@@ -1,0 +1,25 @@
+variant_key,canonical_key,example_raw,seen_in,reason,review_status
+bileyfahi,bileffahi,Sh.Bileyfahi,rtl_zone1,RTL spelling of the Sh. island spelled Bileffahi in CTN/CFN; same atoll prefix (Sh.) and same neighbours (Goidhoo/Maroshi/Feydhoo),ai_agent_reviewed
+dhevvadoo,dhevvadhoo,Dhevvadoo,cfn_2026_all p50,Missing 'h'; next row of the same table reads Dhevvadhoo,ai_agent_reviewed
+dhiyamigil,dhiyamigili,Dhiyamigil,cfn_2026_all p43,Truncated cell; preceding row of the same table reads Dhiyamigili,ai_agent_reviewed
+fenfush,fenfushi,ADH. FENFUSH,cfn_2026_all p29 title,Truncated title; table cells on the same page read Fenfushi,ai_agent_reviewed
+fiyoaree,fiyoari,GDH. FIYOAREE,cfn_2026_all/ctn_2024 p54 title,Title spelling; table cells on the same page read Fiyoari,ai_agent_reviewed
+hebadhoo,henbadhoo,N. HE'BADHOO,cfn_2026_all p19 title,Title missing 'n'; table cells on the same page read He'nbadhoo,ai_agent_reviewed
+hithaadho,hithaadhoo,Hithaadho,cfn_2026_all p24,Truncated cell; other rows of the same table read Hithaadhoo,ai_agent_reviewed
+hithaahdoo,hithaadhoo,Hithaahdoo,ctn_2024_all_atolls p24,Transposed letters; other rows of the same table read Hithaadhoo,ai_agent_reviewed
+kadoodhoo,kandoodhoo,TH. KA'DOODHOO,cfn_2026_all p44 title,Title missing 'n'; table cells on the same page read Ka'ndoodhoo,ai_agent_reviewed
+kolaamaafushi,kolamaafushi,Kolaamaafushi,cfn_2026_all p50,Extra 'a'; title on the same page reads KOLAMAAFUSHI,ai_agent_reviewed
+kuburudhoo,kunburudhoo,Ku'burudhoo,ctn_2024_all_atolls p27,Missing 'n'; CFN 2026 and CTN 2022 versions of route 302 read Ku'nburudhoo,ai_agent_reviewed
+kulhudhuffush,kulhudhuffushi,HDH. KULHUDHUFFUSH,cfn_2026_all p5 title,Truncated title; table cells on the same page read Kulhudhuffushi,ai_agent_reviewed
+kulhudhufushi,kulhudhuffushi,Kulhudhufushi,cfn_2026_all p15,Missing 'f'; title on the same page reads KULHUDHUFFUSHI,ai_agent_reviewed
+kurinbee,kurinbi,HDh. Kurin'bee,rtl_zone1,RTL spelling of the HDh. island spelled Kuri'nbi in CTN/CFN; same neighbours (Nellaidhoo/Kulhudhuffushi),ai_agent_reviewed
+maaugoodhoo,maaungoodhoo,SH. MAAUGOODHOO,cfn_2026_all p17 title,Title missing 'n'; table cells on the same page read Maau'ngoodhoo,ai_agent_reviewed
+maibadhoo,mahibadhoo,Maibadhoo,ctn_2024_all_atolls p30,Missing 'h'; title on the same page reads ADH. MAHIBADHOO,ai_agent_reviewed
+muaridhoo,muraidhoo,Muaridhoo,ctn_2024_all_atolls p6,Transposed letters; earlier rows of the same table read Muraidhoo,ai_agent_reviewed
+mulhadhoo,molhadhoo,Ha.Mulhadhoo,rtl_zone1 p2 title,Title spelling; table cells on the same page read Ha. Molhadhoo,ai_agent_reviewed
+nadella,nadellaa,Nadella,ctn_2024_all_atolls p54,CFN 2026 version of route 607 reads Nadellaa,ai_agent_reviewed
+noomara,noomaraa,Noomara,cfn_2026_all p17,Missing 'a'; other rows of the same table read Noomaraa,ai_agent_reviewed
+ugoofaaru,ungoofaaru,R. UGOOFAARU,cfn_2026_all p21 title,Title missing 'n'; table cells on the same page read U'ngoofaaru,ai_agent_reviewed
+utheem,utheemu,Utheem,cfn_2026_all p3,Truncated cell; other rows of the same table read Utheemu,ai_agent_reviewed
+villingilli,villingili,Villingilli,ctn_2024_all_atolls p48/p50,Double 'l'; other rows of the same tables read Villingili,ai_agent_reviewed
+villimale,vilimale,VILLIMALÉ,mtcc_cargo_2026_v4,Column header spelling; block title on the same page reads Vilimale' Cargo Ferry,ai_agent_reviewed

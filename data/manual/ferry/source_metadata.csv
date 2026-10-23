@@ -1,0 +1,12 @@
+source_id,operator_name,operator_evidence,source_url,notes,review_status
+ctn_2022_k_aa_adh_v,MTCC,"Text 'MTCC FERRY SCHEDULE' on every page; MTCC logo in header",,"Covers routes 301-310 only (K, AA, ADh, V). Each page prints 'Effective: 15th May 2022'.",ai_agent_reviewed
+ctn_2024_all_atolls,MTCC,"MTCC logo image in page header (visual inspection; not in text layer)",,"No printed effective date. File name '30.04' gives no year; PDF metadata creation date 2024-04-28 is evidence of publication period only.",ai_agent_reviewed
+cfn_2026_all,MTCC,"MTCC logo image in page header (visual inspection; not in text layer)",,"No printed effective date. File name says '1 August 2026'; PDF metadata creation date 2026-07-28. Treated as unconfirmed evidence.",ai_agent_reviewed
+cfn_2026_zone6,MTCC,"MTCC logo image in page header (visual inspection; not in text layer)",,"Page title 'Speed Ferry Schedule'. No printed effective date. Dhivehi text is embedded as images; the text layer holds placeholder glyphs.",ai_agent_reviewed
+speed_2026_meemu,MTCC,"MTCC logo image in page header (visual inspection; not in text layer)",,"Route codes S401/S402; page title 'Ferry Schedule'. 'Speed' appears only in the file name. No printed effective date.",ai_agent_reviewed
+speed_2026_thaa_laamu,MTCC,"MTCC logo image in page header (visual inspection; not in text layer)",,"Route codes S506-S509; 'Speed' appears only in the file name. No printed effective date.",ai_agent_reviewed
+rtl_zone1,,"Header shows an unnamed logo; operator not named in the document",,"Page title 'FERRY SCHEDULES'. 'RTL' appears only in the file name. Each route box prints its own 'EFFECTIVE FROM' date (all 2022).",ai_agent_reviewed
+mtcc_gulhifalhu_2026_v1,MTCC,"MTCC logo image in page header (visual inspection; not in text layer)",,"Departure lists only (no arrival times or durations).",ai_agent_reviewed
+mtcc_thilafushi_2026_v2,MTCC,"MTCC logo image in page header (visual inspection; not in text layer)",,"Departure lists only. Effective date printed at the foot of page 2 (Friday) only.",ai_agent_reviewed
+mtcc_cargo_2026_v4,MTCC,"MTCC logo image in page header (visual inspection; not in text layer)",,"Cargo ferry departure lists. No printed effective date. English/Dhivehi day conflict in the Gulhifalhi block.",ai_agent_reviewed
+mtcc_vilimale_2026_v1,MTCC,"MTCC logo image in page header (visual inspection; not in text layer)",,"Frequency (headway) windows; direction not stated. Effective date printed on page 3 only.",ai_agent_reviewed

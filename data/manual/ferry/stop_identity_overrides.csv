@@ -1,0 +1,6 @@
+name_key,atoll_abbreviation,identity_status,reason,review_status
+male,,no_atoll_prefix_reviewed,"Printed as Male’/Male/MALÉ without an atoll prefix in every source; a single Greater Malé name. Atoll field left blank rather than assigned. Ferry terminal (jetty) is never named, so the stop is island-level.",ai_agent_reviewed
+hulhumale,,no_atoll_prefix_reviewed,"Printed as Hulhumale’ without an atoll prefix; Greater Malé name. Atoll left blank; terminal not named.",ai_agent_reviewed
+vilimale,,no_atoll_prefix_reviewed,"Printed as Vilimale’/VILLIMALÉ in MTCC Malé-area sheets without an atoll prefix. Atoll left blank; terminal not named.",ai_agent_reviewed
+thilafushi,,no_atoll_prefix_reviewed,"Printed as THILAFUSHI in MTCC Malé-area sheets without an atoll prefix. Atoll left blank; terminal not named.",ai_agent_reviewed
+gulhifalhu,,no_atoll_prefix_reviewed,"Printed as GULHIFALHU in MTCC Malé-area sheets without an atoll prefix (cargo block title spells it Gulhifalhi). Atoll left blank; terminal not named.",ai_agent_reviewed

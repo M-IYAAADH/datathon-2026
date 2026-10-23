@@ -1,0 +1,53 @@
+{
+  "timezone_assumption": "Asia/Male",
+  "row_counts": {
+    "sources": 11,
+    "stops": 199,
+    "stop_aliases": 808,
+    "routes": 148,
+    "services": 180,
+    "trips": 430,
+    "legs": 1366,
+    "stop_times": 1796,
+    "frequency_windows": 26,
+    "schedule_versions": 180,
+    "extraction_issues": 137,
+    "routing_eligibility": 430,
+    "frequency_eligibility": 26
+  },
+  "coverage": {
+    "duplicate": 42,
+    "extracted": 94,
+    "unresolved": 44
+  },
+  "version_status": {
+    "duplicate": 42,
+    "historical": 33,
+    "preferred_candidate": 71,
+    "unresolved": 34
+  },
+  "routing_eligible_trips": 100,
+  "issues_by_severity": {
+    "info": 65,
+    "warning": 61,
+    "error": 11
+  },
+  "issues_by_type": {
+    "am_pm_ambiguity": 1,
+    "date_ambiguity": 8,
+    "departure_only_timing": 6,
+    "dhivehi_unreadable": 7,
+    "direction_unspecified": 3,
+    "extraction_artifact": 1,
+    "frequency_gap": 1,
+    "language_conflict": 6,
+    "midnight_interpretation": 17,
+    "operating_day_ambiguity": 15,
+    "operator_unconfirmed": 1,
+    "source_row_error": 2,
+    "stop_identity": 13,
+    "time_inconsistency": 4,
+    "trip_segmentation": 11,
+    "version_conflict": 41
+  }
+}

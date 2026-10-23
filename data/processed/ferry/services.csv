@@ -1,0 +1,181 @@
+service_id,monday,tuesday,wednesday,thursday,friday,saturday,sunday,holiday_rule,effective_from,effective_to,days_raw_en,days_raw_dv,calendar_status,source_id,source_page
+svc_ctn_2022_k_aa_adh_v:p01:b1,1,1,1,1,0,1,1,,2022-05-15,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ުހޮނިހިރައާދީއްތ | ަހޯމައަންގާރ | ަބުދ | ިބުރާސްފަތ,explicit_days,ctn_2022_k_aa_adh_v,1
+svc_ctn_2022_k_aa_adh_v:p02:b1,1,1,1,1,0,1,1,,2022-05-15,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ުހޮނިހިރައާދީއްތ | ަހޯމައަންގާރ | ަބުދ | ިބުރާސްފަތ,explicit_days,ctn_2022_k_aa_adh_v,2
+svc_ctn_2022_k_aa_adh_v:p03:b1,0,1,0,0,0,1,0,,2022-05-15,,Saturday Tuesday,ުހޮނިހިރ | ައަންގާރ,explicit_days,ctn_2022_k_aa_adh_v,3
+svc_ctn_2022_k_aa_adh_v:p03:b2,0,0,1,0,0,0,1,,2022-05-15,,Sunday Wednesday,ައާދީއްތ | ަބުދ,explicit_days,ctn_2022_k_aa_adh_v,3
+svc_ctn_2022_k_aa_adh_v:p03:b3,1,0,0,1,0,0,0,,2022-05-15,,"Monday, Thursday",ިހޯމަ ބުރާސްފަތ,explicit_days,ctn_2022_k_aa_adh_v,3
+svc_ctn_2022_k_aa_adh_v:p04:b1,1,1,1,1,0,1,1,,2022-05-15,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ުހޮނިހިރައާދީއްތ | ަހޯމައަންގާރ | ަބުދ | ިބުރާސްފަތ,explicit_days,ctn_2022_k_aa_adh_v,4
+svc_ctn_2022_k_aa_adh_v:p05:b1,1,0,1,0,0,1,0,,2022-05-15,,"Saturday, Monday Wednesday,",ަހޮނިހިރު ހޯމަ ބުދ,explicit_days,ctn_2022_k_aa_adh_v,5
+svc_ctn_2022_k_aa_adh_v:p05:b2,0,1,0,1,0,0,1,,2022-05-15,,"Sunday, Tuesday, Thursday",ިއާދީއްތަ އަންގާރަ ބުރާސްފަތ,explicit_days,ctn_2022_k_aa_adh_v,5
+svc_ctn_2022_k_aa_adh_v:p06:b1,1,0,1,0,0,1,0,,2022-05-15,,"Saturday, Monday, Wednesday",ަހޮނިހިރު ހޯމަ ބުދ,explicit_days,ctn_2022_k_aa_adh_v,6
+svc_ctn_2022_k_aa_adh_v:p06:b2,0,1,0,1,0,0,1,,2022-05-15,,"Sunday, Tuesday, Thursday",ައާދީއްތ | ައަންގާރ | ިބުރާސްފަތ,explicit_days,ctn_2022_k_aa_adh_v,6
+svc_ctn_2022_k_aa_adh_v:p07:b1,1,0,1,0,0,1,0,,2022-05-15,,"Saturday, Monday Wednesday,",ަހޮނިހިރު ހޯމަ ބުދ,explicit_days,ctn_2022_k_aa_adh_v,7
+svc_ctn_2022_k_aa_adh_v:p07:b2,0,1,0,1,0,0,1,,2022-05-15,,"Sunday, Tuesday, Thursday",ިއާދީއްތަ އަންގާރަ ބުރާސްފަތ,explicit_days,ctn_2022_k_aa_adh_v,7
+svc_ctn_2022_k_aa_adh_v:p08:b1,1,1,1,1,0,1,1,,2022-05-15,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ުހޮނިހިރައާދީއްތ | ަހޯމައަންގާރ | ަބުދ | ިބުރާސްފަތ,explicit_days,ctn_2022_k_aa_adh_v,8
+svc_ctn_2022_k_aa_adh_v:p09:b1,1,1,1,1,0,1,1,,2022-05-15,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ުހޮނިހިރައާދީއްތ | ަހޯމައަންގާރ | ަބުދ | ިބުރާސްފަތ,explicit_days,ctn_2022_k_aa_adh_v,9
+svc_ctn_2022_k_aa_adh_v:p10:b1,1,1,1,1,0,1,1,,2022-05-15,,Saturday Sunday Monday Tuesday Wednesday Thursday,ުހޮނިހިރައާދީއްތ | ަހޯމައަންގާރ | ަބުދ | ިބުރާސްފަތ,explicit_days,ctn_2022_k_aa_adh_v,10
+svc_ctn_2024_all_atolls:p01:b1,1,0,0,0,0,0,0,,,,Monday,ަ ހޯމ,explicit_days,ctn_2024_all_atolls,1
+svc_ctn_2024_all_atolls:p02:b1,0,1,0,0,0,0,0,,,,Tuesday,ައަންގާރ,explicit_days,ctn_2024_all_atolls,2
+svc_ctn_2024_all_atolls:p03:b1,0,0,0,1,0,1,0,,,,Saturday and Thursday,ަުހޮނ ހ ރަ | ަުއ ދ ަބަ ރާސ ފ ތ,explicit_days,ctn_2024_all_atolls,3
+svc_ctn_2024_all_atolls:p04:b1,1,0,0,0,0,0,0,,,,Monday,ަ ހޯމ,explicit_days,ctn_2024_all_atolls,4
+svc_ctn_2024_all_atolls:p05:b1,0,0,0,1,0,0,0,,,,Thursday,ބުރާސްފަތ,explicit_days,ctn_2024_all_atolls,5
+svc_ctn_2024_all_atolls:p06:b1,0,1,0,0,0,1,0,,,,Saturday and Tuesday,ަުހޮނ ހ ރަ | ަ އ ދ ައ ނަާގަ ރ,explicit_days,ctn_2024_all_atolls,6
+svc_ctn_2024_all_atolls:p07:b1,0,0,1,0,0,0,0,,,,Wednesday,ަުބަ ދ,explicit_days,ctn_2024_all_atolls,7
+svc_ctn_2024_all_atolls:p08:b1,0,1,0,1,0,1,0,,,,"Saturday, Tuesday, Thursday",ަ ހޮނ ހ ރު،ައ ނަ ގާރ ،ަބުރާސ ފަ ތ,explicit_days_with_unanchored_exception,ctn_2024_all_atolls,8
+svc_ctn_2024_all_atolls:p09:b1,0,1,0,1,0,1,0,,,,"Saturday, Tuesday, Thursday",ަ ހޮނ ހ ރު،ައ ނަ ގާރ ،ަބުރާސ ފަ ތ,explicit_days,ctn_2024_all_atolls,9
+svc_ctn_2024_all_atolls:p10:b1,1,0,1,0,0,0,1,,,,"Sunday, Monday, Wednesday",އާދ އ ތަ ،ަހޯމ ،ަބުދ,explicit_days_with_unanchored_exception,ctn_2024_all_atolls,10
+svc_ctn_2024_all_atolls:p11:b1,0,0,0,1,0,0,1,,,,Sunday and Thursday,ަ އާދ އ ތަ | ަ އ ދ ަބުރާސ ފ ތ,explicit_days,ctn_2024_all_atolls,11
+svc_ctn_2024_all_atolls:p12:b1,1,0,1,0,0,0,0,,,,Monday and Wednesday,ަ | ަ | ަޯހަ މަ | ަ އ ދަ | ަ ބުދ,explicit_days,ctn_2024_all_atolls,12
+svc_ctn_2024_all_atolls:p13:b1,1,0,0,1,0,0,0,,,,Monday and Thursday,ަ ހޯމ ައ ދ ަބުރާސ ފ ތ,explicit_days,ctn_2024_all_atolls,13
+svc_ctn_2024_all_atolls:p14:b1,0,0,0,0,0,0,1,,,,Sunday,ަ އާދ އ ތ,explicit_days,ctn_2024_all_atolls,14
+svc_ctn_2024_all_atolls:p15:b1,0,0,0,0,0,1,0,,,,Saturday,ޮހަުނ ހ ރ,explicit_days,ctn_2024_all_atolls,15
+svc_ctn_2024_all_atolls:p16:b1,0,0,0,0,0,1,0,,,,Saturday,ޮހަުނ ހ ރ,explicit_days,ctn_2024_all_atolls,16
+svc_ctn_2024_all_atolls:p17:b1,0,1,0,0,0,0,0,,,,Tuesday,ަ އ ނ ގާރ,explicit_days,ctn_2024_all_atolls,17
+svc_ctn_2024_all_atolls:p18:b1,0,0,0,0,0,0,1,,,,Sunday,ަ އާދ އ ތ,explicit_days,ctn_2024_all_atolls,18
+svc_ctn_2024_all_atolls:p19:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",،ުހޮނިހިރ | އ ،ަދިއްތަ، ހޯމަ، އަންގ ރަ، ބުދ | ިބުރ ސްފަތ,explicit_days,ctn_2024_all_atolls,19
+svc_ctn_2024_all_atolls:p20:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",،ުހޮނިހިރ | އ ،ަދިއްތަ، ހޯމަ، އަންގ ރަ، ބުދ | ިބުރ ސްފަތ,explicit_days,ctn_2024_all_atolls,20
+svc_ctn_2024_all_atolls:p21:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",،ުހޮނިހިރ | އ ،ަދިއްތަ، ހޯމަ، އަންގ ރަ، ބުދ | ިބުރ ސްފަތ,explicit_days,ctn_2024_all_atolls,21
+svc_ctn_2024_all_atolls:p22:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",،ުހޮނިހިރ | އ ،ަދިއްތަ، ހޯމަ، އަންގ ރަ، ބުދ | ިބުރ ސްފަތ,explicit_days,ctn_2024_all_atolls,22
+svc_ctn_2024_all_atolls:p23:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",،ުހޮނިހިރ | އ ،ަދިއްތަ، ހޯމަ، އަންގ ރަ، ބުދ | ިބުރ ސްފަތ,explicit_days,ctn_2024_all_atolls,23
+svc_ctn_2024_all_atolls:p24:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",،ުހޮނިހިރ | އ ،ަދިއްތަ، ހޯމަ، އަންގ ރަ، ބުދ | ިބުރ ސްފަތ,explicit_days,ctn_2024_all_atolls,24
+svc_ctn_2024_all_atolls:p25:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",،ުހޮނިހިރ | އ ،ަދިއްތަ، ހޯމަ، އަންގ ރަ، ބުދ | ިބުރ ސްފަތ,explicit_days,ctn_2024_all_atolls,25
+svc_ctn_2024_all_atolls:p26:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",،ުހޮނިހިރ | އ ،ަދިއްތަ، ހޯމަ، އަންގ ރަ، ބުދ | ިބުރ ސްފަތ,explicit_days,ctn_2024_all_atolls,26
+svc_ctn_2024_all_atolls:p27:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",،ުހޮނިހިރ | އ ،ަދިއްތަ، ހޯމަ، އަންގ ރަ، ބުދ | ިބުރ ސްފަތ,explicit_days,ctn_2024_all_atolls,27
+svc_ctn_2024_all_atolls:p28:b1,0,1,0,0,0,1,0,,,,Saturday and Tuesday,ުހޮނިހިރ | ިއަދ ައަންގ ރ,explicit_days,ctn_2024_all_atolls,28
+svc_ctn_2024_all_atolls:p28:b2,0,0,1,0,0,0,1,,,,Sunday and Wednesday,އ ަދިއްތ | ިއަދ ަބުދ,explicit_days,ctn_2024_all_atolls,28
+svc_ctn_2024_all_atolls:p28:b3,1,0,0,1,0,0,0,,,,Monday and Thursday,ަހޯމ ި އަދ ިބުރ ސްފަތ,explicit_days,ctn_2024_all_atolls,28
+svc_ctn_2024_all_atolls:p29:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",،ުހޮނިހިރ | އ ،ަދިއްތަ، ހޯމަ، އަންގ ރަ، ބުދ | ިބުރ ސްފަތ,explicit_days,ctn_2024_all_atolls,29
+svc_ctn_2024_all_atolls:p30:b1,1,0,1,0,0,1,0,,,,"Saturday, Monday, Wednesday",ުހޮނިހިރ ، | ަހޯމ ، | ަބުދ,explicit_days,ctn_2024_all_atolls,30
+svc_ctn_2024_all_atolls:p30:b2,0,1,0,1,0,0,1,,,,"Sunday, Tuesday, Thursday",އ | ާދިއްތަ، އަންގާރަ، ބުރާސްފަ | ތ,explicit_days,ctn_2024_all_atolls,30
+svc_ctn_2024_all_atolls:p31:b1,1,0,1,0,0,1,0,,,,"Saturday, Monday, Wednesday",ުހޮނިހިރ ، | ަހޯމ ، | ަބުދ,explicit_days,ctn_2024_all_atolls,31
+svc_ctn_2024_all_atolls:p31:b2,0,1,0,1,0,0,1,,,,"Sunday, Tuesday, Thursday",އ | ާދިއްތަ، އަންގާރަ، ބުރާސްފަ | ތ,explicit_days,ctn_2024_all_atolls,31
+svc_ctn_2024_all_atolls:p32:b1,1,0,1,0,0,1,0,,,,"Saturday, Monday, Wednesday",ުހޮނިހިރ ، | ަހޯމ ، | ަބުދ,explicit_days,ctn_2024_all_atolls,32
+svc_ctn_2024_all_atolls:p32:b2,0,1,0,1,0,0,1,,,,"Sunday, Tuesday, Thursday",އ  ދ ައްތަ، އަންގ ރ  ، ބުރ  ސްފައ,explicit_days,ctn_2024_all_atolls,32
+svc_ctn_2024_all_atolls:p33:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",،ުހޮނިހިރ | އ ،ަދިއްތަ، ހޯމަ، އަންގ ރަ، ބުދ | ިބުރ ސްފަތ,explicit_days,ctn_2024_all_atolls,33
+svc_ctn_2024_all_atolls:p34:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",،ުހޮނިހިރ | އ ،ަދިއްތަ، ހޯމަ، އަންގ ރަ، ބުދ | ިބުރ ސްފަތ,explicit_days,ctn_2024_all_atolls,34
+svc_ctn_2024_all_atolls:p35:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",،ުހޮނިހިރ | އ ،ަދިއްތަ، ހޯމަ، އަންގ ރަ، ބުދ | ިބުރ ސްފަތ,explicit_days,ctn_2024_all_atolls,35
+svc_ctn_2024_all_atolls:p36:b1,0,0,0,0,0,1,1,,,,Saturday and Sunday,ަހޮނިހިރު އަދި އާދިއްތ,explicit_days,ctn_2024_all_atolls,36
+svc_ctn_2024_all_atolls:p37:b1,1,0,0,0,0,0,0,,,,Monday,ަހޯމ,explicit_days,ctn_2024_all_atolls,37
+svc_ctn_2024_all_atolls:p38:b1,0,1,1,0,0,0,0,,,,Tuesday and Wednesday,ައަނ ގާރަ އަދ ބުދ,explicit_days,ctn_2024_all_atolls,38
+svc_ctn_2024_all_atolls:p39:b1,0,0,0,1,0,0,0,,,,Thursday,ބުރާސ ފަތ,explicit_days,ctn_2024_all_atolls,39
+svc_ctn_2024_all_atolls:p40:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ިހޮނިހިރު، އާދިއްތަ، ހޯމަ، އަންގާރަ، ބުދަ، ބުރާސްފަތ,explicit_days,ctn_2024_all_atolls,40
+svc_ctn_2024_all_atolls:p41:b1,,,,,,,,,,,"Saturday, Monday, Wednesday : / Sunday, Tuesday, Thursday :",: އެއ ހަފ ތާގައ | ޯހޮނ ހ ރު، ހ ަމަ، ބުދ / ްއަނެއްހަފްތާގައި: އާދިއްތަ، އަނ ިގާރަ، ބުރާސްފަތ,alternating_weeks_unanchored,ctn_2024_all_atolls,41
+svc_ctn_2024_all_atolls:p42:b1,,,,,,,,,,,"Saturday, Monday, Wednesday : / Sunday, Tuesday, Thursday :",: އެއ ހަފ ތާގައ | ޯހޮނ ހ ރު، ހ ަމަ، ބުދ / ްއަނެއްހަފްތާގައި: އާދިއްތަ، އަނ ިގާރަ، ބުރާސްފަތ,alternating_weeks_unanchored,ctn_2024_all_atolls,42
+svc_ctn_2024_all_atolls:p43:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ިހޮނިހިރު، އާދިއްތަ، ހޯމަ، އަންގާރަ، ބުދަ، ބުރާސްފަތ,explicit_days_with_unanchored_exception,ctn_2024_all_atolls,43
+svc_ctn_2024_all_atolls:p44:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ިހޮނިހިރު، އާދިއްތަ، ހޯމަ، އަންގާރަ، ބުދަ، ބުރާސްފަތ,explicit_days_with_unanchored_exception,ctn_2024_all_atolls,44
+svc_ctn_2024_all_atolls:p44:b2,,,,,,,,,,,,,fortnightly_unanchored,ctn_2024_all_atolls,44
+svc_ctn_2024_all_atolls:p45:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ިހޮނިހިރު، އާދިއްތަ، ހޯމަ، އަންގާރަ، ބުދަ، ބުރާސްފަތ,explicit_days,ctn_2024_all_atolls,45
+svc_ctn_2024_all_atolls:p46:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ިހޮނިހިރު، އާދިއްތަ، ހޯމަ، އަންގާރަ، ބުދަ، ބުރާސްފަތ,explicit_days,ctn_2024_all_atolls,46
+svc_ctn_2024_all_atolls:p47:b1,0,0,0,1,0,1,0,,,,Saturday and Thursday,ުހޮނިހިރ | ިއަދ ިބުރާސްފަތ,explicit_days_with_unanchored_exception,ctn_2024_all_atolls,47
+svc_ctn_2024_all_atolls:p48:b1,0,0,0,1,0,1,0,,,,Saturday and Thursday,ިހޮނިހިރު އަދި ބުރާސްފަތ,explicit_days,ctn_2024_all_atolls,48
+svc_ctn_2024_all_atolls:p49:b1,0,1,0,0,0,0,0,,,,Tuesday,ަައަންގާރ,explicit_days,ctn_2024_all_atolls,49
+svc_ctn_2024_all_atolls:p50:b1,0,0,0,0,0,0,1,,,,Sunday,ައާދިއްތ,explicit_days,ctn_2024_all_atolls,50
+svc_ctn_2024_all_atolls:p51:b1,0,0,0,1,0,1,0,,,,Saturday and Thursday,ުހޮނިހިރ | ިއަދ | ިބުރާސްފަތ,explicit_days,ctn_2024_all_atolls,51
+svc_ctn_2024_all_atolls:p52:b1,1,0,0,0,0,0,0,,,,Monday,ަހޯމ,explicit_days,ctn_2024_all_atolls,52
+svc_ctn_2024_all_atolls:p53:b1,0,1,0,0,0,0,1,,,,Sunday and Tuesday,ައާދީއްތ | ިއަދ | ައަންގާރ,explicit_days,ctn_2024_all_atolls,53
+svc_ctn_2024_all_atolls:p54:b1,0,1,0,1,0,1,1,,,,"Saturday, Sunday, Tuesday, Thursday",ުހޮނިހިރ ، | ައާދީއްތ ، | ައަންގާރ ، | ިބުރާސްފަތ,explicit_days,ctn_2024_all_atolls,54
+svc_cfn_2026_all:p01:b1,1,0,0,0,0,0,0,,,,Monday,ަހޯމ,explicit_days,cfn_2026_all,1
+svc_cfn_2026_all:p02:b1,0,,0,,0,0,0,,,,Thursday,ައަނ ގާރ,language_conflict,cfn_2026_all,2
+svc_cfn_2026_all:p03:b1,0,0,0,1,0,1,0,,,,"Saturday, Thursday",ހޮނ ހ ރު  ބުރާސ ފަތ,explicit_days,cfn_2026_all,3
+svc_cfn_2026_all:p04:b1,1,0,0,0,0,0,0,,,,Monday,ަހޯމ,explicit_days,cfn_2026_all,4
+svc_cfn_2026_all:p05:b1,0,0,0,1,0,0,0,,,,Thursday,ބުރާސ ފަތ,explicit_days,cfn_2026_all,5
+svc_cfn_2026_all:p06:b1,0,1,0,0,0,1,0,,,,"Saturday, Tuesday",ަހޮނ ހ ރު އަނ ގާރ,explicit_days,cfn_2026_all,6
+svc_cfn_2026_all:p07:b1,0,0,1,0,0,0,0,,,,Wednesday,ަބުދ,explicit_days,cfn_2026_all,7
+svc_cfn_2026_all:p08:b1,0,1,0,1,0,1,1,,,,"Saturday, Sunday, Tuesday, Thursday",ުހޮނ ހ ރ ައާދީއ ތ އަނ ގާރަ ބުރާސ ފަތ,explicit_days,cfn_2026_all,8
+svc_cfn_2026_all:p09:b1,0,1,0,1,0,1,0,,,,"Saturday, Tuesday, Thursday",ހޮނ ހ ރު އަނ ގާރަ ބުރާސ ފަތ,explicit_days,cfn_2026_all,9
+svc_cfn_2026_all:p10:b1,0,1,0,1,0,1,1,,,,"Saturday, Sunday, Tuesday, Thursday",ުހޮނ ހ ރ އާދީއ ތަ އަނ ގާރަ ބުރާސ ފަތ,explicit_days,cfn_2026_all,10
+svc_cfn_2026_all:p11:b1,0,0,0,1,0,0,1,,,,Sunday Thursday,ައާދީއ ތ | ބުރާސ ފަތ,explicit_days,cfn_2026_all,11
+svc_cfn_2026_all:p12:b1,1,0,1,0,0,0,0,,,,"Monday, Wednesday",ަހޯމ ަބުދ,explicit_days,cfn_2026_all,12
+svc_cfn_2026_all:p13:b1,1,0,0,1,0,0,0,,,,"Monday, Thursday",ަހޯމ  ބުރާސ ފަތ,explicit_days,cfn_2026_all,13
+svc_cfn_2026_all:p14:b1,0,0,0,0,0,0,1,,,,Sunday,ައާދީއ ތ,explicit_days,cfn_2026_all,14
+svc_cfn_2026_all:p15:b1,0,0,0,0,0,1,0,,,,Saturday,ުހޮނ ހ ރ,explicit_days,cfn_2026_all,15
+svc_cfn_2026_all:p16:b1,0,0,0,0,0,1,0,,,,Saturday,ުހޮނ ހ ރ,explicit_days,cfn_2026_all,16
+svc_cfn_2026_all:p17:b1,0,1,0,0,0,0,0,,,,Tuesday,ައަނ ގާރ,explicit_days,cfn_2026_all,17
+svc_cfn_2026_all:p18:b1,0,0,0,0,0,0,1,,,,Sunday,ައާދ އ ތ,explicit_days,cfn_2026_all,18
+svc_cfn_2026_all:p19:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ަހޮނ ހ ރު އާދީއ ތ ަ ހޯމ  އަނ ގާރަ ބުދަ ބުރާސ ފަތ,explicit_days,cfn_2026_all,19
+svc_cfn_2026_all:p20:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ހޮނ ހ ރު އާދީއ ތަ ހޯމަ އަނ ގާރަ ބުދަ ބުރާސ ފަތ,explicit_days,cfn_2026_all,20
+svc_cfn_2026_all:p21:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ހޮނ ހ ރު އާދީއ ތަ ހޯމަ އަނ ގާރަ ބުދަ ބުރާސ ފަތ,explicit_days,cfn_2026_all,21
+svc_cfn_2026_all:p22:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ހޮނ ހ ރު އާދީއ ތަ ހޯމަ އަނ ގާރަ ބުދަ ބުރާސ ފަތ,explicit_days,cfn_2026_all,22
+svc_cfn_2026_all:p23:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ހޮނ ހ ރު އާދީއ ތަ ހޯމަ އަނ ގާރަ ބުދަ ބުރާސ ފަތ,explicit_days,cfn_2026_all,23
+svc_cfn_2026_all:p24:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ހޮނ ހ ރު އާދީއ ތަ ހޯމަ އަނ ގާރަ ބުދަ ބުރާސ ފަތ,explicit_days,cfn_2026_all,24
+svc_cfn_2026_all:p25:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ުހޮނ ހ ރައާދީއ ތ | ަހޯމ ައަނ ގާރ | ަބުދ | ބުރާސ ފަތ,explicit_days,cfn_2026_all,25
+svc_cfn_2026_all:p26:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ުހޮނ ހ ރައާދީއ ތ | ަހޯމ ައަނ ގާރ | ަބުދ | ބުރާސ ފަތ,explicit_days,cfn_2026_all,26
+svc_cfn_2026_all:p27:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ުހޮނ ހ ރައާދީއ ތ | ަހޯމ ައަނ ގާރ | ަބުދ | ބުރާސ ފަތ,explicit_days,cfn_2026_all,27
+svc_cfn_2026_all:p28:b1,0,1,0,0,0,1,0,,,,Saturday Tuesday,ުހޮނ ހ ރ | ައަނ ގާރ,explicit_days,cfn_2026_all,28
+svc_cfn_2026_all:p28:b2,0,0,1,0,0,0,1,,,,Sunday Wednesday,ައާދީއ ތ | ަބުދ,explicit_days,cfn_2026_all,28
+svc_cfn_2026_all:p28:b3,1,0,0,1,0,0,0,,,,"Monday, Thursday",ހޯމަ ބުރާސ ފަތ,explicit_days,cfn_2026_all,28
+svc_cfn_2026_all:p29:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ުހޮނ ހ ރައާދީއ ތ | ަހޯމ ައަނ ގާރ | ަބުދ | ބުރާސ ފަތ,explicit_days,cfn_2026_all,29
+svc_cfn_2026_all:p30:b1,1,0,1,0,0,1,0,,,,"Saturday, Monday Wednesday,",ަހޮނ ހ ރު ހޯމަ ބުދ,explicit_days,cfn_2026_all,30
+svc_cfn_2026_all:p30:b2,0,1,0,1,0,0,1,,,,"Sunday, Tuesday, Thursday",އާދީއ ތަ އަނ ގާރަ ބުރާސ ފަތ,explicit_days,cfn_2026_all,30
+svc_cfn_2026_all:p31:b1,1,0,1,0,0,1,0,,,,"Saturday, Monday, Wednesday",ަހޮނ ހ ރު ހޯމަ ބުދ,explicit_days,cfn_2026_all,31
+svc_cfn_2026_all:p31:b2,0,1,0,1,0,0,1,,,,"Sunday, Tuesday, Thursday",ައާދީއ ތ | ައަނ ގާރ | ބުރާސަފ ތ,explicit_days,cfn_2026_all,31
+svc_cfn_2026_all:p32:b1,1,0,1,0,0,1,0,,,,"Saturday, Monday Wednesday,",ަހޮނ ހ ރު ހޯމަ ބުދ,explicit_days,cfn_2026_all,32
+svc_cfn_2026_all:p32:b2,0,1,0,1,0,0,1,,,,"Sunday, Tuesday, Thursday",އާދީއ ތަ އަނ ގާރަ ބުރާސ ފަތ,explicit_days,cfn_2026_all,32
+svc_cfn_2026_all:p33:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ުހޮނ ހ ރައާދީއ ތ | ަހޯމައަނ ގާރ | ަބުދ | ބުރާސ ފަތ,explicit_days,cfn_2026_all,33
+svc_cfn_2026_all:p34:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ުހޮނ ހ ރައާދީއ ތ | ަހޯމ ައަނ ގާރ | ަބުދ | ބުރާސ ފަތ,explicit_days,cfn_2026_all,34
+svc_cfn_2026_all:p35:b1,1,1,1,1,0,1,1,,,,Saturday Sunday Monday Tuesday Wednesday Thursday,ުހޮނ ހ ރައާދީއ ތ | ަހޯމ ައަނ ގާރ | ަބުދ | ބުރާސ ފަތ,explicit_days,cfn_2026_all,35
+svc_cfn_2026_all:p36:b1,0,0,0,0,0,1,1,,,,Saturday Sunday,ޮހަނ ހ ރު  އާދީއ ތ,explicit_days,cfn_2026_all,36
+svc_cfn_2026_all:p37:b1,1,0,0,0,0,0,0,,,,Monday,ަހޯމ,explicit_days,cfn_2026_all,37
+svc_cfn_2026_all:p38:b1,0,1,1,0,0,0,0,,,,"Tuesday, Wednesday",ައަނ ގާރަ ބުދ,explicit_days,cfn_2026_all,38
+svc_cfn_2026_all:p39:b1,0,0,0,1,0,0,0,,,,Thursday,ބުރާސ ފަތ,explicit_days,cfn_2026_all,39
+svc_cfn_2026_all:p40:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ހޮނ ހ ރު އަދީއ ތަ ހޯމަ އަނ ގާރަ ބުދަ ބުރާސ ފަތ,explicit_days,cfn_2026_all,40
+svc_cfn_2026_all:p41:b1,,,,,,,,,,,"Saturday, Monday, Wednesday : / Sunday, Tuesday, Thursday :","ައެއ ހަފުތާގައ :   ހޮނ ހ ރު ހޯމަ ބުދ / އަނެއ ހަފުތާގައ :  އާދީއ ތަ އަނ ގާރަ ބުރާސ ފަތ Sunday, Tuesday, Thursday",alternating_weeks_unanchored,cfn_2026_all,41
+svc_cfn_2026_all:p42:b1,,,,,,,,,,,"Saturday, Monday, Wednesday : / Sunday, Tuesday, Thursday :","ައެއ ހަފުތާގައ :   ހޮނ ހ ރު ހޯމަ ބުދ / އަނެއ ހަފުތާގައ :  އާދީއ ތަ އަނ ގާރަ ބުރާސ ފަތ Sunday, Tuesday, Thursday",alternating_weeks_unanchored,cfn_2026_all,42
+svc_cfn_2026_all:p43:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ހޮނ  ހ ރު އާދީއ ތަ ހޯމަ އަނ ގާރަ ބުދަ ބުރާސ ފަތ,explicit_days_with_unanchored_exception,cfn_2026_all,43
+svc_cfn_2026_all:p44:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ހޮނ ހ ރު އާދީއ ތަ ހޯމަ އަނ ގާރަ ބުދަ ބުރާސ ފަތ,explicit_days_with_unanchored_exception,cfn_2026_all,44
+svc_cfn_2026_all:p44:b2,,,,,,,,,,,,,fortnightly_unanchored,cfn_2026_all,44
+svc_cfn_2026_all:p45:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ުހޮނ ހ ރައާދީއ ތ | ަހޯމ ައަނ ގާރ | ަބުދ | ބުރާސ ފަތ,explicit_days,cfn_2026_all,45
+svc_cfn_2026_all:p46:b1,1,1,1,1,0,1,1,,,,"Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday",ުހޮނ ހ ރައާދީއ ތ | ަހޯމ ައަނ ގާރ | ަބުދ | ބުރާސ ފަތ,explicit_days,cfn_2026_all,46
+svc_cfn_2026_all:p47:b1,0,0,0,1,0,1,0,,,,"Saturday, Thursday",ހޮނ ހ ރު  ބުރާސ ފަތ,explicit_days_with_unanchored_exception,cfn_2026_all,47
+svc_cfn_2026_all:p48:b1,0,0,0,1,0,1,0,,,,"Saturday, Thursday,",ހޮނ ހ ރު ބުރާސ ފަތ,explicit_days,cfn_2026_all,48
+svc_cfn_2026_all:p49:b1,0,1,0,0,0,0,0,,,,Tuesday,ައަނ ގާރ,explicit_days,cfn_2026_all,49
+svc_cfn_2026_all:p50:b1,0,0,0,0,0,0,1,,,,Sunday,ައާދީއ ތ,explicit_days,cfn_2026_all,50
+svc_cfn_2026_all:p51:b1,0,0,0,1,0,1,0,,,,Saturday Thursday,ުހޮނ ހ ރ | ބުރާސ ފަތ,explicit_days,cfn_2026_all,51
+svc_cfn_2026_all:p52:b1,1,0,0,0,0,0,0,,,,Monday,ަހޯމ,explicit_days,cfn_2026_all,52
+svc_cfn_2026_all:p53:b1,0,1,0,0,0,0,1,,,,Sunday Tuesday,ައާދީއ ތ ައަނ ގާރ,explicit_days,cfn_2026_all,53
+svc_cfn_2026_all:p54:b1,0,1,0,1,0,1,1,,,,"Saturday, Sunday,Tuesday, Thurday",ހޮނ ހ ރު އާދީއ ތަ އަނ ގާރަ ބުރާސ ފަތ,explicit_days,cfn_2026_all,54
+svc_cfn_2026_zone6:p01:b1,1,1,1,1,0,1,0,,,,"MONDAY, TUESDAY, WEDNESDAY, THURSDAY & SATURDAY",ހހހހ، ހހ | ހހހހހހ، ހހހހ، ހހހހހހހހ | ހހ | ހހހހ ހހ | ހހހހހހ,explicit_days,cfn_2026_zone6,1
+svc_cfn_2026_zone6:p02:b1,0,0,0,0,0,0,1,,,,SUNDAY,އއއއއއއއ,explicit_days,cfn_2026_zone6,2
+svc_cfn_2026_zone6:p03:b1,1,1,1,1,0,1,1,,,,"SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY & SATURDAY",،އއއއއއއއ | އއއއ، އއއއއއއއ، އއއއ، އއއއއއއއއއ އއއއ އއއއއއއއ,explicit_days,cfn_2026_zone6,3
+svc_cfn_2026_zone6:p04:b1,1,1,1,1,0,1,1,,,,"SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY & SATURDAY",،އއއއއއއއ | އއއއ، އއއއއއއއ، އއއއ، އއއއއއއއއއ އއއއ އއއއއއއއ,explicit_days,cfn_2026_zone6,4
+svc_cfn_2026_zone6:p05:b1,1,1,1,1,0,1,1,,,,"SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY & SATURDAY",،އއއއއއއއ | އއއއ، އއއއއއއއ، އއއއ، އއއއއއއއއއ އއއއ އއއއއއއއ,explicit_days,cfn_2026_zone6,5
+svc_cfn_2026_zone6:p06:b1,1,1,1,1,0,1,1,,,,"SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY & SATURDAY",،އއއއއއއއ | އއއއ، އއއއއއއއ، އއއއ، އއއއއއއއއއ އއއއ އއއއއއއއ,explicit_days,cfn_2026_zone6,6
+svc_speed_2026_meemu:p01:b1,0,0,0,1,0,1,0,,,,Saturday Thursday,ޮހ ުނިހިރ | ިބުރާސްފަތ,explicit_days,speed_2026_meemu,1
+svc_speed_2026_meemu:p02:b1,1,0,1,0,0,0,0,,,,Monday Wednesday,ޯހަމ | ަބުދ,explicit_days,speed_2026_meemu,2
+svc_speed_2026_thaa_laamu:p01:b1,0,0,0,1,0,1,0,,,,"Saturday, Thursday",ުހޮނިހިރ ިބުރާސްފަތ,explicit_days,speed_2026_thaa_laamu,1
+svc_speed_2026_thaa_laamu:p01:b2,0,1,0,0,0,0,1,,,,"Sunday, Tuesday",ައާދީއްތ ައަންގާރ,explicit_days,speed_2026_thaa_laamu,1
+svc_speed_2026_thaa_laamu:p02:b1,1,0,0,0,0,0,0,,,,Monday,ަހޯމ,explicit_days,speed_2026_thaa_laamu,2
+svc_speed_2026_thaa_laamu:p02:b2,0,0,1,0,0,0,0,,,,Wednesday,ަބުދ,explicit_days,speed_2026_thaa_laamu,2
+svc_rtl_zone1:p01:b1,1,1,1,1,1,1,1,,2022-06-26,,"OPERATING DAYS: SUN,MON,TUE,WED,THU,FRI,SAT",,explicit_days,rtl_zone1,1
+svc_rtl_zone1:p02:b1,1,1,1,1,1,1,1,,2022-06-26,,"OPERATING DAYS: SUN,MON,TUE,WED,THU,FRI,SAT",,explicit_days,rtl_zone1,2
+svc_rtl_zone1:p03:b1,1,1,1,1,1,1,1,,2022-06-26,,"OPERATING DAYS: SUN,MON,TUE,WED,THU,FRI,SAT",,explicit_days,rtl_zone1,3
+svc_rtl_zone1:p04:b1,1,1,1,1,1,1,1,,2022-08-11,,"OPERATING DAYS: SUN,MON,TUE,WED,THU,FRI,SAT",,explicit_days,rtl_zone1,4
+svc_rtl_zone1:p04:b2,1,1,1,1,1,1,1,,2022-08-11,,"OPERATING DAYS: SUN,MON,TUE,WED,THU,FRI,SAT",,explicit_days,rtl_zone1,4
+svc_rtl_zone1:p04:b3,1,1,1,1,1,1,1,,2022-08-11,,"OPERATING DAYS: SUN,MON,TUE,WED,THU,FRI,SAT",,explicit_days,rtl_zone1,4
+svc_rtl_zone1:p05:b1,1,1,1,1,1,1,1,,2022-06-26,,"OPERATING DAYS: SUN,MON,TUE,WED,THU,FRI,SAT",,explicit_days,rtl_zone1,5
+svc_rtl_zone1:p05:b2,1,1,1,1,1,1,1,,2022-08-11,,"OPERATING DAYS: SUN,MON,TUE,WED,THU,FRI,SAT",,explicit_days,rtl_zone1,5
+svc_rtl_zone1:p06:b1,1,1,1,1,1,1,1,,2022-07-03,,"OPERATING DAYS: SUN,MON,TUE,WED,THU,FRI,SAT",,explicit_days,rtl_zone1,6
+svc_rtl_zone1:p07:b1,1,1,1,1,1,1,1,,2022-06-26,,"OPERATING DAYS: SUN,MON,TUE,WED,THU,FRI,SAT",,explicit_days,rtl_zone1,7
+svc_rtl_zone1:p08:b1,1,1,1,1,1,1,1,,2022-06-26,,"OPERATING DAYS: SUN,MON,TUE,WED,THU,FRI,SAT",,explicit_days,rtl_zone1,8
+svc_rtl_zone1:p09:b1,1,1,1,1,1,1,1,,2022-05-28,,"OPERATING DAYS: SUN,MON,TUE,WED,THU,FRI,SAT",,explicit_days,rtl_zone1,9
+svc_rtl_zone1:p10:b1,1,1,1,1,1,1,1,,2022-05-28,,"OPERATING DAYS: SUN,MON,TUE,WED,THU,FRI,SAT",,explicit_days,rtl_zone1,10
+svc_rtl_zone1:p11:b1,1,1,1,1,1,1,1,,2022-05-28,,"OPERATING DAYS: SUN,MON,TUE,WED,THU,FRI,SAT",,explicit_days,rtl_zone1,11
+svc_rtl_zone1:p11:b2,1,1,1,1,1,1,1,,2022-05-28,,"OPERATING DAYS: SUN,MON,TUE,WED,THU,FRI,SAT",,explicit_days,rtl_zone1,11
+svc_rtl_zone1:p12:b1,1,1,1,1,1,1,1,,2022-05-28,,"OPERATING DAYS: SUN,MON,TUE,WED,THU,FRI,SAT",,explicit_days,rtl_zone1,12
+svc_rtl_zone1:p12:b2,1,1,1,1,1,1,1,,2022-08-10,,"OPERATING DAYS: SUN,MON,TUE,WED,THU,FRI,SAT",,explicit_days,rtl_zone1,12
+svc_rtl_zone1:p13:b1,1,1,1,1,1,1,1,,2022-09-11,,"OPERATING DAYS: SUN,MON,TUE,WED,THU,FRI,SAT",,explicit_days,rtl_zone1,13
+svc_rtl_zone1:p14:b1,1,1,1,1,1,1,1,,2022-09-11,,"OPERATING DAYS: SUN,MON,TUE,WED,THU,FRI,SAT",,explicit_days,rtl_zone1,14
+svc_rtl_zone1:p15:b1,1,1,1,1,1,1,1,,2022-09-11,,"OPERATING DAYS: SUN,MON,TUE,WED,THU,FRI,SAT",,explicit_days,rtl_zone1,15
+svc_rtl_zone1:p16:b1,1,1,1,1,1,1,1,,2022-09-11,,"OPERATING DAYS: SUN,MON,TUE,WED,THU,FRI,SAT",,explicit_days,rtl_zone1,16
+svc_rtl_zone1:p17:b1,1,1,1,1,1,1,1,,2022-09-11,,"OPERATING DAYS: SUN,MON,TUE,WED,THU,FRI,SAT",,explicit_days,rtl_zone1,17
+svc_rtl_zone1:p18:b1,1,1,1,1,1,1,1,,2022-09-11,,"OPERATING DAYS: SUN,MON,TUE,WED,THU,FRI,SAT",,explicit_days,rtl_zone1,18
+svc_rtl_zone1:p19:b1,1,1,1,1,1,1,1,,2022-09-11,,"OPERATING DAYS: SUN,MON,TUE,WED,THU,FRI,SAT",,explicit_days,rtl_zone1,19
+svc_mtcc_gulhifalhu_2026_v1:p01:b1,1,1,1,1,0,1,1,,2026-03-21,,SATURDAY - THURSDAY,ޮހިިނިހި ރި | ި- | ި | ިިބ ރާސްފަތ,explicit_days,mtcc_gulhifalhu_2026_v1,1
+svc_mtcc_thilafushi_2026_v2:p01:b1,1,1,1,1,0,1,1,,,,SATURDAY - THURSDAY,ު ހޮނިހިރު | ު- | ު | ުިބ ރާސްފަތ,explicit_days,mtcc_thilafushi_2026_v2,1
+svc_mtcc_thilafushi_2026_v2:p02:b1,0,0,0,0,1,0,0,,2026-08-24,,FRIDAY,ުްހ ކ ރ ުދ ވަސ,explicit_days,mtcc_thilafushi_2026_v2,2
+svc_mtcc_cargo_2026_v4:p01:b1,1,1,1,1,0,1,1,,,,SATURDAY - THURSDAY,ުހޮނިހިރ - | ިބުރާސްފަތ,explicit_days,mtcc_cargo_2026_v4,1
+svc_mtcc_cargo_2026_v4:p01:b2,1,1,1,1,0,1,1,,,,SATURDAY - THURSDAY,ުހޮނިހިރ - | ިބުރާސްފަތ,explicit_days,mtcc_cargo_2026_v4,1
+svc_mtcc_cargo_2026_v4:p01:b3,0,1,,,0,0,1,,,,"Sunday, Tuesday & Thursday",ައާދީއްތަ، އަންގާރަ އަދި ބުދ,language_conflict,mtcc_cargo_2026_v4,1
+svc_mtcc_vilimale_2026_v1:p01:b1,1,1,1,1,0,0,1,,,,SUNDAY - THURSDAY,ައާދިއްތ - | ިބުރާސްފަތ,explicit_days,mtcc_vilimale_2026_v1,1
+svc_mtcc_vilimale_2026_v1:p02:b1,0,0,0,0,1,0,0,,,,FRIDAY,ްހުކުރު ދުވަސ,explicit_days,mtcc_vilimale_2026_v1,2
+svc_mtcc_vilimale_2026_v1:p03:b1,0,0,0,0,0,1,0,Also applies on 'other holidays' per heading; holiday dates are not listed in the source.,2026-03-21,,SATURDAY & OTHER HOLIDAYS,ްހޮނިހިރު އަދި އެހެނިހެން ބަންދު ދުވަސްތައ,explicit_days_plus_unlisted_holidays,mtcc_vilimale_2026_v1,3

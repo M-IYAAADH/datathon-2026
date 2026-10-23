@@ -1,0 +1,397 @@
+{
+  "status": "pass",
+  "n_checks": 77,
+  "failures": [],
+  "checks": [
+    {
+      "check": "pk_unique:sources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pk_unique:stops",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pk_unique:stop_aliases",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pk_unique:routes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pk_unique:services",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pk_unique:trips",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pk_unique:legs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pk_unique:stop_times",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pk_unique:frequency_windows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pk_unique:schedule_versions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pk_unique:extraction_issues",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pk_unique:routing_eligibility",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "pk_unique:frequency_eligibility",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:stop_aliases.stop_id->stops",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:stop_aliases.source_id->sources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:trips.route_id->routes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:trips.service_id->services",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:trips.source_id->sources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:trips.origin_stop_id->stops",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:trips.destination_stop_id->stops",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:legs.trip_id->trips",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:legs.from_stop_id->stops",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:legs.to_stop_id->stops",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:stop_times.trip_id->trips",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:stop_times.stop_id->stops",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:frequency_windows.route_id->routes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:frequency_windows.service_id->services",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:frequency_windows.from_stop_id->stops",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:frequency_windows.to_stop_id->stops",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:schedule_versions.route_id->routes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:schedule_versions.service_id->services",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:schedule_versions.source_id->sources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:services.source_id->sources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:routing_eligibility.trip_id->trips",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:frequency_eligibility.frequency_id->frequency_windows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:extraction_issues.source_id->sources",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:trips.source_block_id->schedule_versions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fk:routing_eligibility.schedule_version_id",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "eligibility_row_per_trip",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "controlled:trips.schedule_type",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "controlled:frequency_windows.operation_status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "controlled:schedule_versions.selection_status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "controlled:extraction_issues.severity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "controlled:extraction_issues.resolution_status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "controlled:routes.passenger_eligibility",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "controlled:routes.transport_type",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "controlled:services.calendar_status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "controlled:stops.identity_status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "controlled:frequency_windows.direction_scope",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_human_verified_labels",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "source_pdfs_match_sha256",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "legs_time_format_and_seconds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "frequency_time_format_and_order",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "arrival_after_departure_or_flagged_excluded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "monotonic_times_within_trip_or_flagged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "consecutive_leg_stop_continuity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_unsplit_direction_reversal",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "stop_times_match_legs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "weekday_values",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "explicit_days_have_all_flags",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "unanchored_alternation_has_blank_flags",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "effective_to_not_asserted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "frequency_headways_and_no_exact_times",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "frequency_not_expanded_into_trips",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "frequency_unspecified_direction_not_eligible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "cargo_excluded_from_passenger_routing",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "departure_only_keeps_unknown_arrivals",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "eligibility_flags_consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "routable_only_preferred_versions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_duplicate_routable_departures_across_blocks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_unsourced_geography_or_codes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_fare_or_capacity_columns",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "legs_traceable_to_source_row",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "trips_traceable_to_source_block",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "every_page_has_coverage_status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "coverage_status_controlled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "every_block_has_coverage_status",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "stats": {
+    "legs_with_error_issues": 8,
+    "routing_eligible_trips": 100,
+    "trips": 430
+  }
+}

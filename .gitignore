@@ -1,0 +1,6 @@
+# Source PDFs are third-party documents; keep them local (place them in the repo root to rerun extraction)
+*.pdf
+# Page renders are regenerable: python scripts/extract_ferry_schedules.py --render
+data/interim/ferry/renders/
+__pycache__/
+.pytest_cache/

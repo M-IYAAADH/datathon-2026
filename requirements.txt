@@ -1,0 +1,4 @@
+# Ferry timetable extraction (scripts/extract_ferry_schedules.py)
+PyMuPDF==1.26.7
+# Tests
+pytest==9.0.2
