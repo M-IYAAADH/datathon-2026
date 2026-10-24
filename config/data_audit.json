@@ -1,0 +1,36 @@
+{
+  "_comment": "Settings for scripts/audit_data.py. Every value is a stated expectation, not a measured fact.",
+  "polygon_tolerance_m": 1000,
+  "followme_window": ["2025-08-01", "2025-08-31"],
+  "weather_hours_per_point": 744,
+  "disclosure_min_devices": 3,
+  "disclosure_min_days": 5,
+  "large_raw_bytes": 1000000,
+  "raw_path_markers": ["/raw/"],
+  "raw_extensions": [".pbf", ".zip"],
+  "private_forbidden_columns": ["device_key", "imei"],
+  "imei_pattern": "(?<![0-9.])[0-9]{15}(?![0-9.])",
+  "app_ferry_source_id": "cfn_2026_all",
+  "app_ferry_eligible_flag": "routing_eligible",
+  "rasdhoo_stop_id": "stp_aa_rasdhoo",
+  "rasdhoo_checks": [
+    {"route": "301", "event": "arrival", "time": "10:55:00"},
+    {"route": "303", "event": "departure", "time": "11:00:00"}
+  ],
+  "corridor_route_codes": ["301", "303"],
+  "name_aliases": {
+    "_comment": "Audit-only spelling variants, applied after strict normalisation. Not a crosswalk; only exact known variants, no fuzzy matching.",
+    "maale": "male",
+    "hulhumaale": "hulhumale"
+  },
+  "atoll_aliases": {
+    "_comment": "Atoll labels across datasets, normalised to Census atoll_code lower-case.",
+    "male city": "mle",
+    "mle": "mle",
+    "sh": "sh", "hdh": "hdh", "gdh": "gdh", "adh": "adh", "lh": "lh", "th": "th", "dh": "dh", "gn": "gn", "ga": "ga", "ha": "ha"
+  },
+  "onemap_atoll_to_census": {
+    "Alifu Alifu": "aa", "Alifu Dhaalu": "adh", "Kaafu": "k", "Vaavu": "v", "MLE": "mle"
+  },
+  "male_area_note": "Census MLE-coded islands are Maale, Hulhumaale, Vilingili and K.Hulhule; OneMap codes the three main ones as atoll 'MLE'."
+}

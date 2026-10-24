@@ -1,0 +1,88 @@
+{
+  "config_sha256": "686b56b60d54cc5216f12e412589552237b3ecc2c8770f26238d859146cb89e5",
+  "config_version": "1.0.0",
+  "pipeline_version": "1.0.0",
+  "rejected_or_unused": [
+    {
+      "reason": "Attempted 2026-10-24 on overpass.private.coffee and overpass.kumi.systems; both timed out or returned dispatcher errors on a trivial query, so the Geofabrik extract is the OSM source. overpass-api.de was not used because its robots.txt disallows /api/.",
+      "source": "overpass.private.coffee / overpass.kumi.systems"
+    },
+    {
+      "reason": "robots.txt disallows /api/; not used.",
+      "source": "overpass-api.de"
+    },
+    {
+      "reason": "0 matching datasets on 2026-10-24.",
+      "source": "HDX (data.humdata.org package_search 'maldives harbour/jetty/port')"
+    },
+    {
+      "reason": "Named island-level stops only; no jetty names or coordinates, so used for matching only.",
+      "source": "Ferry PDFs / data/processed/ferry/stops.csv"
+    },
+    {
+      "reason": "Island reference points, not harbours.",
+      "source": "Census island coordinates"
+    },
+    {
+      "reason": "No machine-readable public terminal list with coordinates was identified; not scraped.",
+      "source": "MTCC / Ministry of Transport / Ports Limited lists"
+    }
+  ],
+  "sources": [
+    {
+      "attribution": "Contains data (c) OpenStreetMap contributors, available under the Open Database Licence (ODbL) 1.0: https://www.openstreetmap.org/copyright",
+      "extract_last_modified": "Fri, 23 Oct 2026 03:11:28 GMT (HTTP Last-Modified)",
+      "feature_counts": {
+        "parsed_features": 2933,
+        "raw_elements_in_bbox": 2874
+      },
+      "features_by_class": {
+        "breakwater": 537,
+        "dock": 2,
+        "ferry_platform": 1,
+        "ferry_route_endpoint": 110,
+        "ferry_stop_position": 10,
+        "ferry_terminal": 41,
+        "harbour": 3,
+        "marina": 38,
+        "pier": 2163,
+        "port_area": 17,
+        "quay": 8,
+        "seamark_mooring": 2,
+        "seamark_small_craft_facility": 1
+      },
+      "file": "raw/osm_geofabrik_maldives.osm.pbf",
+      "licence": "ODbL-1.0",
+      "query_text": "Whole-country Geofabrik extract; objects matching the selectors in harbour_pipeline/overpass.py (SELECTORS plus route=ferry) kept if any coordinate lies in the study bbox plus margin.",
+      "retrieved_at_utc": "2026-10-24T05:35:23+00:00",
+      "sha256": "90d0bce298de16cad832a39a4231f634c5a16d0e71290f706709862e81e95276",
+      "source": "osm_geofabrik",
+      "url": "https://download.geofabrik.de/asia/maldives-latest.osm.pbf"
+    },
+    {
+      "feature_counts": {
+        "harbour_features_downloaded": 0
+      },
+      "file": "raw/onemap_service_directory.json",
+      "harbour_layers_found": [],
+      "licence": "OneMap Data Usage License: https://readme.onemap.mv/pdf/Data%20Usage%20License.pdf",
+      "outcome": "No public harbour, jetty, port or terminal layer. Island layer is used only for island assignment.",
+      "query_text": "GET <services_url>?f=json and <service>/FeatureServer?f=json for each FeatureServer; keyword match on names/descriptions: ['harbour', 'harbor', 'jetty', 'port', 'pier', 'quay', 'terminal', 'marina', 'wharf', 'dock']",
+      "retrieved_at_utc": "2026-10-24T05:35:23+00:00",
+      "services_listed": [
+        "bathymetry",
+        "lagoon",
+        "ProtectedArea",
+        "reef",
+        "ControlPoints",
+        "PlotLocator",
+        "Ihthisaas_20251023",
+        "island_20240509"
+      ],
+      "sha256": "75423956b81a9893417de9f37c1049c8424e6d85530ad1799b0824881aafc884",
+      "source": "onemap",
+      "url": "https://services7.arcgis.com/yvCbn3q8PPtPLZIM/ArcGIS/rest/services"
+    }
+  ],
+  "total_reference_features": 2933
+}

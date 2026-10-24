@@ -1,0 +1,153 @@
+{
+  "config_version": "1.0.0",
+  "note": "EVERY threshold in this file is PROVISIONAL. Nothing here has been validated against ground truth.",
+  "private_dir": "data/private/followme",
+  "output_dir": "data/derived/vessels",
+  "inputs": {
+    "observations": "gps_region_clean.parquet",
+    "movements": "movement_segments.parquet",
+    "regional_segments": "regional_trajectory_segments.parquet",
+    "trajectory_segments": "trajectory_segments.parquet"
+  },
+  "reference": {
+    "harbour_csv": "data/reference/harbours/harbour_reference.csv",
+    "islands_geojson": "data/reference/followme/onemap_study_islands.geojson",
+    "ferry_dir": "data/processed/ferry",
+    "verification_csv": "data/manual/harbours/jetty_verification.csv"
+  },
+  "timezone": {
+    "assumed": "Asia/Male (UTC+5)",
+    "timezone_confirmed": false,
+    "note": "collection_time is treated as local Maldives time for every departure/arrival. No shift is applied. Organisers have not confirmed the clock."
+  },
+  "speed": {
+    "speed_unit_assumed": "knots",
+    "speed_unit_confirmed": false,
+    "speed_unit_note": "consistent with knots (derived km/h / raw speed is about 1.9, 1 knot = 1.852 km/h), pending organiser confirmation",
+    "kmh_per_knot": 1.852
+  },
+  "jetty": {
+    "verification_column": "verification_status",
+    "accepted_verification": [
+      "VERIFIED",
+      "CORRECTED"
+    ],
+    "fallback_min_confidence": "high",
+    "fallback_require_numeric_osm_id": true,
+    "excluded_feature_classes": [
+      "ferry_route_endpoint",
+      "breakwater"
+    ],
+    "excluded_name_tokens": [
+      "bus stop"
+    ],
+    "note": "Once data/manual/harbours/jetty_verification.csv is present, only rows it marks VERIFIED or CORRECTED are used; unlisted rows are skipped (verification_status:blank). The overlay was checked against live OpenStreetMap on 2026-10-24. Without the file the fallback applies: numeric OSM id and high confidence. 'Bus stop' rows tagged ferry_terminal in OSM are skipped by name."
+  },
+  "scopes": {
+    "corridor": {
+      "islands": [
+        {
+          "island_code": "LD0132",
+          "name": "Mathiveri"
+        },
+        {
+          "island_code": "LD0474",
+          "name": "Bodufolhudhoo"
+        },
+        {
+          "island_code": "LD0916",
+          "name": "Ukulhas"
+        },
+        {
+          "island_code": "LD0257",
+          "name": "Rasdhoo"
+        },
+        {
+          "island_code": "LD0442",
+          "name": "Malé"
+        },
+        {
+          "island_code": "LD0501",
+          "name": "Thoddoo"
+        },
+        {
+          "island_code": "LD0069",
+          "name": "Maafushi"
+        }
+      ]
+    },
+    "full": {
+      "island_categories": [
+        "Residential Island"
+      ],
+      "include_islands_with_terminal_class_jetty": true,
+      "terminal_classes": [
+        "ferry_terminal",
+        "ferry_stop_position",
+        "ferry_platform"
+      ],
+      "note": "Whole study area (AA, ADh, K, V, Greater Malé): inhabited islands plus any island with a qualifying terminal-class jetty."
+    },
+    "direction_reference_island_code": "LD0442"
+  },
+  "stops": {
+    "stop_location_mode": "island_shoreline",
+    "stop_location_mode_options": {
+      "island_shoreline": "a stop is at the island: a run inside a band of radius_m either side of the island's OneMap shoreline. Harbour reference, jetty points and jetty verification are not read.",
+      "jetty": "a stop is within radius_m of a verified jetty point (shoreline band only for islands without one, flagged no_jetty_point). Kept for later; outputs may then carry jetty ids."
+    },
+    "radius_m": 150,
+    "dwell_seconds": 120,
+    "min_observations": 2,
+    "stop_gap_flag_seconds": 300,
+    "sensitivity_radius_m": [
+      100,
+      150,
+      250
+    ],
+    "sensitivity_dwell_seconds": [
+      60,
+      120,
+      300
+    ],
+    "note": "PROVISIONAL. radius_m is the shoreline band width (m) in island_shoreline mode (the default). A stop is a run of consecutive observations of one trajectory inside that band (or, in jetty mode, within radius_m of a verified jetty) lasting at least dwell_seconds. A gap longer than stop_gap_flag_seconds inside a run marks the stop unconfirmed; nothing is filled or interpolated. Runs never cross a trajectory split or a non-accepted transition."
+  },
+  "use_unconfirmed_stops_as_origin": true,
+  "classification": {
+    "moving_knots": 3,
+    "fast_p90_knots_min": 18,
+    "slow_p90_knots_max": 14,
+    "min_run_path_m": 2000,
+    "min_moving_share_off_land": 0.4,
+    "high_confidence_min_days_with_run": 2,
+    "land_interior_buffer_m": 50,
+    "land_device_min_share": 0.5,
+    "per_device_sample": 400,
+    "note": "PROVISIONAL, taken from FollowMe_pipeline/boat_filter.py and boat_types.py (speedboat p90 >= 18 kn, slow < 14 kn, 14-18 reported as mixed). Speed is derived from accepted movement segments (km/h / kmh_per_knot), not the raw field. A path of >= 2 km of consecutive accepted moving segments replaces the original 2 km straight-line sea run. Land share is estimated on a deterministic sample of observations per device. Classes are review hints and never filter rows."
+  },
+  "services": {
+    "departure_window_minutes": 15,
+    "min_days_regular": 8,
+    "days_in_period": 31,
+    "period_start": "2025-08-01",
+    "max_skipped_stops": 1,
+    "min_days_canonical": 8,
+    "weekday_skip_min_days_in_period": 4,
+    "note": "PROVISIONAL. Departures at the first stop are clustered within departure_window_minutes; a cluster seen on >= min_days_regular distinct days is a regular service. A shorter signature matches a longer canonical route when it keeps the same order and omits at most max_skipped_stops stops."
+  },
+  "coverage": {
+    "min_day_device_ratio": 0.7,
+    "min_site_devices": 2,
+    "note": "PROVISIONAL. A date has good coverage when regional active devices >= min_day_device_ratio x the monthly median and at least min_site_devices distinct devices were seen near the signature's stops. Otherwise 'not observed' says little."
+  },
+  "disclosure": {
+    "min_distinct_devices": 3,
+    "min_distinct_days": 5,
+    "note": "No exported row may be backed by fewer than both minima. Per-date device counts below the device minimum are shown as '<3'."
+  },
+  "mtcc_compare": {
+    "long_gap_minutes": 120,
+    "note": "PROVISIONAL. A gap between consecutive published MTCC departures on one island pair at least this long is a 'long wait'; inferred services whose median departure falls inside it are flagged as possible alternatives."
+  },
+  "use_unconfirmed_stops_note": "PROVISIONAL. true: a stop with a ping gap > stops.stop_gap_flag_seconds is flagged unconfirmed (never filled) but its last in-zone observation is still used as the departure time; every export carries unconfirmed_origin_share. false (strict) removes those journeys from regular-service detection; the strict result is reported under sensitivity in service_summary.json (it removes most services at the 300 s gap threshold because sampling gaps are often longer than 5 minutes)."
+}

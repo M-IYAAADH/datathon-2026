@@ -1,0 +1,12 @@
+device_median_difference_bin_start_minutes,devices,observations
+-15,<3,
+0,1739,17080760
+15,4,17402
+30,<3,
+75,<3,
+300,<3,
+360,<3,
+780,<3,
+795,<3,
+1020,<3,
+from_1440,24,91198

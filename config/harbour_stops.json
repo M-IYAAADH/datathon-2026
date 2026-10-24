@@ -1,0 +1,38 @@
+{
+  "config_version": "1.0.0",
+  "private_dir": "data/private/followme",
+  "reference_dir": "data/reference/harbours",
+  "islands_path": "data/reference/followme/onemap_study_islands.geojson",
+  "inputs": {
+    "observations": "gps_region_clean.parquet",
+    "movements": "movement_segments.parquet",
+    "movement_from_column": "from_observation_id",
+    "movement_to_column": "to_observation_id",
+    "movement_accepted_column": "transition_accepted"
+  },
+  "stay_point": {
+    "radius_m": 50,
+    "dwell_seconds": 600,
+    "min_observations": 2,
+    "sensitivity_radius_m": [30, 50, 100],
+    "sensitivity_dwell_seconds": [300, 600, 1200],
+    "note": "PROVISIONAL defaults. Run scripts/build_stop_candidates.py once to write stop_sensitivity.csv, inspect the dwell and spread distributions, then fix the defaults here. Stays are anchored at the first observation: every later observation must be within radius_m of it, the window must span at least dwell_seconds, and it never crosses a trajectory split or a non-accepted transition. Speed (speed_raw) is not used."
+  },
+  "clustering": {
+    "eps_m": 75,
+    "min_samples": 3,
+    "note": "Deterministic DBSCAN on UTM 43N metres (spatial hash neighbour search, points processed in (latitude, longitude, stay_id) order). min_samples counts stay points."
+  },
+  "disclosure": {
+    "min_distinct_devices": 5,
+    "min_distinct_days": 3,
+    "note": "A cluster may only enter a possible aggregate summary when BOTH minima are met. Everything stays private by default."
+  },
+  "matching": {
+    "reference_distance_m": 150,
+    "near_island_m": 250,
+    "nearest_k": 3,
+    "excluded_reference_classes": ["ferry_route_endpoint"],
+    "note": "Distance is cluster centroid to reference geometry (metres). Route endpoints are evidence, not terminals, so they never produce matched_reference."
+  }
+}

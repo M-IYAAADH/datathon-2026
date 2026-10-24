@@ -1,0 +1,306 @@
+{
+  "generated_at_utc": "2026-10-24T08:44:09Z",
+  "scope": "corridor",
+  "config_sha256": "c5a02ebec5089a8192ac901b1db1f1eba3d8fe5347b9eb46553ebb82cf515a9d",
+  "clock_config_sha256": "c5bc728853834d7766749cebe1ac541e8f435db2aed7ac89cedd345809c6bf73",
+  "input_run_manifest_sha256": "ccd72dc5f1593d366c9011ef303443f2993664381a23643369b39e233964b00b",
+  "input_regional_run_manifest_sha256": "294ccbda9ab1b5265e8df76b99bc01d8e9d38d370ba1f437cca1071081bfebf8",
+  "stop_location": {
+    "stop_location_mode": "island_shoreline",
+    "stop_band_m": 150,
+    "description": "A stop is a run of observations inside a 150 m band either side of the island's OneMap shoreline for at least 120 s: stops are 'at Island X', not at a named jetty. The harbour/jetty reference (data/reference/harbours/) is not used.",
+    "jetty_ids_in_shareable_outputs": false
+  },
+  "timezone_assumed": "Asia/Male (UTC+5)",
+  "timezone_confirmed": false,
+  "time_basis": "corrected",
+  "clock_correction": {
+    "method": "per device-day median of database_time - collection_time; a +5 h shift is applied only to device-days whose difference is consistent and within tolerance of 18000 s",
+    "evidence_summary": "0 of 47027 device-days show a consistent difference near 5 h; 0 of 17233072 observations corrected. National median difference 2.0 s, p99 34672.9 s; no 5 h cluster separates from the long tail of delayed uploads.",
+    "provisional": true,
+    "observations_corrected_in_scope": 0,
+    "observations_unchanged_in_scope": 4835920,
+    "statement": "no time correction applied: no device-day met the offset criteria; pending organiser confirmation of the timezone of both time fields",
+    "organisers_confirmed": false
+  },
+  "clock_exclusion": {
+    "classes_excluded_from_regular_service_clustering": [
+      "other",
+      "unknown"
+    ],
+    "observations_in_scope_by_clock_class": {
+      "local": 4831975,
+      "unknown": 3719,
+      "other": 226
+    },
+    "journeys_dropped_from_clustering_by_class": {},
+    "note": "excluded journeys stay in the private trip/journey tables and in service_edges.csv; they are not used to form regular services"
+  },
+  "speed_unit_status": "consistent with knots, pending organiser confirmation",
+  "speed_unit_confirmed": false,
+  "speed_unit_check": {
+    "segments_compared": 286265,
+    "derived_kmh_over_raw_q25_q50_q75": [
+      1.88,
+      1.924,
+      2.012
+    ],
+    "ratio_if_knots": 1.852,
+    "ratio_if_kmh": 1.0,
+    "consistent_with": "knots",
+    "note": "consistent with knots (derived km/h / raw speed is about 1.9, 1 knot = 1.852 km/h), pending organiser confirmation"
+  },
+  "parameters": {
+    "stops": {
+      "stop_location_mode": "island_shoreline",
+      "stop_location_mode_options": {
+        "island_shoreline": "a stop is at the island: a run inside a band of radius_m either side of the island's OneMap shoreline. Harbour reference, jetty points and jetty verification are not read.",
+        "jetty": "a stop is within radius_m of a verified jetty point (shoreline band only for islands without one, flagged no_jetty_point). Kept for later; outputs may then carry jetty ids."
+      },
+      "radius_m": 150,
+      "dwell_seconds": 120,
+      "min_observations": 2,
+      "stop_gap_flag_seconds": 300,
+      "sensitivity_radius_m": [
+        100,
+        150,
+        250
+      ],
+      "sensitivity_dwell_seconds": [
+        60,
+        120,
+        300
+      ],
+      "note": "PROVISIONAL. radius_m is the shoreline band width (m) in island_shoreline mode (the default). A stop is a run of consecutive observations of one trajectory inside that band (or, in jetty mode, within radius_m of a verified jetty) lasting at least dwell_seconds. A gap longer than stop_gap_flag_seconds inside a run marks the stop unconfirmed; nothing is filled or interpolated. Runs never cross a trajectory split or a non-accepted transition."
+    },
+    "classification": {
+      "moving_knots": 3,
+      "fast_p90_knots_min": 18,
+      "slow_p90_knots_max": 14,
+      "min_run_path_m": 2000,
+      "min_moving_share_off_land": 0.4,
+      "high_confidence_min_days_with_run": 2,
+      "land_interior_buffer_m": 50,
+      "land_device_min_share": 0.5,
+      "per_device_sample": 400,
+      "note": "PROVISIONAL, taken from FollowMe_pipeline/boat_filter.py and boat_types.py (speedboat p90 >= 18 kn, slow < 14 kn, 14-18 reported as mixed). Speed is derived from accepted movement segments (km/h / kmh_per_knot), not the raw field. A path of >= 2 km of consecutive accepted moving segments replaces the original 2 km straight-line sea run. Land share is estimated on a deterministic sample of observations per device. Classes are review hints and never filter rows."
+    },
+    "services": {
+      "departure_window_minutes": 15,
+      "min_days_regular": 8,
+      "days_in_period": 31,
+      "period_start": "2025-08-01",
+      "max_skipped_stops": 1,
+      "min_days_canonical": 8,
+      "weekday_skip_min_days_in_period": 4,
+      "note": "PROVISIONAL. Departures at the first stop are clustered within departure_window_minutes; a cluster seen on >= min_days_regular distinct days is a regular service. A shorter signature matches a longer canonical route when it keeps the same order and omits at most max_skipped_stops stops."
+    },
+    "coverage": {
+      "min_day_device_ratio": 0.7,
+      "min_site_devices": 2,
+      "note": "PROVISIONAL. A date has good coverage when regional active devices >= min_day_device_ratio x the monthly median and at least min_site_devices distinct devices were seen near the signature's stops. Otherwise 'not observed' says little."
+    },
+    "disclosure": {
+      "min_distinct_devices": 3,
+      "min_distinct_days": 5,
+      "note": "No exported row may be backed by fewer than both minima. Per-date device counts below the device minimum are shown as '<3'."
+    },
+    "use_unconfirmed_stops_as_origin": true
+  },
+  "clock_thresholds": {
+    "config_version": "1.0.0",
+    "note": "EVERY threshold in this file is PROVISIONAL. They were set by reading the national distribution of database_time minus collection_time, not validated against ground truth. The organisers have not confirmed the timezone of either time field.",
+    "difference_definition": "database_time minus collection_time, in seconds, per retained observation (reporting_lag_seconds is NULL in gps_clean.parquet while the timezone is unconfirmed, so the difference is computed from the two timestamps)",
+    "expected_offset_seconds": 18000,
+    "correction_seconds": 18000,
+    "classes": [
+      "local",
+      "offset_5h",
+      "other",
+      "unknown"
+    ],
+    "local": {
+      "min_median_seconds": -60,
+      "max_median_seconds": 900,
+      "note": "device-day median difference near 0 or a small positive reporting lag"
+    },
+    "offset_5h": {
+      "tolerance_seconds": 1800,
+      "note": "device-day median within this distance of expected_offset_seconds AND consistent (below)"
+    },
+    "consistency": {
+      "window_seconds": 900,
+      "min_share_in_window": 0.8,
+      "note": "a non-local offset only counts as a clock offset when at least this share of the device-day's observations lie within window_seconds of the device-day median. A median drifting up through hours with a wide spread is delayed or buffered upload, not a clock offset."
+    },
+    "min_observations_device_day": 20,
+    "device": {
+      "min_measured_days": 3,
+      "min_share_same_class": 0.9,
+      "note": "a device has a stable class when at least min_measured_days device-days were measured (class local/offset_5h/other) and at least min_share_same_class of them agree. Device-days that are unknown (too few observations or inconsistent difference) inherit a stable device class; otherwise they stay unknown."
+    },
+    "exclude_from_regular_clustering": [
+      "unknown",
+      "other"
+    ],
+    "exclude_note": "Devices classed unknown or other stay in every table but their journeys are not used to form regular services (override with --clock-exclude)."
+  },
+  "disclosure_rule": {
+    "min_distinct_devices": 3,
+    "min_distinct_days": 5,
+    "note": "No exported row may be backed by fewer than both minima. Per-date device counts below the device minimum are shown as '<3'.",
+    "rule": "no exported row is backed by fewer than the minimum distinct devices AND distinct days; per-date device counts below the device minimum print as '<N'"
+  },
+  "suppressed_by_disclosure": {
+    "service_clusters": 116,
+    "regular_service_clusters": 7,
+    "regular_service_clusters_below_device_minimum": 7,
+    "signatures": 21,
+    "edges": 24
+  },
+  "counts": {
+    "islands_in_scope": 7,
+    "islands_without_verified_jetty": null,
+    "jetty_rows_used": null,
+    "jetty_rows_skipped": null,
+    "observations_loaded": 4835920,
+    "trajectories_loaded": 203671,
+    "stops": 45603,
+    "stops_unconfirmed": 21273,
+    "journeys": 1474,
+    "trips": 1693,
+    "signatures_exported": 14,
+    "services_exported": 41,
+    "regular_services_exported": 29,
+    "corridor_services": 41,
+    "night_services_2200_0500": 10,
+    "clock_excluded_journeys": {},
+    "device_classes": {
+      "slow_vessel": 696,
+      "fast_vessel": 541,
+      "unclassified": 79,
+      "mixed": 10
+    },
+    "land_devices_flagged": 32,
+    "journey_categories": {
+      "not_regular_insufficient_days": 368,
+      "regular_service": 813,
+      "not_regular_one_off": 146,
+      "not_regular_partial_or_unconfirmed": 147
+    }
+  },
+  "sensitivity": [
+    {
+      "radius_m": 100,
+      "dwell_seconds": 60,
+      "stops": 53943,
+      "journeys": 1829,
+      "trips": 2127,
+      "signatures_exported": 22,
+      "regular_services_exported": 33,
+      "services_exported": 47,
+      "is_default": false
+    },
+    {
+      "radius_m": 100,
+      "dwell_seconds": 120,
+      "stops": 45307,
+      "journeys": 1413,
+      "trips": 1628,
+      "signatures_exported": 13,
+      "regular_services_exported": 29,
+      "services_exported": 37,
+      "is_default": false
+    },
+    {
+      "radius_m": 100,
+      "dwell_seconds": 300,
+      "stops": 27515,
+      "journeys": 1093,
+      "trips": 1227,
+      "signatures_exported": 12,
+      "regular_services_exported": 23,
+      "services_exported": 26,
+      "is_default": false
+    },
+    {
+      "radius_m": 150,
+      "dwell_seconds": 60,
+      "stops": 52587,
+      "journeys": 1873,
+      "trips": 2187,
+      "signatures_exported": 23,
+      "regular_services_exported": 34,
+      "services_exported": 50,
+      "is_default": false
+    },
+    {
+      "radius_m": 150,
+      "dwell_seconds": 120,
+      "stops": 45603,
+      "journeys": 1474,
+      "trips": 1693,
+      "signatures_exported": 14,
+      "regular_services_exported": 29,
+      "services_exported": 41,
+      "is_default": true
+    },
+    {
+      "radius_m": 150,
+      "dwell_seconds": 300,
+      "stops": 28502,
+      "journeys": 1121,
+      "trips": 1272,
+      "signatures_exported": 12,
+      "regular_services_exported": 23,
+      "services_exported": 27,
+      "is_default": false
+    },
+    {
+      "radius_m": 250,
+      "dwell_seconds": 60,
+      "stops": 52702,
+      "journeys": 1974,
+      "trips": 2319,
+      "signatures_exported": 24,
+      "regular_services_exported": 36,
+      "services_exported": 52,
+      "is_default": false
+    },
+    {
+      "radius_m": 250,
+      "dwell_seconds": 120,
+      "stops": 46879,
+      "journeys": 1633,
+      "trips": 1902,
+      "signatures_exported": 21,
+      "regular_services_exported": 33,
+      "services_exported": 41,
+      "is_default": false
+    },
+    {
+      "radius_m": 250,
+      "dwell_seconds": 300,
+      "stops": 30298,
+      "journeys": 1201,
+      "trips": 1382,
+      "signatures_exported": 13,
+      "regular_services_exported": 23,
+      "services_exported": 29,
+      "is_default": false
+    },
+    {
+      "radius_m": 150,
+      "dwell_seconds": 120,
+      "use_unconfirmed_stops_as_origin": false,
+      "stops": 45603,
+      "journeys": 1474,
+      "trips": 1693,
+      "signatures_exported": 14,
+      "regular_services_exported": 1,
+      "services_exported": 7,
+      "is_default": false
+    }
+  ],
+  "labels": "Output labels are 'inferred class' and 'inferred service'. Nothing here is a confirmed ferry, official timetable, passenger service or specific vessel."
+}

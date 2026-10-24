@@ -1,0 +1,15 @@
+{
+  "last_run_utc": "2026-10-24T05:35:23+00:00",
+  "onemap_service_directory": {
+    "file": "onemap_service_directory.json",
+    "retrieved_at_utc": "2026-10-24T05:35:23+00:00",
+    "sha256": "75423956b81a9893417de9f37c1049c8424e6d85530ad1799b0824881aafc884"
+  },
+  "osm_geofabrik": {
+    "bytes": 3655188,
+    "file": "osm_geofabrik_maldives.osm.pbf",
+    "retrieved_at_utc": "2026-10-24T05:35:23+00:00",
+    "sha256": "90d0bce298de16cad832a39a4231f634c5a16d0e71290f706709862e81e95276",
+    "url": "https://download.geofabrik.de/asia/maldives-latest.osm.pbf"
+  }
+}

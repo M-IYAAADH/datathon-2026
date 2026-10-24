@@ -1,0 +1,40 @@
+{
+  "attempts": [
+    {
+      "bytes": 106,
+      "completed_at_utc": "2026-10-24T05:44:10+00:00",
+      "curl_exit_code": 0,
+      "file": "marine_0e6c257778c976b8d229.attempt01.json",
+      "headers_file": "marine_0e6c257778c976b8d229.attempt01.headers.txt",
+      "http_status": 400,
+      "retrieved_at_utc": "2026-10-24T05:44:08+00:00",
+      "sha256": "bd8f033f807eb08ce4c447062f4723c4330de63b8bf2c4054fe697ede9efdb8b",
+      "transport_error": ""
+    }
+  ],
+  "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+  "error": "Invalid value: Cannot initialize MultiDomains from invalid String value gfs_wave",
+  "parameters": {
+    "cell_selection": "sea",
+    "end_date": "2025-08-31",
+    "hourly": "wave_height,wave_direction,wave_period,wind_wave_height,swell_wave_height,swell_wave_period",
+    "latitude": "3.25,3.25,3.25,3.25,3.25",
+    "length_unit": "metric",
+    "longitude": "72.75,73.0,73.25,73.5,73.75",
+    "models": "gfs_wave",
+    "start_date": "2025-08-01",
+    "timeformat": "iso8601",
+    "timezone": "GMT",
+    "wind_speed_unit": "kmh"
+  },
+  "point_ids": [
+    "grid_013_291",
+    "grid_013_292",
+    "grid_013_293",
+    "grid_013_294",
+    "grid_013_295"
+  ],
+  "source": "marine",
+  "success": false,
+  "url": "https://marine-api.open-meteo.com/v1/marine?latitude=3.25%2C3.25%2C3.25%2C3.25%2C3.25&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wave_height%2Cwave_direction%2Cwave_period%2Cwind_wave_height%2Cswell_wave_height%2Cswell_wave_period&models=gfs_wave&wind_speed_unit=kmh&cell_selection=sea&length_unit=metric"
+}

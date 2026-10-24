@@ -1,0 +1,63 @@
+{
+  "attempts": [
+    {
+      "bytes": 0,
+      "completed_at_utc": "2026-10-24T05:41:15+00:00",
+      "curl_exit_code": 6,
+      "file": "weather_c25bafbbd67749da7ea9.attempt01.json",
+      "headers_file": "weather_c25bafbbd67749da7ea9.attempt01.headers.txt",
+      "http_status": 0,
+      "retrieved_at_utc": "2026-10-24T05:41:15+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transport_error": "curl: (6) Could not resolve host: archive-api.open-meteo.com"
+    },
+    {
+      "bytes": 0,
+      "completed_at_utc": "2026-10-24T05:41:24+00:00",
+      "curl_exit_code": 6,
+      "file": "weather_c25bafbbd67749da7ea9.attempt02.json",
+      "headers_file": "weather_c25bafbbd67749da7ea9.attempt02.headers.txt",
+      "http_status": 0,
+      "retrieved_at_utc": "2026-10-24T05:41:23+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transport_error": "curl: (6) Could not resolve host: archive-api.open-meteo.com"
+    },
+    {
+      "bytes": 100,
+      "completed_at_utc": "2026-10-24T05:42:01+00:00",
+      "curl_exit_code": 0,
+      "file": "weather_c25bafbbd67749da7ea9.attempt03.json",
+      "headers_file": "weather_c25bafbbd67749da7ea9.attempt03.headers.txt",
+      "http_status": 400,
+      "retrieved_at_utc": "2026-10-24T05:41:59+00:00",
+      "sha256": "c9aa93d315996c3e55aeae5be9de68312371e8459a7d6cf55a0080a20284edf2",
+      "transport_error": ""
+    }
+  ],
+  "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+  "error": "Parameter 'elevation' must have the same number of elements as coordinates",
+  "parameters": {
+    "cell_selection": "sea",
+    "elevation": "nan",
+    "end_date": "2025-08-31",
+    "hourly": "wind_speed_10m,wind_gusts_10m,wind_direction_10m,precipitation,surface_pressure",
+    "latitude": "3.5,3.5,3.5,3.5,3.5",
+    "longitude": "72.75,73.0,73.25,73.5,73.75",
+    "models": "ecmwf_ifs",
+    "precipitation_unit": "mm",
+    "start_date": "2025-08-01",
+    "timeformat": "iso8601",
+    "timezone": "GMT",
+    "wind_speed_unit": "kmh"
+  },
+  "point_ids": [
+    "grid_014_291",
+    "grid_014_292",
+    "grid_014_293",
+    "grid_014_294",
+    "grid_014_295"
+  ],
+  "source": "weather",
+  "success": false,
+  "url": "https://archive-api.open-meteo.com/v1/archive?latitude=3.5%2C3.5%2C3.5%2C3.5%2C3.5&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wind_speed_10m%2Cwind_gusts_10m%2Cwind_direction_10m%2Cprecipitation%2Csurface_pressure&models=ecmwf_ifs&wind_speed_unit=kmh&cell_selection=sea&precipitation_unit=mm&elevation=nan"
+}

@@ -1,0 +1,85 @@
+{
+  "attempts": [
+    {
+      "bytes": 0,
+      "completed_at_utc": "2026-10-24T05:40:27+00:00",
+      "curl_exit_code": 6,
+      "file": "weather_e4a4241d6d7b26f50d9f.attempt01.json",
+      "headers_file": "weather_e4a4241d6d7b26f50d9f.attempt01.headers.txt",
+      "http_status": 0,
+      "retrieved_at_utc": "2026-10-24T05:40:26+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transport_error": "curl: (6) Could not resolve host: archive-api.open-meteo.com"
+    },
+    {
+      "bytes": 0,
+      "completed_at_utc": "2026-10-24T05:40:35+00:00",
+      "curl_exit_code": 6,
+      "file": "weather_e4a4241d6d7b26f50d9f.attempt02.json",
+      "headers_file": "weather_e4a4241d6d7b26f50d9f.attempt02.headers.txt",
+      "http_status": 0,
+      "retrieved_at_utc": "2026-10-24T05:40:35+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transport_error": "curl: (6) Could not resolve host: archive-api.open-meteo.com"
+    },
+    {
+      "bytes": 0,
+      "completed_at_utc": "2026-10-24T05:40:48+00:00",
+      "curl_exit_code": 6,
+      "file": "weather_e4a4241d6d7b26f50d9f.attempt03.json",
+      "headers_file": "weather_e4a4241d6d7b26f50d9f.attempt03.headers.txt",
+      "http_status": 0,
+      "retrieved_at_utc": "2026-10-24T05:40:48+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transport_error": "curl: (6) Could not resolve host: archive-api.open-meteo.com"
+    },
+    {
+      "bytes": 0,
+      "completed_at_utc": "2026-10-24T05:41:12+00:00",
+      "curl_exit_code": 6,
+      "file": "weather_e4a4241d6d7b26f50d9f.attempt04.json",
+      "headers_file": "weather_e4a4241d6d7b26f50d9f.attempt04.headers.txt",
+      "http_status": 0,
+      "retrieved_at_utc": "2026-10-24T05:41:11+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transport_error": "curl: (6) Could not resolve host: archive-api.open-meteo.com"
+    },
+    {
+      "bytes": 100,
+      "completed_at_utc": "2026-10-24T05:41:56+00:00",
+      "curl_exit_code": 0,
+      "file": "weather_e4a4241d6d7b26f50d9f.attempt05.json",
+      "headers_file": "weather_e4a4241d6d7b26f50d9f.attempt05.headers.txt",
+      "http_status": 400,
+      "retrieved_at_utc": "2026-10-24T05:41:54+00:00",
+      "sha256": "c9aa93d315996c3e55aeae5be9de68312371e8459a7d6cf55a0080a20284edf2",
+      "transport_error": ""
+    }
+  ],
+  "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+  "error": "Parameter 'elevation' must have the same number of elements as coordinates",
+  "parameters": {
+    "cell_selection": "sea",
+    "elevation": "nan",
+    "end_date": "2025-08-31",
+    "hourly": "wind_speed_10m,wind_gusts_10m,wind_direction_10m,precipitation,surface_pressure",
+    "latitude": "3.25,3.25,3.25,3.25,3.25",
+    "longitude": "72.75,73.0,73.25,73.5,73.75",
+    "models": "ecmwf_ifs",
+    "precipitation_unit": "mm",
+    "start_date": "2025-08-01",
+    "timeformat": "iso8601",
+    "timezone": "GMT",
+    "wind_speed_unit": "kmh"
+  },
+  "point_ids": [
+    "grid_013_291",
+    "grid_013_292",
+    "grid_013_293",
+    "grid_013_294",
+    "grid_013_295"
+  ],
+  "source": "weather",
+  "success": false,
+  "url": "https://archive-api.open-meteo.com/v1/archive?latitude=3.25%2C3.25%2C3.25%2C3.25%2C3.25&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wind_speed_10m%2Cwind_gusts_10m%2Cwind_direction_10m%2Cprecipitation%2Csurface_pressure&models=ecmwf_ifs&wind_speed_unit=kmh&cell_selection=sea&precipitation_unit=mm&elevation=nan"
+}

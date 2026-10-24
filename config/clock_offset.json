@@ -1,0 +1,30 @@
+{
+  "config_version": "1.0.0",
+  "note": "EVERY threshold in this file is PROVISIONAL. They were set by reading the national distribution of database_time minus collection_time, not validated against ground truth. The organisers have not confirmed the timezone of either time field.",
+  "difference_definition": "database_time minus collection_time, in seconds, per retained observation (reporting_lag_seconds is NULL in gps_clean.parquet while the timezone is unconfirmed, so the difference is computed from the two timestamps)",
+  "expected_offset_seconds": 18000,
+  "correction_seconds": 18000,
+  "classes": ["local", "offset_5h", "other", "unknown"],
+  "local": {
+    "min_median_seconds": -60,
+    "max_median_seconds": 900,
+    "note": "device-day median difference near 0 or a small positive reporting lag"
+  },
+  "offset_5h": {
+    "tolerance_seconds": 1800,
+    "note": "device-day median within this distance of expected_offset_seconds AND consistent (below)"
+  },
+  "consistency": {
+    "window_seconds": 900,
+    "min_share_in_window": 0.8,
+    "note": "a non-local offset only counts as a clock offset when at least this share of the device-day's observations lie within window_seconds of the device-day median. A median drifting up through hours with a wide spread is delayed or buffered upload, not a clock offset."
+  },
+  "min_observations_device_day": 20,
+  "device": {
+    "min_measured_days": 3,
+    "min_share_same_class": 0.9,
+    "note": "a device has a stable class when at least min_measured_days device-days were measured (class local/offset_5h/other) and at least min_share_same_class of them agree. Device-days that are unknown (too few observations or inconsistent difference) inherit a stable device class; otherwise they stay unknown."
+  },
+  "exclude_from_regular_clustering": ["unknown", "other"],
+  "exclude_note": "Devices classed unknown or other stay in every table but their journeys are not used to form regular services (override with --clock-exclude)."
+}

@@ -1,0 +1,18 @@
+{
+  "latitude": 4.125,
+  "longitude": 73.5,
+  "generationtime_ms": 0.1,
+  "utc_offset_seconds": 0,
+  "timezone": "GMT",
+  "timezone_abbreviation": "GMT",
+  "elevation": 0,
+  "hourly_units": {"time": "iso8601", "wind_speed_10m": "km/h", "wind_gusts_10m": "km/h", "wind_direction_10m": "°", "precipitation": "mm", "surface_pressure": "hPa"},
+  "hourly": {
+    "time": ["2025-08-01T18:00", "2025-08-01T19:00"],
+    "wind_speed_10m": [30, null],
+    "wind_gusts_10m": [45, 46],
+    "wind_direction_10m": [270, 280],
+    "precipitation": [0, null],
+    "surface_pressure": [1010, 1011]
+  }
+}

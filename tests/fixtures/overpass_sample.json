@@ -1,0 +1,18 @@
+{"version": 0.6, "generator": "fixture", "elements": [
+ {"type": "node", "id": 1, "lat": 4.2, "lon": 73.5, "tags": {"amenity": "ferry_terminal", "name": "Fixture Ferry Terminal", "name:dv": "dv-name", "name:en": "Fixture Terminal EN", "operator": "MTCC"}},
+ {"type": "node", "id": 2, "lat": 4.2001, "lon": 73.5001, "tags": {"public_transport": "platform", "ferry": "yes", "name": "Platform A"}},
+ {"type": "node", "id": 3, "lat": 4.3, "lon": 73.4, "tags": {"public_transport": "platform", "bus": "yes"}},
+ {"type": "node", "id": 4, "tags": {"amenity": "ferry_terminal"}},
+ {"type": "node", "id": "bad", "lat": 4.0, "lon": 73.0, "tags": {"man_made": "pier"}},
+ {"type": "way", "id": 10, "tags": {"man_made": "pier", "name": "Fixture Pier"}, "geometry": [{"lat": 4.0, "lon": 73.0}, {"lat": 4.0, "lon": 73.001}]},
+ {"type": "way", "id": 11, "tags": {"landuse": "harbour", "name": "Fixture Harbour"}, "geometry": [{"lat": 4.0, "lon": 73.0}, {"lat": 4.0, "lon": 73.01}, {"lat": 4.01, "lon": 73.01}, {"lat": 4.0, "lon": 73.0}]},
+ {"type": "way", "id": 12, "tags": {"route": "ferry", "name": "A - B"}, "geometry": [{"lat": 4.0, "lon": 73.0}, {"lat": 4.1, "lon": 73.1}, {"lat": 4.2, "lon": 73.2}]},
+ {"type": "relation", "id": 20, "tags": {"route": "ferry", "name": "Rel route"}, "members": [
+   {"type": "way", "ref": 30, "geometry": [{"lat": 4.0, "lon": 73.0}, {"lat": 4.0, "lon": 73.05}]},
+   {"type": "way", "ref": 31, "geometry": [{"lat": 4.0, "lon": 73.05}, {"lat": 4.05, "lon": 73.05}]}]},
+ {"type": "relation", "id": 21, "tags": {"leisure": "marina", "name": "Rel marina"}, "members": [
+   {"type": "way", "ref": 32, "geometry": [{"lat": 4.0, "lon": 73.0}, {"lat": 4.0, "lon": 73.01}, {"lat": 4.01, "lon": 73.01}]},
+   {"type": "way", "ref": 33, "geometry": [{"lat": 4.01, "lon": 73.01}, {"lat": 4.0, "lon": 73.0}]}]},
+ {"type": "node", "id": 5, "lat": 4.0, "lon": 73.0, "tags": {"shop": "kiosk"}},
+ "not-a-dict"
+]}

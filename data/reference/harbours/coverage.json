@@ -1,0 +1,23 @@
+{
+  "inhabited_study_islands": 35,
+  "inhabited_with_any_feature": 34,
+  "inhabited_with_terminal_grade_feature": 31,
+  "inhabited_without_terminal_grade_feature": [
+    "ADh:Dhidhdhoo",
+    "ADh:Mandhoo",
+    "V:Felidhoo",
+    "V:Keyodhoo"
+  ],
+  "study_area_ferry_stops": 37,
+  "ferry_stops_with_any_feature": 34,
+  "ferry_stops_with_terminal_grade_feature": 31,
+  "ferry_stops_without_terminal_grade_feature": [
+    "ADH:Dhidhdhoo",
+    "ADH:Mandhoo",
+    "K:Himmafushi",
+    "V:Felidhoo",
+    "V:Keyodhoo",
+    "noatoll:Gulhifalhu"
+  ],
+  "terminal_grade_definition": "any class except ferry_route_endpoint and breakwater"
+}

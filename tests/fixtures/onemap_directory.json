@@ -1,0 +1,1 @@
+{"services": [{"name": "bathymetry", "type": "FeatureServer", "url": "u1"}, {"name": "ports_layer", "type": "FeatureServer", "url": "u2"}, {"name": "misc", "type": "FeatureServer", "url": "u3"}]}

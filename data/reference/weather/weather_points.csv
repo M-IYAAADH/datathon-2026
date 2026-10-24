@@ -1,0 +1,46 @@
+point_id,latitude,longitude,kind,reason,onemap_fcodes,onemap_island_names,land_by_onemap,study_area_codes,nearest_island_distance_m,weather_returned_latitude,weather_returned_longitude,weather_status,marine_returned_latitude,marine_returned_longitude,marine_status
+grid_013_291,3.25,72.75,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,25344.45,3.2688928,72.7706,ok,3.25,72.75,ok
+grid_013_292,3.25,73.0,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,28943.61,3.2688928,72.98869,ok,3.25,73.0,ok
+grid_013_293,3.25,73.25,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,19790.97,3.2688928,73.27948,ok,3.25,73.25,ok
+grid_013_294,3.25,73.5,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,7746.28,3.2688928,73.497574,ok,3.25,73.5,ok
+grid_013_295,3.25,73.75,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,16613.35,3.2688928,73.71567,ok,3.25,73.75,ok
+grid_014_291,3.5,72.75,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,ADh,901.58,3.479789,72.728745,ok,3.5,72.75,ok
+grid_014_292,3.5,73.0,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,8608.83,3.479789,73.02024,ok,3.5,73.0,ok
+grid_014_293,3.5,73.25,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,3876.65,3.479789,73.23887,ok,3.5,73.25,ok
+grid_014_294,3.5,73.5,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,V,2322.12,3.479789,73.530365,ok,3.5,73.5,ok
+grid_014_295,3.5,73.75,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,4195.88,3.479789,73.748985,ok,3.5,73.75,ok
+grid_015_291,3.75,72.75,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,ADh,2275.06,3.7609842,72.745735,ok,3.75,72.75,ok
+grid_015_292,3.75,73.0,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,2990.32,3.7609842,72.965065,ok,3.75,73.0,ok
+grid_015_293,3.75,73.25,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,16118.73,3.7609842,73.25751,ok,3.75,73.25,ok
+grid_015_294,3.75,73.5,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,10298.26,3.7609842,73.476845,ok,3.75,73.5,ok
+grid_015_295,3.75,73.75,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,30042.54,3.7609842,73.76929,ok,3.75,73.75,ok
+grid_016_291,4.0,72.75,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,AA,3217.32,3.9718804,72.77687,ok,4.0,72.75,ok
+grid_016_292,4.0,73.0,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,4816.15,3.9718804,72.99674,ok,4.0,73.0,ok
+grid_016_293,4.0,73.25,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,12998.09,3.9718804,73.21661,ok,4.0,73.25,ok
+grid_016_294,4.0,73.5,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,K,1087.3,3.9718804,73.50977,ok,4.0,73.5,ok
+grid_016_295,4.0,73.75,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,25876.25,3.9718804,73.72964,ok,4.0,73.75,ok
+grid_017_291,4.25,72.75,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,AA,3264.98,4.2530756,72.72059,ok,4.25,72.75,ok
+grid_017_292,4.25,73.0,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,1401.29,4.2530756,73.01471,ok,4.25,73.0,ok
+grid_017_293,4.25,73.25,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,12293.38,4.2530756,73.2353,ok,4.25,73.25,ok
+grid_017_294,4.25,73.5,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,K,1426.59,4.2530756,73.52941,ok,4.25,73.5,ok
+grid_017_295,4.25,73.75,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,16714.67,4.2530756,73.75,ok,4.25,73.75,ok
+grid_018_291,4.5,72.75,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,23490.25,4.463972,72.75185,ok,4.5,72.75,ok
+grid_018_292,4.5,73.0,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,7590.34,4.463972,72.97298,ok,4.5,73.0,ok
+grid_018_293,4.5,73.25,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,12987.81,4.534271,73.2541,ok,4.5,73.25,ok
+grid_018_294,4.5,73.5,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,K,6370.13,4.463972,73.488945,ok,4.5,73.5,ok
+grid_018_295,4.5,73.75,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,5689.94,4.534271,73.77049,ok,4.5,73.75,ok
+grid_019_291,4.75,72.75,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,40927.77,4.7451673,72.769104,ok,4.75,72.75,ok
+grid_019_292,4.75,73.0,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,34107.15,4.7451673,72.99096,ok,4.75,73.0,ok
+grid_019_293,4.75,73.25,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,20732.31,4.7451673,73.286766,ok,4.75,73.25,ok
+grid_019_294,4.75,73.5,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,K,1268.78,4.7451673,73.50863,ok,4.75,73.5,ok
+grid_019_295,4.75,73.75,grid,0.25 degree grid in study bounding box; sea proxy or within configured distance of study island,,,False,,23733.85,4.7451673,73.730484,ok,4.75,73.75,ok
+route_hulhumale,4.2231139,73.5429238,route_endpoint,"Hulhumalé route-area endpoint/additional island: OneMap LD0591, projected polygon centroid; not a harbour",LD0591,Hulhumalé,True,Greater_Male,0.0,4.2530756,73.52941,ok,4.25,73.5,ok
+route_maafushi,3.9409856,73.4896699,route_endpoint,"Maafushi route-area endpoint/additional island: OneMap LD0069, projected polygon centroid; not a harbour",LD0069,Maafushi,True,K,0.0,3.9718804,73.50977,ok,4.0,73.5,ok
+route_male,4.1742229,73.5094929,route_endpoint,"Malé route-area endpoint/additional island: OneMap LD0442, projected polygon centroid; not a harbour",LD0442,Malé,True,Greater_Male,0.0,4.182777,73.542854,ok,4.25,73.5,ok
+route_mathiveri,4.1918626,72.7462553,route_endpoint,"Mathiveri route-area endpoint/additional island: OneMap LD0132, projected polygon centroid; not a harbour",LD0132,Mathiveri,True,AA,0.0,4.182777,72.734695,ok,4.25,72.75,ok
+route_mid_male_rasdhoo,4.2186871,73.2506864,route_midpoint,WGS84 geodesic midpoint of OneMap-derived male–rasdhoo island-area endpoints; not a sailed track,LD0442;LD0257,Malé;Rasdhoo,False,,13197.74,4.182777,73.24898,ok,4.25,73.25,ok
+route_mid_rasdhoo_ukulhas,4.2390645,72.9280505,route_midpoint,WGS84 geodesic midpoint of OneMap-derived rasdhoo–ukulhas island-area endpoints; not a sailed track,LD0257;LD0916,Rasdhoo;Ukulhas,False,,4993.49,4.2530756,72.94118,ok,4.25,73.0,ok
+route_mid_ukulhas_mathiveri,4.203463,72.8052541,route_midpoint,WGS84 geodesic midpoint of OneMap-derived ukulhas–mathiveri island-area endpoints; not a sailed track,LD0916;LD0132,Ukulhas;Mathiveri,False,AA,1456.42,4.182777,72.80816,ok,4.25,72.75,ok
+route_rasdhoo,4.2630649,72.9918504,route_endpoint,"Rasdhoo route-area endpoint/additional island: OneMap LD0257, projected polygon centroid; not a harbour",LD0257,Rasdhoo,True,AA,0.0,4.2530756,73.01471,ok,4.25,73.0,ok
+route_thoddoo,4.4372164,72.9596337,route_endpoint,"Thoddoo route-area endpoint/additional island: OneMap LD0501, projected polygon centroid; not a harbour",LD0501,Thoddoo,True,AA,0.0,4.463972,72.97298,ok,4.5,73.0,ok
+route_ukulhas,4.2150589,72.8642546,route_endpoint,"Ukulhas route-area endpoint/additional island: OneMap LD0916, projected polygon centroid; not a harbour",LD0916,Ukulhas,True,AA,0.0,4.182777,72.88163,ok,4.25,72.75,ok

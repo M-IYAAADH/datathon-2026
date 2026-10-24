@@ -1,0 +1,42 @@
+{
+  "attempts": [
+    {
+      "bytes": 169150,
+      "completed_at_utc": "2026-10-24T05:42:23+00:00",
+      "curl_exit_code": 0,
+      "file": "weather_733093d1c32c013ba7a6.attempt01.json",
+      "headers_file": "weather_733093d1c32c013ba7a6.attempt01.headers.txt",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-24T05:42:20+00:00",
+      "sha256": "c89bde76dbef464398211db3f03f4c4be30e1694bb7e059754583f975b325c93",
+      "transport_error": ""
+    }
+  ],
+  "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+  "error": null,
+  "parameters": {
+    "cell_selection": "sea",
+    "elevation": "nan,nan,nan,nan,nan",
+    "end_date": "2025-08-31",
+    "hourly": "wind_speed_10m,wind_gusts_10m,wind_direction_10m,precipitation,surface_pressure",
+    "latitude": "3.25,3.25,3.25,3.25,3.25",
+    "longitude": "72.75,73.0,73.25,73.5,73.75",
+    "models": "ecmwf_ifs",
+    "precipitation_unit": "mm",
+    "start_date": "2025-08-01",
+    "timeformat": "iso8601",
+    "timezone": "GMT",
+    "wind_speed_unit": "kmh"
+  },
+  "point_ids": [
+    "grid_013_291",
+    "grid_013_292",
+    "grid_013_293",
+    "grid_013_294",
+    "grid_013_295"
+  ],
+  "response_file": "weather_733093d1c32c013ba7a6.attempt01.json",
+  "source": "weather",
+  "success": true,
+  "url": "https://archive-api.open-meteo.com/v1/archive?latitude=3.25%2C3.25%2C3.25%2C3.25%2C3.25&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wind_speed_10m%2Cwind_gusts_10m%2Cwind_direction_10m%2Cprecipitation%2Csurface_pressure&models=ecmwf_ifs&wind_speed_unit=kmh&cell_selection=sea&precipitation_unit=mm&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan"
+}

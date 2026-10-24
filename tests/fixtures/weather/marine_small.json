@@ -1,0 +1,18 @@
+{
+  "latitude": 4,
+  "longitude": 73.5,
+  "generationtime_ms": 0.1,
+  "utc_offset_seconds": 0,
+  "timezone": "GMT",
+  "timezone_abbreviation": "GMT",
+  "hourly_units": {"time": "iso8601", "wave_height": "m", "wave_direction": "°", "wave_period": "s", "wind_wave_height": "m", "swell_wave_height": "m", "swell_wave_period": "s"},
+  "hourly": {
+    "time": ["2025-08-01T18:00", "2025-08-01T19:00"],
+    "wave_height": [2, 2.1],
+    "wave_direction": [240, null],
+    "wave_period": [8, 9],
+    "wind_wave_height": [1, null],
+    "swell_wave_height": [1.5, 1.6],
+    "swell_wave_period": [10, 11]
+  }
+}

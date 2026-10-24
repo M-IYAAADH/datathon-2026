@@ -1,0 +1,11 @@
+service_id,inferred_label,regular,first_stop,stop_sequence,in_corridor,departure_p10,departure_median,departure_p90,days_seen,distinct_devices,trips,time_basis,note
+sig_758a1e0713_s01,inferred speedboat service,True,Maafushi,Maafushi > Malé,True,01:16,01:17,01:18,29,5,33,corrected,information only: a night departure is not evidence of a wrong clock
+sig_758a1e0713_s04,inferred slow ferry/dhoni service,True,Maafushi,Maafushi > Malé,True,02:31,02:33,02:35,26,4,52,corrected,information only: a night departure is not evidence of a wrong clock
+sig_225c2af1e0_s01,inferred fast-vessel movements (not regular),False,Malé,Malé > Maafushi,True,01:28,01:32,01:37,6,5,7,corrected,information only: a night departure is not evidence of a wrong clock
+sig_225c2af1e0_s04,inferred speedboat service,True,Malé,Malé > Maafushi,True,03:59,04:02,04:04,26,3,26,corrected,information only: a night departure is not evidence of a wrong clock
+sig_225c2af1e0_s05,inferred speedboat service,True,Malé,Malé > Maafushi,True,04:47,04:49,04:52,13,5,14,corrected,information only: a night departure is not evidence of a wrong clock
+sig_5422fd37e2_s02,inferred speedboat service,True,Thoddoo,Thoddoo > Rasdhoo > Malé,True,01:29,01:32,01:36,18,4,19,corrected,information only: a night departure is not evidence of a wrong clock
+sig_5422fd37e2_s04,inferred speedboat service,True,Thoddoo,Thoddoo > Rasdhoo > Malé,True,01:50,01:54,01:59,30,10,51,corrected,information only: a night departure is not evidence of a wrong clock
+sig_5422fd37e2_s05,inferred fast-vessel movements (not regular),False,Thoddoo,Thoddoo > Malé,True,02:03,02:05,02:15,5,4,6,corrected,information only: a night departure is not evidence of a wrong clock
+sig_c70a0bd334_s01,inferred speedboat service,True,Ukulhas,Ukulhas > Rasdhoo > Malé,True,01:02,01:05,01:06,10,3,10,corrected,information only: a night departure is not evidence of a wrong clock
+sig_c70a0bd334_s03,inferred speedboat service,True,Ukulhas,Ukulhas > Rasdhoo > Malé,True,02:01,02:04,02:06,10,5,11,corrected,information only: a night departure is not evidence of a wrong clock

@@ -1,0 +1,12 @@
+{
+  "query_url": "https://services7.arcgis.com/yvCbn3q8PPtPLZIM/arcgis/rest/services/island_20240509/FeatureServer/0/query?where=atoll+IN+%28%27Alifu+Alifu%27%2C%27Alifu+Dhaalu%27%2C%27Kaafu%27%2C%27Vaavu%27%2C%27MLE%27%29&outFields=OBJECTID%2CFCODE%2Catoll%2CislandName%2CislandNa_1%2Ccategory&outSR=4326&returnGeometry=true&f=geojson&resultRecordCount=1000&orderByFields=OBJECTID",
+  "parameters": {
+    "where": "atoll IN ('Alifu Alifu','Alifu Dhaalu','Kaafu','Vaavu','MLE')",
+    "outFields": "OBJECTID,FCODE,atoll,islandName,islandNa_1,category",
+    "outSR": "4326",
+    "returnGeometry": "true",
+    "f": "geojson",
+    "resultRecordCount": 1000,
+    "orderByFields": "OBJECTID"
+  }
+}

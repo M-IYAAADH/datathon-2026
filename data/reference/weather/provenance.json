@@ -1,0 +1,5094 @@
+{
+  "attribution": "Weather data by Open-Meteo.com (https://open-meteo.com/); ECMWF IFS and NOAA NCEP GFS Wave. Derived point selection, joins, local time and summaries by the Datathon team.",
+  "config_file": "config/weather.json",
+  "config_sha256": "346349b5e9324e3b98b13604786b95d274294df2592ec07864bf49589d283110",
+  "config_version": "1.0.0",
+  "failures": [],
+  "files": {
+    "data/reference/weather/daily_summary.csv": {
+      "bytes": 108484,
+      "row_count": 1440,
+      "sha256": "ff3d649b6524e7fcb427c19bcb0486d067170233da11be53203598b1b0ec12ad"
+    },
+    "data/reference/weather/raw/marine_0e6c257778c976b8d229.attempt01.headers.txt": {
+      "bytes": 157,
+      "sha256": "c6ae61b012d6b9a9226eedc4f7377d586a556c11298cae7de79f27f037c6edba"
+    },
+    "data/reference/weather/raw/marine_0e6c257778c976b8d229.attempt01.json": {
+      "bytes": 106,
+      "row_count": 0,
+      "sha256": "bd8f033f807eb08ce4c447062f4723c4330de63b8bf2c4054fe697ede9efdb8b"
+    },
+    "data/reference/weather/raw/marine_0e6c257778c976b8d229.request.json": {
+      "bytes": 1637,
+      "sha256": "b34baf6069f08b55727df07fa9664124fd4911149972fac484bb8f072006b558"
+    },
+    "data/reference/weather/raw/marine_2459446dfc395e17ee2f.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "fe52622641743d7cf15e872591b74097ccce350febaa900c0db70faa1a0a2955"
+    },
+    "data/reference/weather/raw/marine_2459446dfc395e17ee2f.attempt01.json": {
+      "bytes": 183618,
+      "row_count": 3720,
+      "sha256": "30f51d5afb5f482db44d4260f1850d4dda0bd71d5a274d0c0708c52d6ba10ac1"
+    },
+    "data/reference/weather/raw/marine_2459446dfc395e17ee2f.request.json": {
+      "bytes": 1630,
+      "sha256": "252325ca27d304e7faad6150837ce69312eb1da2eac412829d1cf57d00ec8f37"
+    },
+    "data/reference/weather/raw/marine_3a1077f940de69595e48.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "9239009d049cf1a07535dd45ebe6f97d7455b22fc486cf5072f497a9f52f913b"
+    },
+    "data/reference/weather/raw/marine_3a1077f940de69595e48.attempt01.json": {
+      "bytes": 181039,
+      "row_count": 3720,
+      "sha256": "44176af9517681b2974fa1aed01a31be71b50b531a85a6f7e3f4451bc649350c"
+    },
+    "data/reference/weather/raw/marine_3a1077f940de69595e48.request.json": {
+      "bytes": 1620,
+      "sha256": "b274e0d786895dd5f319130bd084ccdf7c5a4655ebf12fe9f08fd9150cf63660"
+    },
+    "data/reference/weather/raw/marine_3bfdf905d1b64de898a4.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "9906ebb09e66a4d8569abb2ec7bbea809864dbcb568963820c929effb3d3ece6"
+    },
+    "data/reference/weather/raw/marine_3bfdf905d1b64de898a4.attempt01.json": {
+      "bytes": 181034,
+      "row_count": 3720,
+      "sha256": "05715bd3561c7ec0bfafbea8be4b0cd855e1da538088b7fb5820cacbe7442408"
+    },
+    "data/reference/weather/raw/marine_3bfdf905d1b64de898a4.request.json": {
+      "bytes": 1630,
+      "sha256": "26bdf1d5c3d51749f59977f6c4629cc2c9ab67e2b712332bf949b0ac3ade84f9"
+    },
+    "data/reference/weather/raw/marine_40f4ade891b56f165cbd.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "1ccaa96f2432f350cc5fa6dc635d1726c176a4fa06e97a60bcf2846b85d2c501"
+    },
+    "data/reference/weather/raw/marine_40f4ade891b56f165cbd.attempt01.json": {
+      "bytes": 181037,
+      "row_count": 3720,
+      "sha256": "69083faf815f0e325e035ffe9e12ef20ca5679adc5f26f965be5e10bae3f6c8d"
+    },
+    "data/reference/weather/raw/marine_40f4ade891b56f165cbd.request.json": {
+      "bytes": 1630,
+      "sha256": "2223a90e87d2d67c137321e913af7aad77c86649e1cbc67b94da284e408a0b4d"
+    },
+    "data/reference/weather/raw/marine_437879c947eb670f272d.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "39bd27c1348a6883f63a67baada0b82f4df18b91776713de012d258d3d2eefb5"
+    },
+    "data/reference/weather/raw/marine_437879c947eb670f272d.attempt01.json": {
+      "bytes": 183040,
+      "row_count": 3720,
+      "sha256": "d39a8c8556e18f56b6123fb1fe2012b9b3dd0370047f51951f61e2bd930152e1"
+    },
+    "data/reference/weather/raw/marine_437879c947eb670f272d.request.json": {
+      "bytes": 1760,
+      "sha256": "531dde810b4a0d7c55ccf60cdfa1b47b6b15d93a70faab86d9a3f2ab8a0b5262"
+    },
+    "data/reference/weather/raw/marine_5746b7b930d1a0c0df92.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "81e88a6f869109f64cabe42f4bc0a6e3238e7396da0ac4010589469845a33591"
+    },
+    "data/reference/weather/raw/marine_5746b7b930d1a0c0df92.attempt01.json": {
+      "bytes": 181038,
+      "row_count": 3720,
+      "sha256": "cb9dfef11d5a9c321817ec3235179e8ee90e7c802136a875ac45d5e8b2c61b50"
+    },
+    "data/reference/weather/raw/marine_5746b7b930d1a0c0df92.request.json": {
+      "bytes": 1630,
+      "sha256": "ba9490e24d963f1c4ddf985459429f06df43634e64e24f990c27822ad825485d"
+    },
+    "data/reference/weather/raw/marine_6e52d5c890a06578d5ca.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "2d0964a5c2e5239e0bdcaa3bcb8ed779a7eeb0d6a714f455723580a3f2aa1d25"
+    },
+    "data/reference/weather/raw/marine_6e52d5c890a06578d5ca.attempt01.json": {
+      "bytes": 181038,
+      "row_count": 3720,
+      "sha256": "aa479bb4e66be3c77018a8673fe1ac595b94d3886ef88cf5585712f2e87f18eb"
+    },
+    "data/reference/weather/raw/marine_6e52d5c890a06578d5ca.request.json": {
+      "bytes": 1620,
+      "sha256": "276da339fea3da0d4c612425afceddf0d36b6665abf0a1bb225cca7fabdc25af"
+    },
+    "data/reference/weather/raw/marine_73de2c64018180576b55.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "03a5c77aa635459aa7d61b5cc0f773d2183870f32b15c5969249026824937010"
+    },
+    "data/reference/weather/raw/marine_73de2c64018180576b55.attempt01.json": {
+      "bytes": 183301,
+      "row_count": 3720,
+      "sha256": "9042bda9a9a4d43bbdc48ccb1a45ab62be9f610aa8dae60c3fe7879ab513ea55"
+    },
+    "data/reference/weather/raw/marine_73de2c64018180576b55.request.json": {
+      "bytes": 1640,
+      "sha256": "e4b74d439a60d7d92af2206bfd3b27159980cf4c3a6a5d0aa12c8f11aa7a25cf"
+    },
+    "data/reference/weather/raw/marine_92fabbd893e53fd1f377.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "e3871fa276e6fabc25bd71796ad2e091c929b9c42620ef84c49d45d6bc454dfb"
+    },
+    "data/reference/weather/raw/marine_92fabbd893e53fd1f377.attempt01.json": {
+      "bytes": 183169,
+      "row_count": 3720,
+      "sha256": "c866513ceb04481f36fc8d0cfbdf31738bc9483f28781f32a2ce2161391fab2b"
+    },
+    "data/reference/weather/raw/marine_92fabbd893e53fd1f377.request.json": {
+      "bytes": 1630,
+      "sha256": "d8426b43e6824d15b0ac5e1738235efb57844721dc7f5cfc2ac1ec677af58c5d"
+    },
+    "data/reference/weather/raw/marine_961911727a0f5a553e38.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "28765de0acac400a40d2c8fbf6ba0e585d7a3f35d11ecc247f8bf5c798ea7fab"
+    },
+    "data/reference/weather/raw/marine_961911727a0f5a553e38.attempt01.json": {
+      "bytes": 183135,
+      "row_count": 3720,
+      "sha256": "cd8c6dbac2aae0cab3699948a07ab365704f488b3e0d84abad075b023453cd3d"
+    },
+    "data/reference/weather/raw/marine_961911727a0f5a553e38.request.json": {
+      "bytes": 1640,
+      "sha256": "4d4526346698e68fe4a68e2c33e8a9278cecf3513661a3b211a01442cf5e2b75"
+    },
+    "data/reference/weather/raw/marine_964e1127e13d61669ad3.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "098b9cd4826317973157e99cff6bf73e63c55ef9f8ac07541409ac688a4099da"
+    },
+    "data/reference/weather/raw/marine_964e1127e13d61669ad3.attempt01.json": {
+      "bytes": 183114,
+      "row_count": 3720,
+      "sha256": "7f900253602238aed14d0f3d18e3378cdc87c31ba75d6501793178f21ea8861e"
+    },
+    "data/reference/weather/raw/marine_964e1127e13d61669ad3.request.json": {
+      "bytes": 1640,
+      "sha256": "b9874ddf64c89930d20e99eaa761aeec07a9dec5511c0060c544639dba7a7542"
+    },
+    "data/reference/weather/raw/marine_9a2e27da020078548c64.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "8e97e00db5fd8e64c31d0f5b6c6fde62f157b252e6d1341318d07282ecbe2921"
+    },
+    "data/reference/weather/raw/marine_9a2e27da020078548c64.attempt01.json": {
+      "bytes": 183786,
+      "row_count": 3720,
+      "sha256": "955f77e1914af61a16ff7764855351c4748d1827bdb1097807db9e207a419c21"
+    },
+    "data/reference/weather/raw/marine_9a2e27da020078548c64.request.json": {
+      "bytes": 1640,
+      "sha256": "431d82019550981e94208b80a6b2beb6eb9bd2eb7cf7547107ff453c31777b47"
+    },
+    "data/reference/weather/raw/marine_aa7334d7de943aacc472.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "41ada2e780ec0a21d4bba683d27a34932058d831ab66e4902fdeab7f4e7b4b56"
+    },
+    "data/reference/weather/raw/marine_aa7334d7de943aacc472.attempt01.json": {
+      "bytes": 181059,
+      "row_count": 3720,
+      "sha256": "4c260ffe482f56c1ed5795ef87a56ee080b4871d2bce7af0a222e00bbb0fbe08"
+    },
+    "data/reference/weather/raw/marine_aa7334d7de943aacc472.request.json": {
+      "bytes": 1750,
+      "sha256": "f68528a728af1fbbbf4e3f01d4504f53f95c9febd3456f5ce5dd10887e105ada"
+    },
+    "data/reference/weather/raw/marine_b4821ed07f98dee86eee.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "c695a11c03c7dd1254cb4605aea791196e2b3d672ab5b350845bc33de2eca740"
+    },
+    "data/reference/weather/raw/marine_b4821ed07f98dee86eee.attempt01.json": {
+      "bytes": 183096,
+      "row_count": 3720,
+      "sha256": "bf98f86412d70f55ad32176e006754d37a3e13af4f92c62b334ae4685fb5d50e"
+    },
+    "data/reference/weather/raw/marine_b4821ed07f98dee86eee.request.json": {
+      "bytes": 1773,
+      "sha256": "9abb724d01aa24ac9093881efa7cda74b91028e4b0b6bfe54377c4eab23b3362"
+    },
+    "data/reference/weather/raw/marine_b4ce91b5dfb03bf23618.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "4dd09ce0ce209a2953185443f974b201b29e7d10f661bc2a854ff7a5dbf0c501"
+    },
+    "data/reference/weather/raw/marine_b4ce91b5dfb03bf23618.attempt01.json": {
+      "bytes": 181040,
+      "row_count": 3720,
+      "sha256": "0f8233bc580e07b433c641d941d77dc95052dda518779a7ac56be01ca7d3bd92"
+    },
+    "data/reference/weather/raw/marine_b4ce91b5dfb03bf23618.request.json": {
+      "bytes": 1763,
+      "sha256": "ce4d4590c831857883e403fb5302a8c81ba88ca2cbc78c1aa11391d035599486"
+    },
+    "data/reference/weather/raw/marine_b6706d8143d0285f536e.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "52e6c4d58a09a3cc6062650a2f6b11dfdfafd8d66356bd9bad759d7ee6f31b1c"
+    },
+    "data/reference/weather/raw/marine_b6706d8143d0285f536e.attempt01.json": {
+      "bytes": 181038,
+      "row_count": 3720,
+      "sha256": "eb40accf47d3f71d023482ab3616dcfad3f5a79cbf86c5dae7e6aa314b0082f2"
+    },
+    "data/reference/weather/raw/marine_b6706d8143d0285f536e.request.json": {
+      "bytes": 1620,
+      "sha256": "fb6a17a061fd77d1fc231ebf33edaf9df33cf35769bd2edcce3b9d43c1ea4452"
+    },
+    "data/reference/weather/raw/marine_d69c063125b485d35f76.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "aeef78aa27c69d826727e94f041f016b614b334a2496c97dc27ae45dc98314e5"
+    },
+    "data/reference/weather/raw/marine_d69c063125b485d35f76.attempt01.json": {
+      "bytes": 183276,
+      "row_count": 3720,
+      "sha256": "e9a7705699000cf38a63b0ded9840d8f1e89aee069e899224d3973cf7d921f51"
+    },
+    "data/reference/weather/raw/marine_d69c063125b485d35f76.request.json": {
+      "bytes": 1630,
+      "sha256": "55b515b80bc77c0fc7311f40147ac4f2152e3e0942b2857b540e420327f73d83"
+    },
+    "data/reference/weather/raw/marine_f8d2d78a96c50be32d35.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "cf5cb8284943b0c17a688c90b1bad5337af0463f98b6aa2162ecb504cb360ceb"
+    },
+    "data/reference/weather/raw/marine_f8d2d78a96c50be32d35.attempt01.json": {
+      "bytes": 181038,
+      "row_count": 3720,
+      "sha256": "a5aa1d6958da8f4669c43692bf3cacf59b52ec8202edeeed783b33f0feda85fa"
+    },
+    "data/reference/weather/raw/marine_f8d2d78a96c50be32d35.request.json": {
+      "bytes": 1630,
+      "sha256": "685be4ae0fb4d64f0873ecb0cd29ccd78013c010dd7e24a97064b1d0f738a4b0"
+    },
+    "data/reference/weather/raw/weather_46d274a5284facf2d537.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "a053316d36f8d2390752d41a61dd9416d43eacfe2773b1b5d115ac6bc8c91732"
+    },
+    "data/reference/weather/raw/weather_46d274a5284facf2d537.attempt01.json": {
+      "bytes": 169440,
+      "row_count": 3720,
+      "sha256": "ef3cc94e330cac7a228c4a18edb5c69df78e42d6bdd72425872e63c942744ace"
+    },
+    "data/reference/weather/raw/weather_46d274a5284facf2d537.request.json": {
+      "bytes": 1684,
+      "sha256": "c71e03579d6587498082e6b334b07bd2ce8cf60e6d8355e1f9de3428ac02f177"
+    },
+    "data/reference/weather/raw/weather_57fa60294c7d26f1b78e.attempt01.headers.txt": {
+      "bytes": 157,
+      "sha256": "10eea5c47cbb8bad0f301fdf72c90b65c69b8676145929694db9cb832cbcdc44"
+    },
+    "data/reference/weather/raw/weather_57fa60294c7d26f1b78e.attempt01.json": {
+      "bytes": 100,
+      "row_count": 0,
+      "sha256": "5fc431de8e0bf629ae4c6bc254b3e5d3891a7764fa3d579adec7ec05dcd15de5"
+    },
+    "data/reference/weather/raw/weather_57fa60294c7d26f1b78e.request.json": {
+      "bytes": 1648,
+      "sha256": "a7a13e10eac9c2323cfa97bb528d5b5319f4ac931e7b9bc96e3d7422d959fa39"
+    },
+    "data/reference/weather/raw/weather_6573e9840a82475e0861.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "e6b21e4cea3c31436d4a0fd5862c09829d47a6f9e4b6324bcb916cd2c6ca35af"
+    },
+    "data/reference/weather/raw/weather_6573e9840a82475e0861.attempt01.json": {
+      "bytes": 169487,
+      "row_count": 3720,
+      "sha256": "5b8801fe92c21cdeb94d70320a3f87ad44cbbdd76db56f57e8ad5f080c5130ef"
+    },
+    "data/reference/weather/raw/weather_6573e9840a82475e0861.request.json": {
+      "bytes": 1694,
+      "sha256": "3ef575b37fceff800d7c2a9d3828fbae2df72bcee0287693e7e95444367ea8e4"
+    },
+    "data/reference/weather/raw/weather_733093d1c32c013ba7a6.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "4268d26fc8a7c250b0352a26a7822fde7b74ab918a9cfa08e1a8a5ae985510ac"
+    },
+    "data/reference/weather/raw/weather_733093d1c32c013ba7a6.attempt01.json": {
+      "bytes": 169150,
+      "row_count": 3720,
+      "sha256": "c89bde76dbef464398211db3f03f4c4be30e1694bb7e059754583f975b325c93"
+    },
+    "data/reference/weather/raw/weather_733093d1c32c013ba7a6.request.json": {
+      "bytes": 1694,
+      "sha256": "87fcf8721bc9d79adcc64ad53ea7676f7080a4bd7af9edf0db0d6d6adc94e794"
+    },
+    "data/reference/weather/raw/weather_764b6876a7338135cf10.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "8360e00b3e5337a912b479796cf1c76b803ee9fa1c2ab575935bf64502704c14"
+    },
+    "data/reference/weather/raw/weather_764b6876a7338135cf10.attempt01.json": {
+      "bytes": 169245,
+      "row_count": 3720,
+      "sha256": "b3f6c69db25e90b271c4da161249044e464d92820a91bb1ebf09f9c831130215"
+    },
+    "data/reference/weather/raw/weather_764b6876a7338135cf10.request.json": {
+      "bytes": 1694,
+      "sha256": "c49816d119241dc815c81efc20a3377e31005ec8696c030ec6bf1f9e67d7df80"
+    },
+    "data/reference/weather/raw/weather_7e636fa3acb1fab24f48.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "80ef07d96313a712315e625ddb947eba63ffec9acf12e83d45ff367d22eb8db6"
+    },
+    "data/reference/weather/raw/weather_7e636fa3acb1fab24f48.attempt01.json": {
+      "bytes": 169181,
+      "row_count": 3720,
+      "sha256": "204cc3a53122d3843dd295374b3c91eb8d46716b2328518869d31bc46c68c68c"
+    },
+    "data/reference/weather/raw/weather_7e636fa3acb1fab24f48.request.json": {
+      "bytes": 1684,
+      "sha256": "c499316c1f1be80f94dbe1fe52598716b629cd18604cbb72fd2c6ddb56b1a5dd"
+    },
+    "data/reference/weather/raw/weather_887f37c89504cfe77acd.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "74b464df5a9b84bca08ee89a13b1802bf02f1279ceca0f3af0af2876e69d5d03"
+    },
+    "data/reference/weather/raw/weather_887f37c89504cfe77acd.attempt01.json": {
+      "bytes": 169369,
+      "row_count": 3720,
+      "sha256": "5b4afe638049a89e9401f38d46d650646a65361cca32bee8da3a67707163b5e6"
+    },
+    "data/reference/weather/raw/weather_887f37c89504cfe77acd.request.json": {
+      "bytes": 1827,
+      "sha256": "6d31b04677b443b92c5d631afacfd163ce5ce966e110db51a16806239f807403"
+    },
+    "data/reference/weather/raw/weather_a1ce8fac18246d918a6f.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "7497c6894d6ff9724082c068a6592955c4522144ffa0f1d517197c8ddbfed90e"
+    },
+    "data/reference/weather/raw/weather_a1ce8fac18246d918a6f.attempt01.json": {
+      "bytes": 169361,
+      "row_count": 3720,
+      "sha256": "6ac244bd55eb55a66b616af09d91d5b65f7efc6d2f18e6fcea876046b1f8372d"
+    },
+    "data/reference/weather/raw/weather_a1ce8fac18246d918a6f.request.json": {
+      "bytes": 1814,
+      "sha256": "147e7b520ce40e9f1f555a70f877425518c943fc60f4ca1b3220db8daf7a8819"
+    },
+    "data/reference/weather/raw/weather_b20537b47e4942240ca0.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "89f525a4b04ca0883ba679104e6492487a96cb26dc16b23782315a10c0a69742"
+    },
+    "data/reference/weather/raw/weather_b20537b47e4942240ca0.attempt01.json": {
+      "bytes": 169320,
+      "row_count": 3720,
+      "sha256": "f6833bb7a011cdf262685301d6b892707130f6b1b300612cfb18749210b83f3b"
+    },
+    "data/reference/weather/raw/weather_b20537b47e4942240ca0.request.json": {
+      "bytes": 1684,
+      "sha256": "78e64dde715ebfe5058c504ac72b9a107bf7655085839e582d1fdd1331df2315"
+    },
+    "data/reference/weather/raw/weather_b37d37f0cd5dc6d51d82.attempt01.headers.txt": {
+      "bytes": 155,
+      "sha256": "941c51e54664752fb8ccc2adcb260a777ac772e7866f64f4d6cdf14a46b586ec"
+    },
+    "data/reference/weather/raw/weather_b37d37f0cd5dc6d51d82.attempt01.json": {
+      "bytes": 169375,
+      "row_count": 3720,
+      "sha256": "8465c3526bfd104fbaff431882266c8a8c0ed1fba6bf3cb1483ba4a857d9f42b"
+    },
+    "data/reference/weather/raw/weather_b37d37f0cd5dc6d51d82.request.json": {
+      "bytes": 1694,
+      "sha256": "273b0ac7b4e385e48cf661355eee2406e8938ed80597a00c7e96cf5997be662f"
+    },
+    "data/reference/weather/raw/weather_c25bafbbd67749da7ea9.attempt01.headers.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "data/reference/weather/raw/weather_c25bafbbd67749da7ea9.attempt01.json": {
+      "bytes": 0,
+      "row_count": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "data/reference/weather/raw/weather_c25bafbbd67749da7ea9.attempt02.headers.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "data/reference/weather/raw/weather_c25bafbbd67749da7ea9.attempt02.json": {
+      "bytes": 0,
+      "row_count": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "data/reference/weather/raw/weather_c25bafbbd67749da7ea9.attempt03.headers.txt": {
+      "bytes": 157,
+      "sha256": "c651127099340882d39e0b98e18bb265e5638cdee3dce25b959a226088fd1564"
+    },
+    "data/reference/weather/raw/weather_c25bafbbd67749da7ea9.attempt03.json": {
+      "bytes": 100,
+      "row_count": 0,
+      "sha256": "c9aa93d315996c3e55aeae5be9de68312371e8459a7d6cf55a0080a20284edf2"
+    },
+    "data/reference/weather/raw/weather_c25bafbbd67749da7ea9.request.json": {
+      "bytes": 2650,
+      "sha256": "b409be3e213bb0c34e12a23efcd27bc4c1951dcabcb8f2f37d9633a0ff5aa7dd"
+    },
+    "data/reference/weather/raw/weather_d837cdf43f4d4e3e3069.attempt01.headers.txt": {
+      "bytes": 157,
+      "sha256": "49d6469bc4de3a9b7d0014ad1e80ee7e85b6a4b864d17976b571adca1e39baa0"
+    },
+    "data/reference/weather/raw/weather_d837cdf43f4d4e3e3069.attempt01.json": {
+      "bytes": 100,
+      "row_count": 0,
+      "sha256": "5fc431de8e0bf629ae4c6bc254b3e5d3891a7764fa3d579adec7ec05dcd15de5"
+    },
+    "data/reference/weather/raw/weather_d837cdf43f4d4e3e3069.request.json": {
+      "bytes": 1658,
+      "sha256": "f61d36237835dac159d9d407d90107d6d10a850f410c3bf1de823afa8df8549a"
+    },
+    "data/reference/weather/raw/weather_e4a4241d6d7b26f50d9f.attempt01.headers.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "data/reference/weather/raw/weather_e4a4241d6d7b26f50d9f.attempt01.json": {
+      "bytes": 0,
+      "row_count": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "data/reference/weather/raw/weather_e4a4241d6d7b26f50d9f.attempt02.headers.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "data/reference/weather/raw/weather_e4a4241d6d7b26f50d9f.attempt02.json": {
+      "bytes": 0,
+      "row_count": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "data/reference/weather/raw/weather_e4a4241d6d7b26f50d9f.attempt03.headers.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "data/reference/weather/raw/weather_e4a4241d6d7b26f50d9f.attempt03.json": {
+      "bytes": 0,
+      "row_count": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "data/reference/weather/raw/weather_e4a4241d6d7b26f50d9f.attempt04.headers.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "data/reference/weather/raw/weather_e4a4241d6d7b26f50d9f.attempt04.json": {
+      "bytes": 0,
+      "row_count": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "data/reference/weather/raw/weather_e4a4241d6d7b26f50d9f.attempt05.headers.txt": {
+      "bytes": 157,
+      "sha256": "5ec96efef92fb01a1840f156f9462d15e0246e4495da37533721732a24fe54d7"
+    },
+    "data/reference/weather/raw/weather_e4a4241d6d7b26f50d9f.attempt05.json": {
+      "bytes": 100,
+      "row_count": 0,
+      "sha256": "c9aa93d315996c3e55aeae5be9de68312371e8459a7d6cf55a0080a20284edf2"
+    },
+    "data/reference/weather/raw/weather_e4a4241d6d7b26f50d9f.request.json": {
+      "bytes": 3662,
+      "sha256": "3c0479440d61cf3e7f68fc46e602435fa075c3477deb0b0a96ca37dc9ed6148f"
+    },
+    "data/reference/weather/validation.json": {
+      "bytes": 31770,
+      "row_count": null,
+      "sha256": "e742fd4da0079a6aad3b628cc78b225f6a8df42cf6806a71d7ff60680ac60a83"
+    },
+    "data/reference/weather/weather_hourly.parquet": {
+      "bytes": 258793,
+      "row_count": 33480,
+      "sha256": "f814dc8cf811d4b78a6c020a45c7bebfc62c25193f5ec39afcaaa5d71253c187"
+    },
+    "data/reference/weather/weather_points.csv": {
+      "bytes": 8747,
+      "row_count": 45,
+      "sha256": "7d2a3eb86541008a4cd24747dd8fe65c16fdf51d9cd7d3a9c149aee518bdca69"
+    },
+    "docs/weather_data.md": {
+      "bytes": 12917,
+      "sha256": "96180eefae9c2608ccce42e6e8f864d02345a0f5b18a74c6389698cb275fdf6f"
+    }
+  },
+  "free_tier_terms": "Non-commercial use only; https://open-meteo.com/en/terms",
+  "geography_attribution": "Government of Maldives / OCHA COD-AB CC BY-IGO; OneMap Geomatics Department, Ministry of Infrastructure, Housing and Urban Development, OneMap Data Usage License. See docs/followme_geography.md.",
+  "inputs": {
+    "data/reference/followme/onemap_study_islands.geojson": {
+      "sha256": "028d86db440078616cc207a3a05aa6a17828afafba9540cd0ca2fd22c25e8031"
+    },
+    "data/reference/followme/study_area.geojson": {
+      "sha256": "f4d64eebd1ea42c15b5aba9e331da16ee34b916645337a776f213213db25400d"
+    }
+  },
+  "licence": "CC BY 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+  "local_timezone": "Indian/Maldives",
+  "locations": [
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_013_291",
+      "raw_file": "data/reference/weather/raw/weather_733093d1c32c013ba7a6.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 46.10180854797363,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 3.2688928,
+        "longitude": 72.7706,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_013_292",
+      "raw_file": "data/reference/weather/raw/weather_733093d1c32c013ba7a6.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.21219253540039062,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 3.2688928,
+        "location_id": 1,
+        "longitude": 72.98869,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_013_293",
+      "raw_file": "data/reference/weather/raw/weather_733093d1c32c013ba7a6.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.24497509002685547,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 3.2688928,
+        "location_id": 2,
+        "longitude": 73.27948,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_013_294",
+      "raw_file": "data/reference/weather/raw/weather_733093d1c32c013ba7a6.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.15413761138916016,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 3.2688928,
+        "location_id": 3,
+        "longitude": 73.497574,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_013_295",
+      "raw_file": "data/reference/weather/raw/weather_733093d1c32c013ba7a6.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.1671314239501953,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 3.2688928,
+        "location_id": 4,
+        "longitude": 73.71567,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_014_291",
+      "raw_file": "data/reference/weather/raw/weather_7e636fa3acb1fab24f48.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 29.884934425354004,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 3.479789,
+        "longitude": 72.728745,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_014_292",
+      "raw_file": "data/reference/weather/raw/weather_7e636fa3acb1fab24f48.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 2.1022558212280273,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 3.479789,
+        "location_id": 1,
+        "longitude": 73.02024,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_014_293",
+      "raw_file": "data/reference/weather/raw/weather_7e636fa3acb1fab24f48.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.1939535140991211,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 3.479789,
+        "location_id": 2,
+        "longitude": 73.23887,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_014_294",
+      "raw_file": "data/reference/weather/raw/weather_7e636fa3acb1fab24f48.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.16021728515625,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 3.479789,
+        "location_id": 3,
+        "longitude": 73.530365,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_014_295",
+      "raw_file": "data/reference/weather/raw/weather_7e636fa3acb1fab24f48.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.17321109771728516,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 3.479789,
+        "location_id": 4,
+        "longitude": 73.748985,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_015_291",
+      "raw_file": "data/reference/weather/raw/weather_764b6876a7338135cf10.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 50.276875495910645,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 3.7609842,
+        "longitude": 72.745735,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_015_292",
+      "raw_file": "data/reference/weather/raw/weather_764b6876a7338135cf10.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.2524852752685547,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 3.7609842,
+        "location_id": 1,
+        "longitude": 72.965065,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_015_293",
+      "raw_file": "data/reference/weather/raw/weather_764b6876a7338135cf10.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.1939535140991211,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 3.7609842,
+        "location_id": 2,
+        "longitude": 73.25751,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_015_294",
+      "raw_file": "data/reference/weather/raw/weather_764b6876a7338135cf10.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.18298625946044922,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 3.7609842,
+        "location_id": 3,
+        "longitude": 73.476845,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_015_295",
+      "raw_file": "data/reference/weather/raw/weather_764b6876a7338135cf10.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.1989603042602539,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 3.7609842,
+        "location_id": 4,
+        "longitude": 73.76929,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_016_291",
+      "raw_file": "data/reference/weather/raw/weather_b20537b47e4942240ca0.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 30.541658401489258,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 3.9718804,
+        "longitude": 72.77687,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_016_292",
+      "raw_file": "data/reference/weather/raw/weather_b20537b47e4942240ca0.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.23543834686279297,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 3.9718804,
+        "location_id": 1,
+        "longitude": 72.99674,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_016_293",
+      "raw_file": "data/reference/weather/raw/weather_b20537b47e4942240ca0.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.20134449005126953,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 3.9718804,
+        "location_id": 2,
+        "longitude": 73.21661,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_016_294",
+      "raw_file": "data/reference/weather/raw/weather_b20537b47e4942240ca0.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.16641616821289062,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 3.9718804,
+        "location_id": 3,
+        "longitude": 73.50977,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_016_295",
+      "raw_file": "data/reference/weather/raw/weather_b20537b47e4942240ca0.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.22876262664794922,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 3.9718804,
+        "location_id": 4,
+        "longitude": 73.72964,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_017_291",
+      "raw_file": "data/reference/weather/raw/weather_b37d37f0cd5dc6d51d82.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 43.965816497802734,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 4.2530756,
+        "longitude": 72.72059,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_017_292",
+      "raw_file": "data/reference/weather/raw/weather_b37d37f0cd5dc6d51d82.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.7332563400268555,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 4.2530756,
+        "location_id": 1,
+        "longitude": 73.01471,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_017_293",
+      "raw_file": "data/reference/weather/raw/weather_b37d37f0cd5dc6d51d82.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.1819133758544922,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 4.2530756,
+        "location_id": 2,
+        "longitude": 73.2353,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_017_294",
+      "raw_file": "data/reference/weather/raw/weather_b37d37f0cd5dc6d51d82.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.15163421630859375,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 4.2530756,
+        "location_id": 3,
+        "longitude": 73.52941,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_017_295",
+      "raw_file": "data/reference/weather/raw/weather_b37d37f0cd5dc6d51d82.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.14495849609375,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 4.2530756,
+        "location_id": 4,
+        "longitude": 73.75,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_018_291",
+      "raw_file": "data/reference/weather/raw/weather_46d274a5284facf2d537.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 35.907745361328125,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 4.463972,
+        "longitude": 72.75185,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_018_292",
+      "raw_file": "data/reference/weather/raw/weather_46d274a5284facf2d537.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.23090839385986328,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 4.463972,
+        "location_id": 1,
+        "longitude": 72.97298,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_018_293",
+      "raw_file": "data/reference/weather/raw/weather_46d274a5284facf2d537.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 31.41188621520996,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 4.534271,
+        "location_id": 2,
+        "longitude": 73.2541,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_018_294",
+      "raw_file": "data/reference/weather/raw/weather_46d274a5284facf2d537.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.2073049545288086,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 4.463972,
+        "location_id": 3,
+        "longitude": 73.488945,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_018_295",
+      "raw_file": "data/reference/weather/raw/weather_46d274a5284facf2d537.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.14662742614746094,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 4.534271,
+        "location_id": 4,
+        "longitude": 73.77049,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_019_291",
+      "raw_file": "data/reference/weather/raw/weather_6573e9840a82475e0861.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 30.729293823242188,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 4.7451673,
+        "longitude": 72.769104,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_019_292",
+      "raw_file": "data/reference/weather/raw/weather_6573e9840a82475e0861.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.18870830535888672,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 4.7451673,
+        "location_id": 1,
+        "longitude": 72.99096,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_019_293",
+      "raw_file": "data/reference/weather/raw/weather_6573e9840a82475e0861.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 1.191854476928711,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 4.7451673,
+        "location_id": 2,
+        "longitude": 73.286766,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_019_294",
+      "raw_file": "data/reference/weather/raw/weather_6573e9840a82475e0861.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.17952919006347656,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 4.7451673,
+        "location_id": 3,
+        "longitude": 73.50863,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "grid_019_295",
+      "raw_file": "data/reference/weather/raw/weather_6573e9840a82475e0861.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.15056133270263672,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 4.7451673,
+        "location_id": 4,
+        "longitude": 73.730484,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "route_hulhumale",
+      "raw_file": "data/reference/weather/raw/weather_a1ce8fac18246d918a6f.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.2669095993041992,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 4.2530756,
+        "longitude": 73.52941,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "route_maafushi",
+      "raw_file": "data/reference/weather/raw/weather_a1ce8fac18246d918a6f.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.21696090698242188,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 3.9718804,
+        "location_id": 1,
+        "longitude": 73.50977,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "route_male",
+      "raw_file": "data/reference/weather/raw/weather_a1ce8fac18246d918a6f.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 56.35058879852295,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 4.182777,
+        "location_id": 2,
+        "longitude": 73.542854,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "route_mathiveri",
+      "raw_file": "data/reference/weather/raw/weather_a1ce8fac18246d918a6f.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.1844167709350586,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 4.182777,
+        "location_id": 3,
+        "longitude": 72.734695,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "route_mid_male_rasdhoo",
+      "raw_file": "data/reference/weather/raw/weather_a1ce8fac18246d918a6f.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.14662742614746094,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 4.182777,
+        "location_id": 4,
+        "longitude": 73.24898,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "route_mid_rasdhoo_ukulhas",
+      "raw_file": "data/reference/weather/raw/weather_887f37c89504cfe77acd.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.2586841583251953,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 4.2530756,
+        "longitude": 72.94118,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "route_mid_ukulhas_mathiveri",
+      "raw_file": "data/reference/weather/raw/weather_887f37c89504cfe77acd.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.15211105346679688,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 4.182777,
+        "location_id": 1,
+        "longitude": 72.80816,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "route_rasdhoo",
+      "raw_file": "data/reference/weather/raw/weather_887f37c89504cfe77acd.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.2828836441040039,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 4.2530756,
+        "location_id": 2,
+        "longitude": 73.01471,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "route_thoddoo",
+      "raw_file": "data/reference/weather/raw/weather_887f37c89504cfe77acd.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.20301342010498047,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 4.463972,
+        "location_id": 3,
+        "longitude": 72.97298,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "precipitation": "mm",
+        "surface_pressure": "hPa",
+        "time": "iso8601",
+        "wind_direction_10m": "°",
+        "wind_gusts_10m": "km/h",
+        "wind_speed_10m": "km/h"
+      },
+      "point_id": "route_ukulhas",
+      "raw_file": "data/reference/weather/raw/weather_887f37c89504cfe77acd.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.13780593872070312,
+        "hourly_units": {
+          "precipitation": "mm",
+          "surface_pressure": "hPa",
+          "time": "iso8601",
+          "wind_direction_10m": "°",
+          "wind_gusts_10m": "km/h",
+          "wind_speed_10m": "km/h"
+        },
+        "latitude": 4.182777,
+        "location_id": 4,
+        "longitude": 72.88163,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "weather"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_013_291",
+      "raw_file": "data/reference/weather/raw/marine_9a2e27da020078548c64.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.43654441833496094,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 3.25,
+        "longitude": 72.75,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_013_292",
+      "raw_file": "data/reference/weather/raw/marine_9a2e27da020078548c64.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.3141164779663086,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 3.25,
+        "location_id": 1,
+        "longitude": 73.0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_013_293",
+      "raw_file": "data/reference/weather/raw/marine_9a2e27da020078548c64.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.1938343048095703,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 3.25,
+        "location_id": 2,
+        "longitude": 73.25,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_013_294",
+      "raw_file": "data/reference/weather/raw/marine_9a2e27da020078548c64.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 1.2432336807250977,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 3.25,
+        "location_id": 3,
+        "longitude": 73.5,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_013_295",
+      "raw_file": "data/reference/weather/raw/marine_9a2e27da020078548c64.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.39005279541015625,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 3.25,
+        "location_id": 4,
+        "longitude": 73.75,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_014_291",
+      "raw_file": "data/reference/weather/raw/marine_2459446dfc395e17ee2f.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.4183053970336914,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 3.5,
+        "longitude": 72.75,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_014_292",
+      "raw_file": "data/reference/weather/raw/marine_2459446dfc395e17ee2f.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.18024444580078125,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 3.5,
+        "location_id": 1,
+        "longitude": 73.0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_014_293",
+      "raw_file": "data/reference/weather/raw/marine_2459446dfc395e17ee2f.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.23293495178222656,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 3.5,
+        "location_id": 2,
+        "longitude": 73.25,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_014_294",
+      "raw_file": "data/reference/weather/raw/marine_2459446dfc395e17ee2f.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 3.2362937927246094,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 3.5,
+        "location_id": 3,
+        "longitude": 73.5,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_014_295",
+      "raw_file": "data/reference/weather/raw/marine_2459446dfc395e17ee2f.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.3281831741333008,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 3.5,
+        "location_id": 4,
+        "longitude": 73.75,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_015_291",
+      "raw_file": "data/reference/weather/raw/marine_73de2c64018180576b55.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.28002262115478516,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 3.75,
+        "longitude": 72.75,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_015_292",
+      "raw_file": "data/reference/weather/raw/marine_73de2c64018180576b55.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.13506412506103516,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 3.75,
+        "location_id": 1,
+        "longitude": 73.0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_015_293",
+      "raw_file": "data/reference/weather/raw/marine_73de2c64018180576b55.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.16367435455322266,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 3.75,
+        "location_id": 2,
+        "longitude": 73.25,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_015_294",
+      "raw_file": "data/reference/weather/raw/marine_73de2c64018180576b55.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.9351968765258789,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 3.75,
+        "location_id": 3,
+        "longitude": 73.5,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_015_295",
+      "raw_file": "data/reference/weather/raw/marine_73de2c64018180576b55.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.3192424774169922,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 3.75,
+        "location_id": 4,
+        "longitude": 73.75,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_016_291",
+      "raw_file": "data/reference/weather/raw/marine_d69c063125b485d35f76.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.43380260467529297,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.0,
+        "longitude": 72.75,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_016_292",
+      "raw_file": "data/reference/weather/raw/marine_d69c063125b485d35f76.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.23686885833740234,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.0,
+        "location_id": 1,
+        "longitude": 73.0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_016_293",
+      "raw_file": "data/reference/weather/raw/marine_d69c063125b485d35f76.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.1659393310546875,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.0,
+        "location_id": 2,
+        "longitude": 73.25,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_016_294",
+      "raw_file": "data/reference/weather/raw/marine_d69c063125b485d35f76.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.8022785186767578,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.0,
+        "location_id": 3,
+        "longitude": 73.5,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_016_295",
+      "raw_file": "data/reference/weather/raw/marine_d69c063125b485d35f76.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.14221668243408203,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.0,
+        "location_id": 4,
+        "longitude": 73.75,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_017_291",
+      "raw_file": "data/reference/weather/raw/marine_964e1127e13d61669ad3.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.3077983856201172,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.25,
+        "longitude": 72.75,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_017_292",
+      "raw_file": "data/reference/weather/raw/marine_964e1127e13d61669ad3.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.27501583099365234,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.25,
+        "location_id": 1,
+        "longitude": 73.0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_017_293",
+      "raw_file": "data/reference/weather/raw/marine_964e1127e13d61669ad3.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.2009868621826172,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.25,
+        "location_id": 2,
+        "longitude": 73.25,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_017_294",
+      "raw_file": "data/reference/weather/raw/marine_964e1127e13d61669ad3.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 1.0173320770263672,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.25,
+        "location_id": 3,
+        "longitude": 73.5,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_017_295",
+      "raw_file": "data/reference/weather/raw/marine_964e1127e13d61669ad3.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.15652179718017578,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.25,
+        "location_id": 4,
+        "longitude": 73.75,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_018_291",
+      "raw_file": "data/reference/weather/raw/marine_92fabbd893e53fd1f377.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.4303455352783203,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.5,
+        "longitude": 72.75,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_018_292",
+      "raw_file": "data/reference/weather/raw/marine_92fabbd893e53fd1f377.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.21386146545410156,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.5,
+        "location_id": 1,
+        "longitude": 73.0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_018_293",
+      "raw_file": "data/reference/weather/raw/marine_92fabbd893e53fd1f377.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.3192424774169922,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.5,
+        "location_id": 2,
+        "longitude": 73.25,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_018_294",
+      "raw_file": "data/reference/weather/raw/marine_92fabbd893e53fd1f377.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.7342100143432617,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.5,
+        "location_id": 3,
+        "longitude": 73.5,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_018_295",
+      "raw_file": "data/reference/weather/raw/marine_92fabbd893e53fd1f377.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.24712085723876953,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.5,
+        "location_id": 4,
+        "longitude": 73.75,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_019_291",
+      "raw_file": "data/reference/weather/raw/marine_961911727a0f5a553e38.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.4309415817260742,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.75,
+        "longitude": 72.75,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_019_292",
+      "raw_file": "data/reference/weather/raw/marine_961911727a0f5a553e38.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.15783309936523438,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.75,
+        "location_id": 1,
+        "longitude": 73.0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_019_293",
+      "raw_file": "data/reference/weather/raw/marine_961911727a0f5a553e38.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.14793872833251953,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.75,
+        "location_id": 2,
+        "longitude": 73.25,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_019_294",
+      "raw_file": "data/reference/weather/raw/marine_961911727a0f5a553e38.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 1.0514259338378906,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.75,
+        "location_id": 3,
+        "longitude": 73.5,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "grid_019_295",
+      "raw_file": "data/reference/weather/raw/marine_961911727a0f5a553e38.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.1817941665649414,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.75,
+        "location_id": 4,
+        "longitude": 73.75,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "route_hulhumale",
+      "raw_file": "data/reference/weather/raw/marine_437879c947eb670f272d.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.3610849380493164,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.25,
+        "longitude": 73.5,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "route_maafushi",
+      "raw_file": "data/reference/weather/raw/marine_437879c947eb670f272d.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 3.0,
+        "generationtime_ms": 0.31828880310058594,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.0,
+        "location_id": 1,
+        "longitude": 73.5,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "route_male",
+      "raw_file": "data/reference/weather/raw/marine_437879c947eb670f272d.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 6.0,
+        "generationtime_ms": 0.40841102600097656,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.25,
+        "location_id": 2,
+        "longitude": 73.5,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "route_mathiveri",
+      "raw_file": "data/reference/weather/raw/marine_437879c947eb670f272d.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 5.0,
+        "generationtime_ms": 0.18262863159179688,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.25,
+        "location_id": 3,
+        "longitude": 72.75,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "route_mid_male_rasdhoo",
+      "raw_file": "data/reference/weather/raw/marine_437879c947eb670f272d.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.13399124145507812,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.25,
+        "location_id": 4,
+        "longitude": 73.25,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "route_mid_rasdhoo_ukulhas",
+      "raw_file": "data/reference/weather/raw/marine_b4821ed07f98dee86eee.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.25391578674316406,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.25,
+        "longitude": 73.0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "route_mid_ukulhas_mathiveri",
+      "raw_file": "data/reference/weather/raw/marine_b4821ed07f98dee86eee.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 0.0,
+        "generationtime_ms": 0.21898746490478516,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.25,
+        "location_id": 1,
+        "longitude": 72.75,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "route_rasdhoo",
+      "raw_file": "data/reference/weather/raw/marine_b4821ed07f98dee86eee.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 5.0,
+        "generationtime_ms": 0.30493736267089844,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.25,
+        "location_id": 2,
+        "longitude": 73.0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "route_thoddoo",
+      "raw_file": "data/reference/weather/raw/marine_b4821ed07f98dee86eee.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 8.0,
+        "generationtime_ms": 0.17881393432617188,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.5,
+        "location_id": 3,
+        "longitude": 73.0,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    },
+    {
+      "absent_variables": [],
+      "hourly_units": {
+        "swell_wave_height": "m",
+        "swell_wave_period": "s",
+        "time": "iso8601",
+        "wave_direction": "°",
+        "wave_height": "m",
+        "wave_period": "s",
+        "wind_wave_height": "m"
+      },
+      "point_id": "route_ukulhas",
+      "raw_file": "data/reference/weather/raw/marine_b4821ed07f98dee86eee.attempt01.json",
+      "reported_model_dataset_fields": {},
+      "response_hours": 744,
+      "returned_metadata": {
+        "elevation": 6.0,
+        "generationtime_ms": 0.2579689025878906,
+        "hourly_units": {
+          "swell_wave_height": "m",
+          "swell_wave_period": "s",
+          "time": "iso8601",
+          "wave_direction": "°",
+          "wave_height": "m",
+          "wave_period": "s",
+          "wind_wave_height": "m"
+        },
+        "latitude": 4.25,
+        "location_id": 4,
+        "longitude": 72.75,
+        "timezone": "GMT",
+        "timezone_abbreviation": "GMT",
+        "utc_offset_seconds": 0
+      },
+      "source": "marine"
+    }
+  ],
+  "model_reporting_note": "Requested model IDs are recorded separately from returned fields. Empty reported_model_dataset_fields means the API did not independently report a model/dataset name.",
+  "query_point_count": 45,
+  "request_timezone": "GMT",
+  "requests": [
+    {
+      "attempts": [
+        {
+          "bytes": 169150,
+          "completed_at_utc": "2026-10-24T05:42:23+00:00",
+          "curl_exit_code": 0,
+          "file": "weather_733093d1c32c013ba7a6.attempt01.json",
+          "headers_file": "weather_733093d1c32c013ba7a6.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:42:20+00:00",
+          "sha256": "c89bde76dbef464398211db3f03f4c4be30e1694bb7e059754583f975b325c93",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "elevation": "nan,nan,nan,nan,nan",
+        "end_date": "2025-08-31",
+        "hourly": "wind_speed_10m,wind_gusts_10m,wind_direction_10m,precipitation,surface_pressure",
+        "latitude": "3.25,3.25,3.25,3.25,3.25",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "ecmwf_ifs",
+        "precipitation_unit": "mm",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_013_291",
+        "grid_013_292",
+        "grid_013_293",
+        "grid_013_294",
+        "grid_013_295"
+      ],
+      "response_file": "weather_733093d1c32c013ba7a6.attempt01.json",
+      "source": "weather",
+      "success": true,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=3.25%2C3.25%2C3.25%2C3.25%2C3.25&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wind_speed_10m%2Cwind_gusts_10m%2Cwind_direction_10m%2Cprecipitation%2Csurface_pressure&models=ecmwf_ifs&wind_speed_unit=kmh&cell_selection=sea&precipitation_unit=mm&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 169181,
+          "completed_at_utc": "2026-10-24T05:42:28+00:00",
+          "curl_exit_code": 0,
+          "file": "weather_7e636fa3acb1fab24f48.attempt01.json",
+          "headers_file": "weather_7e636fa3acb1fab24f48.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:42:26+00:00",
+          "sha256": "204cc3a53122d3843dd295374b3c91eb8d46716b2328518869d31bc46c68c68c",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "elevation": "nan,nan,nan,nan,nan",
+        "end_date": "2025-08-31",
+        "hourly": "wind_speed_10m,wind_gusts_10m,wind_direction_10m,precipitation,surface_pressure",
+        "latitude": "3.5,3.5,3.5,3.5,3.5",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "ecmwf_ifs",
+        "precipitation_unit": "mm",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_014_291",
+        "grid_014_292",
+        "grid_014_293",
+        "grid_014_294",
+        "grid_014_295"
+      ],
+      "response_file": "weather_7e636fa3acb1fab24f48.attempt01.json",
+      "source": "weather",
+      "success": true,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=3.5%2C3.5%2C3.5%2C3.5%2C3.5&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wind_speed_10m%2Cwind_gusts_10m%2Cwind_direction_10m%2Cprecipitation%2Csurface_pressure&models=ecmwf_ifs&wind_speed_unit=kmh&cell_selection=sea&precipitation_unit=mm&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 169245,
+          "completed_at_utc": "2026-10-24T05:42:35+00:00",
+          "curl_exit_code": 0,
+          "file": "weather_764b6876a7338135cf10.attempt01.json",
+          "headers_file": "weather_764b6876a7338135cf10.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:42:31+00:00",
+          "sha256": "b3f6c69db25e90b271c4da161249044e464d92820a91bb1ebf09f9c831130215",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "elevation": "nan,nan,nan,nan,nan",
+        "end_date": "2025-08-31",
+        "hourly": "wind_speed_10m,wind_gusts_10m,wind_direction_10m,precipitation,surface_pressure",
+        "latitude": "3.75,3.75,3.75,3.75,3.75",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "ecmwf_ifs",
+        "precipitation_unit": "mm",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_015_291",
+        "grid_015_292",
+        "grid_015_293",
+        "grid_015_294",
+        "grid_015_295"
+      ],
+      "response_file": "weather_764b6876a7338135cf10.attempt01.json",
+      "source": "weather",
+      "success": true,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=3.75%2C3.75%2C3.75%2C3.75%2C3.75&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wind_speed_10m%2Cwind_gusts_10m%2Cwind_direction_10m%2Cprecipitation%2Csurface_pressure&models=ecmwf_ifs&wind_speed_unit=kmh&cell_selection=sea&precipitation_unit=mm&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 169320,
+          "completed_at_utc": "2026-10-24T05:42:44+00:00",
+          "curl_exit_code": 0,
+          "file": "weather_b20537b47e4942240ca0.attempt01.json",
+          "headers_file": "weather_b20537b47e4942240ca0.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:42:38+00:00",
+          "sha256": "f6833bb7a011cdf262685301d6b892707130f6b1b300612cfb18749210b83f3b",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "elevation": "nan,nan,nan,nan,nan",
+        "end_date": "2025-08-31",
+        "hourly": "wind_speed_10m,wind_gusts_10m,wind_direction_10m,precipitation,surface_pressure",
+        "latitude": "4.0,4.0,4.0,4.0,4.0",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "ecmwf_ifs",
+        "precipitation_unit": "mm",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_016_291",
+        "grid_016_292",
+        "grid_016_293",
+        "grid_016_294",
+        "grid_016_295"
+      ],
+      "response_file": "weather_b20537b47e4942240ca0.attempt01.json",
+      "source": "weather",
+      "success": true,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=4.0%2C4.0%2C4.0%2C4.0%2C4.0&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wind_speed_10m%2Cwind_gusts_10m%2Cwind_direction_10m%2Cprecipitation%2Csurface_pressure&models=ecmwf_ifs&wind_speed_unit=kmh&cell_selection=sea&precipitation_unit=mm&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 169375,
+          "completed_at_utc": "2026-10-24T05:42:50+00:00",
+          "curl_exit_code": 0,
+          "file": "weather_b37d37f0cd5dc6d51d82.attempt01.json",
+          "headers_file": "weather_b37d37f0cd5dc6d51d82.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:42:47+00:00",
+          "sha256": "8465c3526bfd104fbaff431882266c8a8c0ed1fba6bf3cb1483ba4a857d9f42b",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "elevation": "nan,nan,nan,nan,nan",
+        "end_date": "2025-08-31",
+        "hourly": "wind_speed_10m,wind_gusts_10m,wind_direction_10m,precipitation,surface_pressure",
+        "latitude": "4.25,4.25,4.25,4.25,4.25",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "ecmwf_ifs",
+        "precipitation_unit": "mm",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_017_291",
+        "grid_017_292",
+        "grid_017_293",
+        "grid_017_294",
+        "grid_017_295"
+      ],
+      "response_file": "weather_b37d37f0cd5dc6d51d82.attempt01.json",
+      "source": "weather",
+      "success": true,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=4.25%2C4.25%2C4.25%2C4.25%2C4.25&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wind_speed_10m%2Cwind_gusts_10m%2Cwind_direction_10m%2Cprecipitation%2Csurface_pressure&models=ecmwf_ifs&wind_speed_unit=kmh&cell_selection=sea&precipitation_unit=mm&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 169440,
+          "completed_at_utc": "2026-10-24T05:42:58+00:00",
+          "curl_exit_code": 0,
+          "file": "weather_46d274a5284facf2d537.attempt01.json",
+          "headers_file": "weather_46d274a5284facf2d537.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:42:53+00:00",
+          "sha256": "ef3cc94e330cac7a228c4a18edb5c69df78e42d6bdd72425872e63c942744ace",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "elevation": "nan,nan,nan,nan,nan",
+        "end_date": "2025-08-31",
+        "hourly": "wind_speed_10m,wind_gusts_10m,wind_direction_10m,precipitation,surface_pressure",
+        "latitude": "4.5,4.5,4.5,4.5,4.5",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "ecmwf_ifs",
+        "precipitation_unit": "mm",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_018_291",
+        "grid_018_292",
+        "grid_018_293",
+        "grid_018_294",
+        "grid_018_295"
+      ],
+      "response_file": "weather_46d274a5284facf2d537.attempt01.json",
+      "source": "weather",
+      "success": true,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=4.5%2C4.5%2C4.5%2C4.5%2C4.5&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wind_speed_10m%2Cwind_gusts_10m%2Cwind_direction_10m%2Cprecipitation%2Csurface_pressure&models=ecmwf_ifs&wind_speed_unit=kmh&cell_selection=sea&precipitation_unit=mm&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 169487,
+          "completed_at_utc": "2026-10-24T05:43:06+00:00",
+          "curl_exit_code": 0,
+          "file": "weather_6573e9840a82475e0861.attempt01.json",
+          "headers_file": "weather_6573e9840a82475e0861.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:43:01+00:00",
+          "sha256": "5b8801fe92c21cdeb94d70320a3f87ad44cbbdd76db56f57e8ad5f080c5130ef",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "elevation": "nan,nan,nan,nan,nan",
+        "end_date": "2025-08-31",
+        "hourly": "wind_speed_10m,wind_gusts_10m,wind_direction_10m,precipitation,surface_pressure",
+        "latitude": "4.75,4.75,4.75,4.75,4.75",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "ecmwf_ifs",
+        "precipitation_unit": "mm",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_019_291",
+        "grid_019_292",
+        "grid_019_293",
+        "grid_019_294",
+        "grid_019_295"
+      ],
+      "response_file": "weather_6573e9840a82475e0861.attempt01.json",
+      "source": "weather",
+      "success": true,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=4.75%2C4.75%2C4.75%2C4.75%2C4.75&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wind_speed_10m%2Cwind_gusts_10m%2Cwind_direction_10m%2Cprecipitation%2Csurface_pressure&models=ecmwf_ifs&wind_speed_unit=kmh&cell_selection=sea&precipitation_unit=mm&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 169361,
+          "completed_at_utc": "2026-10-24T05:43:11+00:00",
+          "curl_exit_code": 0,
+          "file": "weather_a1ce8fac18246d918a6f.attempt01.json",
+          "headers_file": "weather_a1ce8fac18246d918a6f.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:43:09+00:00",
+          "sha256": "6ac244bd55eb55a66b616af09d91d5b65f7efc6d2f18e6fcea876046b1f8372d",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "elevation": "nan,nan,nan,nan,nan",
+        "end_date": "2025-08-31",
+        "hourly": "wind_speed_10m,wind_gusts_10m,wind_direction_10m,precipitation,surface_pressure",
+        "latitude": "4.2231139,3.9409856,4.1742229,4.1918626,4.2186871",
+        "longitude": "73.5429238,73.4896699,73.5094929,72.7462553,73.2506864",
+        "models": "ecmwf_ifs",
+        "precipitation_unit": "mm",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "route_hulhumale",
+        "route_maafushi",
+        "route_male",
+        "route_mathiveri",
+        "route_mid_male_rasdhoo"
+      ],
+      "response_file": "weather_a1ce8fac18246d918a6f.attempt01.json",
+      "source": "weather",
+      "success": true,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=4.2231139%2C3.9409856%2C4.1742229%2C4.1918626%2C4.2186871&longitude=73.5429238%2C73.4896699%2C73.5094929%2C72.7462553%2C73.2506864&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wind_speed_10m%2Cwind_gusts_10m%2Cwind_direction_10m%2Cprecipitation%2Csurface_pressure&models=ecmwf_ifs&wind_speed_unit=kmh&cell_selection=sea&precipitation_unit=mm&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 169369,
+          "completed_at_utc": "2026-10-24T05:43:17+00:00",
+          "curl_exit_code": 0,
+          "file": "weather_887f37c89504cfe77acd.attempt01.json",
+          "headers_file": "weather_887f37c89504cfe77acd.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:43:14+00:00",
+          "sha256": "5b4afe638049a89e9401f38d46d650646a65361cca32bee8da3a67707163b5e6",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "elevation": "nan,nan,nan,nan,nan",
+        "end_date": "2025-08-31",
+        "hourly": "wind_speed_10m,wind_gusts_10m,wind_direction_10m,precipitation,surface_pressure",
+        "latitude": "4.2390645,4.203463,4.2630649,4.4372164,4.2150589",
+        "longitude": "72.9280505,72.8052541,72.9918504,72.9596337,72.8642546",
+        "models": "ecmwf_ifs",
+        "precipitation_unit": "mm",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "route_mid_rasdhoo_ukulhas",
+        "route_mid_ukulhas_mathiveri",
+        "route_rasdhoo",
+        "route_thoddoo",
+        "route_ukulhas"
+      ],
+      "response_file": "weather_887f37c89504cfe77acd.attempt01.json",
+      "source": "weather",
+      "success": true,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=4.2390645%2C4.203463%2C4.2630649%2C4.4372164%2C4.2150589&longitude=72.9280505%2C72.8052541%2C72.9918504%2C72.9596337%2C72.8642546&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wind_speed_10m%2Cwind_gusts_10m%2Cwind_direction_10m%2Cprecipitation%2Csurface_pressure&models=ecmwf_ifs&wind_speed_unit=kmh&cell_selection=sea&precipitation_unit=mm&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 183786,
+          "completed_at_utc": "2026-10-24T05:45:12+00:00",
+          "curl_exit_code": 0,
+          "file": "marine_9a2e27da020078548c64.attempt01.json",
+          "headers_file": "marine_9a2e27da020078548c64.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:45:10+00:00",
+          "sha256": "955f77e1914af61a16ff7764855351c4748d1827bdb1097807db9e207a419c21",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "end_date": "2025-08-31",
+        "hourly": "wave_height,wave_direction,wave_period,wind_wave_height,swell_wave_height,swell_wave_period",
+        "latitude": "3.25,3.25,3.25,3.25,3.25",
+        "length_unit": "metric",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "ncep_gfswave025",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_013_291",
+        "grid_013_292",
+        "grid_013_293",
+        "grid_013_294",
+        "grid_013_295"
+      ],
+      "response_file": "marine_9a2e27da020078548c64.attempt01.json",
+      "source": "marine",
+      "success": true,
+      "url": "https://marine-api.open-meteo.com/v1/marine?latitude=3.25%2C3.25%2C3.25%2C3.25%2C3.25&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wave_height%2Cwave_direction%2Cwave_period%2Cwind_wave_height%2Cswell_wave_height%2Cswell_wave_period&models=ncep_gfswave025&wind_speed_unit=kmh&cell_selection=sea&length_unit=metric"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 183618,
+          "completed_at_utc": "2026-10-24T05:45:57+00:00",
+          "curl_exit_code": 0,
+          "file": "marine_2459446dfc395e17ee2f.attempt01.json",
+          "headers_file": "marine_2459446dfc395e17ee2f.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:45:55+00:00",
+          "sha256": "30f51d5afb5f482db44d4260f1850d4dda0bd71d5a274d0c0708c52d6ba10ac1",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "end_date": "2025-08-31",
+        "hourly": "wave_height,wave_direction,wave_period,wind_wave_height,swell_wave_height,swell_wave_period",
+        "latitude": "3.5,3.5,3.5,3.5,3.5",
+        "length_unit": "metric",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "ncep_gfswave025",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_014_291",
+        "grid_014_292",
+        "grid_014_293",
+        "grid_014_294",
+        "grid_014_295"
+      ],
+      "response_file": "marine_2459446dfc395e17ee2f.attempt01.json",
+      "source": "marine",
+      "success": true,
+      "url": "https://marine-api.open-meteo.com/v1/marine?latitude=3.5%2C3.5%2C3.5%2C3.5%2C3.5&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wave_height%2Cwave_direction%2Cwave_period%2Cwind_wave_height%2Cswell_wave_height%2Cswell_wave_period&models=ncep_gfswave025&wind_speed_unit=kmh&cell_selection=sea&length_unit=metric"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 183301,
+          "completed_at_utc": "2026-10-24T05:46:02+00:00",
+          "curl_exit_code": 0,
+          "file": "marine_73de2c64018180576b55.attempt01.json",
+          "headers_file": "marine_73de2c64018180576b55.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:46:00+00:00",
+          "sha256": "9042bda9a9a4d43bbdc48ccb1a45ab62be9f610aa8dae60c3fe7879ab513ea55",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "end_date": "2025-08-31",
+        "hourly": "wave_height,wave_direction,wave_period,wind_wave_height,swell_wave_height,swell_wave_period",
+        "latitude": "3.75,3.75,3.75,3.75,3.75",
+        "length_unit": "metric",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "ncep_gfswave025",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_015_291",
+        "grid_015_292",
+        "grid_015_293",
+        "grid_015_294",
+        "grid_015_295"
+      ],
+      "response_file": "marine_73de2c64018180576b55.attempt01.json",
+      "source": "marine",
+      "success": true,
+      "url": "https://marine-api.open-meteo.com/v1/marine?latitude=3.75%2C3.75%2C3.75%2C3.75%2C3.75&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wave_height%2Cwave_direction%2Cwave_period%2Cwind_wave_height%2Cswell_wave_height%2Cswell_wave_period&models=ncep_gfswave025&wind_speed_unit=kmh&cell_selection=sea&length_unit=metric"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 183276,
+          "completed_at_utc": "2026-10-24T05:46:09+00:00",
+          "curl_exit_code": 0,
+          "file": "marine_d69c063125b485d35f76.attempt01.json",
+          "headers_file": "marine_d69c063125b485d35f76.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:46:05+00:00",
+          "sha256": "e9a7705699000cf38a63b0ded9840d8f1e89aee069e899224d3973cf7d921f51",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "end_date": "2025-08-31",
+        "hourly": "wave_height,wave_direction,wave_period,wind_wave_height,swell_wave_height,swell_wave_period",
+        "latitude": "4.0,4.0,4.0,4.0,4.0",
+        "length_unit": "metric",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "ncep_gfswave025",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_016_291",
+        "grid_016_292",
+        "grid_016_293",
+        "grid_016_294",
+        "grid_016_295"
+      ],
+      "response_file": "marine_d69c063125b485d35f76.attempt01.json",
+      "source": "marine",
+      "success": true,
+      "url": "https://marine-api.open-meteo.com/v1/marine?latitude=4.0%2C4.0%2C4.0%2C4.0%2C4.0&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wave_height%2Cwave_direction%2Cwave_period%2Cwind_wave_height%2Cswell_wave_height%2Cswell_wave_period&models=ncep_gfswave025&wind_speed_unit=kmh&cell_selection=sea&length_unit=metric"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 183114,
+          "completed_at_utc": "2026-10-24T05:46:14+00:00",
+          "curl_exit_code": 0,
+          "file": "marine_964e1127e13d61669ad3.attempt01.json",
+          "headers_file": "marine_964e1127e13d61669ad3.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:46:12+00:00",
+          "sha256": "7f900253602238aed14d0f3d18e3378cdc87c31ba75d6501793178f21ea8861e",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "end_date": "2025-08-31",
+        "hourly": "wave_height,wave_direction,wave_period,wind_wave_height,swell_wave_height,swell_wave_period",
+        "latitude": "4.25,4.25,4.25,4.25,4.25",
+        "length_unit": "metric",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "ncep_gfswave025",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_017_291",
+        "grid_017_292",
+        "grid_017_293",
+        "grid_017_294",
+        "grid_017_295"
+      ],
+      "response_file": "marine_964e1127e13d61669ad3.attempt01.json",
+      "source": "marine",
+      "success": true,
+      "url": "https://marine-api.open-meteo.com/v1/marine?latitude=4.25%2C4.25%2C4.25%2C4.25%2C4.25&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wave_height%2Cwave_direction%2Cwave_period%2Cwind_wave_height%2Cswell_wave_height%2Cswell_wave_period&models=ncep_gfswave025&wind_speed_unit=kmh&cell_selection=sea&length_unit=metric"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 183169,
+          "completed_at_utc": "2026-10-24T05:46:21+00:00",
+          "curl_exit_code": 0,
+          "file": "marine_92fabbd893e53fd1f377.attempt01.json",
+          "headers_file": "marine_92fabbd893e53fd1f377.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:46:17+00:00",
+          "sha256": "c866513ceb04481f36fc8d0cfbdf31738bc9483f28781f32a2ce2161391fab2b",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "end_date": "2025-08-31",
+        "hourly": "wave_height,wave_direction,wave_period,wind_wave_height,swell_wave_height,swell_wave_period",
+        "latitude": "4.5,4.5,4.5,4.5,4.5",
+        "length_unit": "metric",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "ncep_gfswave025",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_018_291",
+        "grid_018_292",
+        "grid_018_293",
+        "grid_018_294",
+        "grid_018_295"
+      ],
+      "response_file": "marine_92fabbd893e53fd1f377.attempt01.json",
+      "source": "marine",
+      "success": true,
+      "url": "https://marine-api.open-meteo.com/v1/marine?latitude=4.5%2C4.5%2C4.5%2C4.5%2C4.5&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wave_height%2Cwave_direction%2Cwave_period%2Cwind_wave_height%2Cswell_wave_height%2Cswell_wave_period&models=ncep_gfswave025&wind_speed_unit=kmh&cell_selection=sea&length_unit=metric"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 183135,
+          "completed_at_utc": "2026-10-24T05:46:28+00:00",
+          "curl_exit_code": 0,
+          "file": "marine_961911727a0f5a553e38.attempt01.json",
+          "headers_file": "marine_961911727a0f5a553e38.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:46:24+00:00",
+          "sha256": "cd8c6dbac2aae0cab3699948a07ab365704f488b3e0d84abad075b023453cd3d",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "end_date": "2025-08-31",
+        "hourly": "wave_height,wave_direction,wave_period,wind_wave_height,swell_wave_height,swell_wave_period",
+        "latitude": "4.75,4.75,4.75,4.75,4.75",
+        "length_unit": "metric",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "ncep_gfswave025",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_019_291",
+        "grid_019_292",
+        "grid_019_293",
+        "grid_019_294",
+        "grid_019_295"
+      ],
+      "response_file": "marine_961911727a0f5a553e38.attempt01.json",
+      "source": "marine",
+      "success": true,
+      "url": "https://marine-api.open-meteo.com/v1/marine?latitude=4.75%2C4.75%2C4.75%2C4.75%2C4.75&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wave_height%2Cwave_direction%2Cwave_period%2Cwind_wave_height%2Cswell_wave_height%2Cswell_wave_period&models=ncep_gfswave025&wind_speed_unit=kmh&cell_selection=sea&length_unit=metric"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 183040,
+          "completed_at_utc": "2026-10-24T05:46:33+00:00",
+          "curl_exit_code": 0,
+          "file": "marine_437879c947eb670f272d.attempt01.json",
+          "headers_file": "marine_437879c947eb670f272d.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:46:31+00:00",
+          "sha256": "d39a8c8556e18f56b6123fb1fe2012b9b3dd0370047f51951f61e2bd930152e1",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "end_date": "2025-08-31",
+        "hourly": "wave_height,wave_direction,wave_period,wind_wave_height,swell_wave_height,swell_wave_period",
+        "latitude": "4.2231139,3.9409856,4.1742229,4.1918626,4.2186871",
+        "length_unit": "metric",
+        "longitude": "73.5429238,73.4896699,73.5094929,72.7462553,73.2506864",
+        "models": "ncep_gfswave025",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "route_hulhumale",
+        "route_maafushi",
+        "route_male",
+        "route_mathiveri",
+        "route_mid_male_rasdhoo"
+      ],
+      "response_file": "marine_437879c947eb670f272d.attempt01.json",
+      "source": "marine",
+      "success": true,
+      "url": "https://marine-api.open-meteo.com/v1/marine?latitude=4.2231139%2C3.9409856%2C4.1742229%2C4.1918626%2C4.2186871&longitude=73.5429238%2C73.4896699%2C73.5094929%2C72.7462553%2C73.2506864&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wave_height%2Cwave_direction%2Cwave_period%2Cwind_wave_height%2Cswell_wave_height%2Cswell_wave_period&models=ncep_gfswave025&wind_speed_unit=kmh&cell_selection=sea&length_unit=metric"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 183096,
+          "completed_at_utc": "2026-10-24T05:46:39+00:00",
+          "curl_exit_code": 0,
+          "file": "marine_b4821ed07f98dee86eee.attempt01.json",
+          "headers_file": "marine_b4821ed07f98dee86eee.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:46:36+00:00",
+          "sha256": "bf98f86412d70f55ad32176e006754d37a3e13af4f92c62b334ae4685fb5d50e",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "end_date": "2025-08-31",
+        "hourly": "wave_height,wave_direction,wave_period,wind_wave_height,swell_wave_height,swell_wave_period",
+        "latitude": "4.2390645,4.203463,4.2630649,4.4372164,4.2150589",
+        "length_unit": "metric",
+        "longitude": "72.9280505,72.8052541,72.9918504,72.9596337,72.8642546",
+        "models": "ncep_gfswave025",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "route_mid_rasdhoo_ukulhas",
+        "route_mid_ukulhas_mathiveri",
+        "route_rasdhoo",
+        "route_thoddoo",
+        "route_ukulhas"
+      ],
+      "response_file": "marine_b4821ed07f98dee86eee.attempt01.json",
+      "source": "marine",
+      "success": true,
+      "url": "https://marine-api.open-meteo.com/v1/marine?latitude=4.2390645%2C4.203463%2C4.2630649%2C4.4372164%2C4.2150589&longitude=72.9280505%2C72.8052541%2C72.9918504%2C72.9596337%2C72.8642546&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wave_height%2Cwave_direction%2Cwave_period%2Cwind_wave_height%2Cswell_wave_height%2Cswell_wave_period&models=ncep_gfswave025&wind_speed_unit=kmh&cell_selection=sea&length_unit=metric"
+    }
+  ],
+  "retrieval_timestamps_utc": [
+    "2026-10-24T05:42:20+00:00",
+    "2026-10-24T05:42:26+00:00",
+    "2026-10-24T05:42:31+00:00",
+    "2026-10-24T05:42:38+00:00",
+    "2026-10-24T05:42:47+00:00",
+    "2026-10-24T05:42:53+00:00",
+    "2026-10-24T05:43:01+00:00",
+    "2026-10-24T05:43:09+00:00",
+    "2026-10-24T05:43:14+00:00",
+    "2026-10-24T05:45:10+00:00",
+    "2026-10-24T05:45:55+00:00",
+    "2026-10-24T05:46:00+00:00",
+    "2026-10-24T05:46:05+00:00",
+    "2026-10-24T05:46:12+00:00",
+    "2026-10-24T05:46:17+00:00",
+    "2026-10-24T05:46:24+00:00",
+    "2026-10-24T05:46:31+00:00",
+    "2026-10-24T05:46:36+00:00"
+  ],
+  "sources": {
+    "marine": {
+      "dataset_note": "NOAA NCEP GFS Wave archived model forecast, documented 0.25 degree grid (about 25 km), hourly, available since June 2024. Selected after ERA5-Ocean returned null/undefined for all requested wind-wave and swell components. No ERA5-Ocean values enter the final table.",
+      "documentation_url": "https://open-meteo.com/en/docs/marine-weather-api",
+      "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+      "model": "ncep_gfswave025",
+      "model_identifier_reference": "https://github.com/open-meteo/open-data#marine-wave-models",
+      "variables": [
+        "wave_height",
+        "wave_direction",
+        "wave_period",
+        "wind_wave_height",
+        "swell_wave_height",
+        "swell_wave_period"
+      ]
+    },
+    "weather": {
+      "dataset_note": "ECMWF IFS historical analysis assembled by Open-Meteo, about 9 km, hourly. Explicitly selected because the documented ERA5 variable matrix does not provide wind gusts.",
+      "documentation_url": "https://open-meteo.com/en/docs/historical-weather-api",
+      "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+      "model": "ecmwf_ifs",
+      "variables": [
+        "wind_speed_10m",
+        "wind_gusts_10m",
+        "wind_direction_10m",
+        "precipitation",
+        "surface_pressure"
+      ]
+    }
+  },
+  "unused_cache_attribution": "Diagnostic ERA5-Ocean responses: Open-Meteo.com and ECMWF/Copernicus Climate Change Service (C3S). These values are not used in the final table.",
+  "unused_cached_requests": [
+    {
+      "attempts": [
+        {
+          "bytes": 106,
+          "completed_at_utc": "2026-10-24T05:44:10+00:00",
+          "curl_exit_code": 0,
+          "file": "marine_0e6c257778c976b8d229.attempt01.json",
+          "headers_file": "marine_0e6c257778c976b8d229.attempt01.headers.txt",
+          "http_status": 400,
+          "retrieved_at_utc": "2026-10-24T05:44:08+00:00",
+          "sha256": "bd8f033f807eb08ce4c447062f4723c4330de63b8bf2c4054fe697ede9efdb8b",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+      "error": "Invalid value: Cannot initialize MultiDomains from invalid String value gfs_wave",
+      "parameters": {
+        "cell_selection": "sea",
+        "end_date": "2025-08-31",
+        "hourly": "wave_height,wave_direction,wave_period,wind_wave_height,swell_wave_height,swell_wave_period",
+        "latitude": "3.25,3.25,3.25,3.25,3.25",
+        "length_unit": "metric",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "gfs_wave",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_013_291",
+        "grid_013_292",
+        "grid_013_293",
+        "grid_013_294",
+        "grid_013_295"
+      ],
+      "source": "marine",
+      "success": false,
+      "url": "https://marine-api.open-meteo.com/v1/marine?latitude=3.25%2C3.25%2C3.25%2C3.25%2C3.25&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wave_height%2Cwave_direction%2Cwave_period%2Cwind_wave_height%2Cswell_wave_height%2Cswell_wave_period&models=gfs_wave&wind_speed_unit=kmh&cell_selection=sea&length_unit=metric"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 181039,
+          "completed_at_utc": "2026-10-24T05:43:29+00:00",
+          "curl_exit_code": 0,
+          "file": "marine_3a1077f940de69595e48.attempt01.json",
+          "headers_file": "marine_3a1077f940de69595e48.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:43:26+00:00",
+          "sha256": "44176af9517681b2974fa1aed01a31be71b50b531a85a6f7e3f4451bc649350c",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "end_date": "2025-08-31",
+        "hourly": "wave_height,wave_direction,wave_period,wind_wave_height,swell_wave_height,swell_wave_period",
+        "latitude": "3.5,3.5,3.5,3.5,3.5",
+        "length_unit": "metric",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "era5_ocean",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_014_291",
+        "grid_014_292",
+        "grid_014_293",
+        "grid_014_294",
+        "grid_014_295"
+      ],
+      "response_file": "marine_3a1077f940de69595e48.attempt01.json",
+      "source": "marine",
+      "success": true,
+      "url": "https://marine-api.open-meteo.com/v1/marine?latitude=3.5%2C3.5%2C3.5%2C3.5%2C3.5&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wave_height%2Cwave_direction%2Cwave_period%2Cwind_wave_height%2Cswell_wave_height%2Cswell_wave_period&models=era5_ocean&wind_speed_unit=kmh&cell_selection=sea&length_unit=metric"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 181034,
+          "completed_at_utc": "2026-10-24T05:44:00+00:00",
+          "curl_exit_code": 0,
+          "file": "marine_3bfdf905d1b64de898a4.attempt01.json",
+          "headers_file": "marine_3bfdf905d1b64de898a4.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:43:57+00:00",
+          "sha256": "05715bd3561c7ec0bfafbea8be4b0cd855e1da538088b7fb5820cacbe7442408",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "end_date": "2025-08-31",
+        "hourly": "wave_height,wave_direction,wave_period,wind_wave_height,swell_wave_height,swell_wave_period",
+        "latitude": "4.75,4.75,4.75,4.75,4.75",
+        "length_unit": "metric",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "era5_ocean",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_019_291",
+        "grid_019_292",
+        "grid_019_293",
+        "grid_019_294",
+        "grid_019_295"
+      ],
+      "response_file": "marine_3bfdf905d1b64de898a4.attempt01.json",
+      "source": "marine",
+      "success": true,
+      "url": "https://marine-api.open-meteo.com/v1/marine?latitude=4.75%2C4.75%2C4.75%2C4.75%2C4.75&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wave_height%2Cwave_direction%2Cwave_period%2Cwind_wave_height%2Cswell_wave_height%2Cswell_wave_period&models=era5_ocean&wind_speed_unit=kmh&cell_selection=sea&length_unit=metric"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 181037,
+          "completed_at_utc": "2026-10-24T05:43:34+00:00",
+          "curl_exit_code": 0,
+          "file": "marine_40f4ade891b56f165cbd.attempt01.json",
+          "headers_file": "marine_40f4ade891b56f165cbd.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:43:32+00:00",
+          "sha256": "69083faf815f0e325e035ffe9e12ef20ca5679adc5f26f965be5e10bae3f6c8d",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "end_date": "2025-08-31",
+        "hourly": "wave_height,wave_direction,wave_period,wind_wave_height,swell_wave_height,swell_wave_period",
+        "latitude": "3.75,3.75,3.75,3.75,3.75",
+        "length_unit": "metric",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "era5_ocean",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_015_291",
+        "grid_015_292",
+        "grid_015_293",
+        "grid_015_294",
+        "grid_015_295"
+      ],
+      "response_file": "marine_40f4ade891b56f165cbd.attempt01.json",
+      "source": "marine",
+      "success": true,
+      "url": "https://marine-api.open-meteo.com/v1/marine?latitude=3.75%2C3.75%2C3.75%2C3.75%2C3.75&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wave_height%2Cwave_direction%2Cwave_period%2Cwind_wave_height%2Cswell_wave_height%2Cswell_wave_period&models=era5_ocean&wind_speed_unit=kmh&cell_selection=sea&length_unit=metric"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 181038,
+          "completed_at_utc": "2026-10-24T05:43:46+00:00",
+          "curl_exit_code": 0,
+          "file": "marine_5746b7b930d1a0c0df92.attempt01.json",
+          "headers_file": "marine_5746b7b930d1a0c0df92.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:43:43+00:00",
+          "sha256": "cb9dfef11d5a9c321817ec3235179e8ee90e7c802136a875ac45d5e8b2c61b50",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "end_date": "2025-08-31",
+        "hourly": "wave_height,wave_direction,wave_period,wind_wave_height,swell_wave_height,swell_wave_period",
+        "latitude": "4.25,4.25,4.25,4.25,4.25",
+        "length_unit": "metric",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "era5_ocean",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_017_291",
+        "grid_017_292",
+        "grid_017_293",
+        "grid_017_294",
+        "grid_017_295"
+      ],
+      "response_file": "marine_5746b7b930d1a0c0df92.attempt01.json",
+      "source": "marine",
+      "success": true,
+      "url": "https://marine-api.open-meteo.com/v1/marine?latitude=4.25%2C4.25%2C4.25%2C4.25%2C4.25&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wave_height%2Cwave_direction%2Cwave_period%2Cwind_wave_height%2Cswell_wave_height%2Cswell_wave_period&models=era5_ocean&wind_speed_unit=kmh&cell_selection=sea&length_unit=metric"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 181038,
+          "completed_at_utc": "2026-10-24T05:43:54+00:00",
+          "curl_exit_code": 0,
+          "file": "marine_6e52d5c890a06578d5ca.attempt01.json",
+          "headers_file": "marine_6e52d5c890a06578d5ca.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:43:50+00:00",
+          "sha256": "aa479bb4e66be3c77018a8673fe1ac595b94d3886ef88cf5585712f2e87f18eb",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "end_date": "2025-08-31",
+        "hourly": "wave_height,wave_direction,wave_period,wind_wave_height,swell_wave_height,swell_wave_period",
+        "latitude": "4.5,4.5,4.5,4.5,4.5",
+        "length_unit": "metric",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "era5_ocean",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_018_291",
+        "grid_018_292",
+        "grid_018_293",
+        "grid_018_294",
+        "grid_018_295"
+      ],
+      "response_file": "marine_6e52d5c890a06578d5ca.attempt01.json",
+      "source": "marine",
+      "success": true,
+      "url": "https://marine-api.open-meteo.com/v1/marine?latitude=4.5%2C4.5%2C4.5%2C4.5%2C4.5&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wave_height%2Cwave_direction%2Cwave_period%2Cwind_wave_height%2Cswell_wave_height%2Cswell_wave_period&models=era5_ocean&wind_speed_unit=kmh&cell_selection=sea&length_unit=metric"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 181059,
+          "completed_at_utc": "2026-10-24T05:44:06+00:00",
+          "curl_exit_code": 0,
+          "file": "marine_aa7334d7de943aacc472.attempt01.json",
+          "headers_file": "marine_aa7334d7de943aacc472.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:44:03+00:00",
+          "sha256": "4c260ffe482f56c1ed5795ef87a56ee080b4871d2bce7af0a222e00bbb0fbe08",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "end_date": "2025-08-31",
+        "hourly": "wave_height,wave_direction,wave_period,wind_wave_height,swell_wave_height,swell_wave_period",
+        "latitude": "4.2231139,3.9409856,4.1742229,4.1918626,4.2186871",
+        "length_unit": "metric",
+        "longitude": "73.5429238,73.4896699,73.5094929,72.7462553,73.2506864",
+        "models": "era5_ocean",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "route_hulhumale",
+        "route_maafushi",
+        "route_male",
+        "route_mathiveri",
+        "route_mid_male_rasdhoo"
+      ],
+      "response_file": "marine_aa7334d7de943aacc472.attempt01.json",
+      "source": "marine",
+      "success": true,
+      "url": "https://marine-api.open-meteo.com/v1/marine?latitude=4.2231139%2C3.9409856%2C4.1742229%2C4.1918626%2C4.2186871&longitude=73.5429238%2C73.4896699%2C73.5094929%2C72.7462553%2C73.2506864&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wave_height%2Cwave_direction%2Cwave_period%2Cwind_wave_height%2Cswell_wave_height%2Cswell_wave_period&models=era5_ocean&wind_speed_unit=kmh&cell_selection=sea&length_unit=metric"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 181040,
+          "completed_at_utc": "2026-10-24T05:44:12+00:00",
+          "curl_exit_code": 0,
+          "file": "marine_b4ce91b5dfb03bf23618.attempt01.json",
+          "headers_file": "marine_b4ce91b5dfb03bf23618.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:44:09+00:00",
+          "sha256": "0f8233bc580e07b433c641d941d77dc95052dda518779a7ac56be01ca7d3bd92",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "end_date": "2025-08-31",
+        "hourly": "wave_height,wave_direction,wave_period,wind_wave_height,swell_wave_height,swell_wave_period",
+        "latitude": "4.2390645,4.203463,4.2630649,4.4372164,4.2150589",
+        "length_unit": "metric",
+        "longitude": "72.9280505,72.8052541,72.9918504,72.9596337,72.8642546",
+        "models": "era5_ocean",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "route_mid_rasdhoo_ukulhas",
+        "route_mid_ukulhas_mathiveri",
+        "route_rasdhoo",
+        "route_thoddoo",
+        "route_ukulhas"
+      ],
+      "response_file": "marine_b4ce91b5dfb03bf23618.attempt01.json",
+      "source": "marine",
+      "success": true,
+      "url": "https://marine-api.open-meteo.com/v1/marine?latitude=4.2390645%2C4.203463%2C4.2630649%2C4.4372164%2C4.2150589&longitude=72.9280505%2C72.8052541%2C72.9918504%2C72.9596337%2C72.8642546&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wave_height%2Cwave_direction%2Cwave_period%2Cwind_wave_height%2Cswell_wave_height%2Cswell_wave_period&models=era5_ocean&wind_speed_unit=kmh&cell_selection=sea&length_unit=metric"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 181038,
+          "completed_at_utc": "2026-10-24T05:43:40+00:00",
+          "curl_exit_code": 0,
+          "file": "marine_b6706d8143d0285f536e.attempt01.json",
+          "headers_file": "marine_b6706d8143d0285f536e.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:43:37+00:00",
+          "sha256": "eb40accf47d3f71d023482ab3616dcfad3f5a79cbf86c5dae7e6aa314b0082f2",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "end_date": "2025-08-31",
+        "hourly": "wave_height,wave_direction,wave_period,wind_wave_height,swell_wave_height,swell_wave_period",
+        "latitude": "4.0,4.0,4.0,4.0,4.0",
+        "length_unit": "metric",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "era5_ocean",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_016_291",
+        "grid_016_292",
+        "grid_016_293",
+        "grid_016_294",
+        "grid_016_295"
+      ],
+      "response_file": "marine_b6706d8143d0285f536e.attempt01.json",
+      "source": "marine",
+      "success": true,
+      "url": "https://marine-api.open-meteo.com/v1/marine?latitude=4.0%2C4.0%2C4.0%2C4.0%2C4.0&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wave_height%2Cwave_direction%2Cwave_period%2Cwind_wave_height%2Cswell_wave_height%2Cswell_wave_period&models=era5_ocean&wind_speed_unit=kmh&cell_selection=sea&length_unit=metric"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 181038,
+          "completed_at_utc": "2026-10-24T05:43:23+00:00",
+          "curl_exit_code": 0,
+          "file": "marine_f8d2d78a96c50be32d35.attempt01.json",
+          "headers_file": "marine_f8d2d78a96c50be32d35.attempt01.headers.txt",
+          "http_status": 200,
+          "retrieved_at_utc": "2026-10-24T05:43:20+00:00",
+          "sha256": "a5aa1d6958da8f4669c43692bf3cacf59b52ec8202edeeed783b33f0feda85fa",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+      "error": null,
+      "parameters": {
+        "cell_selection": "sea",
+        "end_date": "2025-08-31",
+        "hourly": "wave_height,wave_direction,wave_period,wind_wave_height,swell_wave_height,swell_wave_period",
+        "latitude": "3.25,3.25,3.25,3.25,3.25",
+        "length_unit": "metric",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "era5_ocean",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_013_291",
+        "grid_013_292",
+        "grid_013_293",
+        "grid_013_294",
+        "grid_013_295"
+      ],
+      "response_file": "marine_f8d2d78a96c50be32d35.attempt01.json",
+      "source": "marine",
+      "success": true,
+      "url": "https://marine-api.open-meteo.com/v1/marine?latitude=3.25%2C3.25%2C3.25%2C3.25%2C3.25&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wave_height%2Cwave_direction%2Cwave_period%2Cwind_wave_height%2Cswell_wave_height%2Cswell_wave_period&models=era5_ocean&wind_speed_unit=kmh&cell_selection=sea&length_unit=metric"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 100,
+          "completed_at_utc": "2026-10-24T05:42:13+00:00",
+          "curl_exit_code": 0,
+          "file": "weather_57fa60294c7d26f1b78e.attempt01.json",
+          "headers_file": "weather_57fa60294c7d26f1b78e.attempt01.headers.txt",
+          "http_status": 400,
+          "retrieved_at_utc": "2026-10-24T05:42:10+00:00",
+          "sha256": "5fc431de8e0bf629ae4c6bc254b3e5d3891a7764fa3d579adec7ec05dcd15de5",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+      "error": "Parameter 'elevation' must have the same number of elements as coordinates",
+      "parameters": {
+        "cell_selection": "sea",
+        "elevation": "nan",
+        "end_date": "2025-08-31",
+        "hourly": "wind_speed_10m,wind_gusts_10m,wind_direction_10m,precipitation,surface_pressure",
+        "latitude": "4.0,4.0,4.0,4.0,4.0",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "ecmwf_ifs",
+        "precipitation_unit": "mm",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_016_291",
+        "grid_016_292",
+        "grid_016_293",
+        "grid_016_294",
+        "grid_016_295"
+      ],
+      "source": "weather",
+      "success": false,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=4.0%2C4.0%2C4.0%2C4.0%2C4.0&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wind_speed_10m%2Cwind_gusts_10m%2Cwind_direction_10m%2Cprecipitation%2Csurface_pressure&models=ecmwf_ifs&wind_speed_unit=kmh&cell_selection=sea&precipitation_unit=mm&elevation=nan"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 0,
+          "completed_at_utc": "2026-10-24T05:41:15+00:00",
+          "curl_exit_code": 6,
+          "file": "weather_c25bafbbd67749da7ea9.attempt01.json",
+          "headers_file": "weather_c25bafbbd67749da7ea9.attempt01.headers.txt",
+          "http_status": 0,
+          "retrieved_at_utc": "2026-10-24T05:41:15+00:00",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "transport_error": "curl: (6) Could not resolve host: archive-api.open-meteo.com"
+        },
+        {
+          "bytes": 0,
+          "completed_at_utc": "2026-10-24T05:41:24+00:00",
+          "curl_exit_code": 6,
+          "file": "weather_c25bafbbd67749da7ea9.attempt02.json",
+          "headers_file": "weather_c25bafbbd67749da7ea9.attempt02.headers.txt",
+          "http_status": 0,
+          "retrieved_at_utc": "2026-10-24T05:41:23+00:00",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "transport_error": "curl: (6) Could not resolve host: archive-api.open-meteo.com"
+        },
+        {
+          "bytes": 100,
+          "completed_at_utc": "2026-10-24T05:42:01+00:00",
+          "curl_exit_code": 0,
+          "file": "weather_c25bafbbd67749da7ea9.attempt03.json",
+          "headers_file": "weather_c25bafbbd67749da7ea9.attempt03.headers.txt",
+          "http_status": 400,
+          "retrieved_at_utc": "2026-10-24T05:41:59+00:00",
+          "sha256": "c9aa93d315996c3e55aeae5be9de68312371e8459a7d6cf55a0080a20284edf2",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+      "error": "Parameter 'elevation' must have the same number of elements as coordinates",
+      "parameters": {
+        "cell_selection": "sea",
+        "elevation": "nan",
+        "end_date": "2025-08-31",
+        "hourly": "wind_speed_10m,wind_gusts_10m,wind_direction_10m,precipitation,surface_pressure",
+        "latitude": "3.5,3.5,3.5,3.5,3.5",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "ecmwf_ifs",
+        "precipitation_unit": "mm",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_014_291",
+        "grid_014_292",
+        "grid_014_293",
+        "grid_014_294",
+        "grid_014_295"
+      ],
+      "source": "weather",
+      "success": false,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=3.5%2C3.5%2C3.5%2C3.5%2C3.5&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wind_speed_10m%2Cwind_gusts_10m%2Cwind_direction_10m%2Cprecipitation%2Csurface_pressure&models=ecmwf_ifs&wind_speed_unit=kmh&cell_selection=sea&precipitation_unit=mm&elevation=nan"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 100,
+          "completed_at_utc": "2026-10-24T05:42:07+00:00",
+          "curl_exit_code": 0,
+          "file": "weather_d837cdf43f4d4e3e3069.attempt01.json",
+          "headers_file": "weather_d837cdf43f4d4e3e3069.attempt01.headers.txt",
+          "http_status": 400,
+          "retrieved_at_utc": "2026-10-24T05:42:04+00:00",
+          "sha256": "5fc431de8e0bf629ae4c6bc254b3e5d3891a7764fa3d579adec7ec05dcd15de5",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+      "error": "Parameter 'elevation' must have the same number of elements as coordinates",
+      "parameters": {
+        "cell_selection": "sea",
+        "elevation": "nan",
+        "end_date": "2025-08-31",
+        "hourly": "wind_speed_10m,wind_gusts_10m,wind_direction_10m,precipitation,surface_pressure",
+        "latitude": "3.75,3.75,3.75,3.75,3.75",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "ecmwf_ifs",
+        "precipitation_unit": "mm",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_015_291",
+        "grid_015_292",
+        "grid_015_293",
+        "grid_015_294",
+        "grid_015_295"
+      ],
+      "source": "weather",
+      "success": false,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=3.75%2C3.75%2C3.75%2C3.75%2C3.75&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wind_speed_10m%2Cwind_gusts_10m%2Cwind_direction_10m%2Cprecipitation%2Csurface_pressure&models=ecmwf_ifs&wind_speed_unit=kmh&cell_selection=sea&precipitation_unit=mm&elevation=nan"
+    },
+    {
+      "attempts": [
+        {
+          "bytes": 0,
+          "completed_at_utc": "2026-10-24T05:40:27+00:00",
+          "curl_exit_code": 6,
+          "file": "weather_e4a4241d6d7b26f50d9f.attempt01.json",
+          "headers_file": "weather_e4a4241d6d7b26f50d9f.attempt01.headers.txt",
+          "http_status": 0,
+          "retrieved_at_utc": "2026-10-24T05:40:26+00:00",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "transport_error": "curl: (6) Could not resolve host: archive-api.open-meteo.com"
+        },
+        {
+          "bytes": 0,
+          "completed_at_utc": "2026-10-24T05:40:35+00:00",
+          "curl_exit_code": 6,
+          "file": "weather_e4a4241d6d7b26f50d9f.attempt02.json",
+          "headers_file": "weather_e4a4241d6d7b26f50d9f.attempt02.headers.txt",
+          "http_status": 0,
+          "retrieved_at_utc": "2026-10-24T05:40:35+00:00",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "transport_error": "curl: (6) Could not resolve host: archive-api.open-meteo.com"
+        },
+        {
+          "bytes": 0,
+          "completed_at_utc": "2026-10-24T05:40:48+00:00",
+          "curl_exit_code": 6,
+          "file": "weather_e4a4241d6d7b26f50d9f.attempt03.json",
+          "headers_file": "weather_e4a4241d6d7b26f50d9f.attempt03.headers.txt",
+          "http_status": 0,
+          "retrieved_at_utc": "2026-10-24T05:40:48+00:00",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "transport_error": "curl: (6) Could not resolve host: archive-api.open-meteo.com"
+        },
+        {
+          "bytes": 0,
+          "completed_at_utc": "2026-10-24T05:41:12+00:00",
+          "curl_exit_code": 6,
+          "file": "weather_e4a4241d6d7b26f50d9f.attempt04.json",
+          "headers_file": "weather_e4a4241d6d7b26f50d9f.attempt04.headers.txt",
+          "http_status": 0,
+          "retrieved_at_utc": "2026-10-24T05:41:11+00:00",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "transport_error": "curl: (6) Could not resolve host: archive-api.open-meteo.com"
+        },
+        {
+          "bytes": 100,
+          "completed_at_utc": "2026-10-24T05:41:56+00:00",
+          "curl_exit_code": 0,
+          "file": "weather_e4a4241d6d7b26f50d9f.attempt05.json",
+          "headers_file": "weather_e4a4241d6d7b26f50d9f.attempt05.headers.txt",
+          "http_status": 400,
+          "retrieved_at_utc": "2026-10-24T05:41:54+00:00",
+          "sha256": "c9aa93d315996c3e55aeae5be9de68312371e8459a7d6cf55a0080a20284edf2",
+          "transport_error": ""
+        }
+      ],
+      "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+      "error": "Parameter 'elevation' must have the same number of elements as coordinates",
+      "parameters": {
+        "cell_selection": "sea",
+        "elevation": "nan",
+        "end_date": "2025-08-31",
+        "hourly": "wind_speed_10m,wind_gusts_10m,wind_direction_10m,precipitation,surface_pressure",
+        "latitude": "3.25,3.25,3.25,3.25,3.25",
+        "longitude": "72.75,73.0,73.25,73.5,73.75",
+        "models": "ecmwf_ifs",
+        "precipitation_unit": "mm",
+        "start_date": "2025-08-01",
+        "timeformat": "iso8601",
+        "timezone": "GMT",
+        "wind_speed_unit": "kmh"
+      },
+      "point_ids": [
+        "grid_013_291",
+        "grid_013_292",
+        "grid_013_293",
+        "grid_013_294",
+        "grid_013_295"
+      ],
+      "source": "weather",
+      "success": false,
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=3.25%2C3.25%2C3.25%2C3.25%2C3.25&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wind_speed_10m%2Cwind_gusts_10m%2Cwind_direction_10m%2Cprecipitation%2Csurface_pressure&models=ecmwf_ifs&wind_speed_unit=kmh&cell_selection=sea&precipitation_unit=mm&elevation=nan"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "attempts": [
+    {
+      "bytes": 181059,
+      "completed_at_utc": "2026-10-24T05:44:06+00:00",
+      "curl_exit_code": 0,
+      "file": "marine_aa7334d7de943aacc472.attempt01.json",
+      "headers_file": "marine_aa7334d7de943aacc472.attempt01.headers.txt",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-24T05:44:03+00:00",
+      "sha256": "4c260ffe482f56c1ed5795ef87a56ee080b4871d2bce7af0a222e00bbb0fbe08",
+      "transport_error": ""
+    }
+  ],
+  "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+  "error": null,
+  "parameters": {
+    "cell_selection": "sea",
+    "end_date": "2025-08-31",
+    "hourly": "wave_height,wave_direction,wave_period,wind_wave_height,swell_wave_height,swell_wave_period",
+    "latitude": "4.2231139,3.9409856,4.1742229,4.1918626,4.2186871",
+    "length_unit": "metric",
+    "longitude": "73.5429238,73.4896699,73.5094929,72.7462553,73.2506864",
+    "models": "era5_ocean",
+    "start_date": "2025-08-01",
+    "timeformat": "iso8601",
+    "timezone": "GMT",
+    "wind_speed_unit": "kmh"
+  },
+  "point_ids": [
+    "route_hulhumale",
+    "route_maafushi",
+    "route_male",
+    "route_mathiveri",
+    "route_mid_male_rasdhoo"
+  ],
+  "response_file": "marine_aa7334d7de943aacc472.attempt01.json",
+  "source": "marine",
+  "success": true,
+  "url": "https://marine-api.open-meteo.com/v1/marine?latitude=4.2231139%2C3.9409856%2C4.1742229%2C4.1918626%2C4.2186871&longitude=73.5429238%2C73.4896699%2C73.5094929%2C72.7462553%2C73.2506864&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wave_height%2Cwave_direction%2Cwave_period%2Cwind_wave_height%2Cswell_wave_height%2Cswell_wave_period&models=era5_ocean&wind_speed_unit=kmh&cell_selection=sea&length_unit=metric"
+}

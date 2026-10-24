@@ -1,0 +1,77 @@
+{
+  "config_version": "1.0.0",
+  "start_date": "2025-08-01",
+  "end_date": "2025-08-31",
+  "request_timezone": "GMT",
+  "local_timezone": "Indian/Maldives",
+  "output_dir": "data/reference/weather",
+  "documentation_path": "docs/weather_data.md",
+  "study_area_path": "data/reference/followme/study_area.geojson",
+  "study_area_sha256": "f4d64eebd1ea42c15b5aba9e331da16ee34b916645337a776f213213db25400d",
+  "islands_path": "data/reference/followme/onemap_study_islands.geojson",
+  "islands_sha256": "028d86db440078616cc207a3a05aa6a17828afafba9540cd0ca2fd22c25e8031",
+  "grid_spacing_degrees": 0.25,
+  "grid_origin_degrees": [0, 0],
+  "near_island_distance_m": 5000,
+  "grid_filter_note": "Inside the study union bounding box, retain points outside all 379 OneMap island footprints (sea proxy), or within 5000 m of a study island footprint. This is a footprint-based sea proxy, not a surveyed coastline or reef mask. Study-area polygon membership is recorded separately; sea in the bounding box outside the administrative union is retained for exposure context.",
+  "route_points": [
+    {"id": "male", "island_name": "Malé", "atoll": "MLE"},
+    {"id": "rasdhoo", "island_name": "Rasdhoo", "atoll": "Alifu Alifu"},
+    {"id": "ukulhas", "island_name": "Ukulhas", "atoll": "Alifu Alifu"},
+    {"id": "mathiveri", "island_name": "Mathiveri", "atoll": "Alifu Alifu"},
+    {"id": "thoddoo", "island_name": "Thoddoo", "atoll": "Alifu Alifu"},
+    {"id": "maafushi", "island_name": "Maafushi", "atoll": "Kaafu"},
+    {"id": "hulhumale", "island_name": "Hulhumalé", "atoll": "MLE"}
+  ],
+  "corridor": ["male", "rasdhoo", "ukulhas", "mathiveri"],
+  "endpoint_method": "Centroid of each OneMap polygon in EPSG:32643, transformed to EPSG:4326; use representative_point in the same projection if centroid lies outside polygon. Endpoints are island-area proxies, not surveyed harbours. Midpoints use the WGS84 geodesic between consecutive endpoints, not claimed sailed paths.",
+  "request": {
+    "batch_size": 5,
+    "sleep_seconds": 3,
+    "max_attempts": 4,
+    "backoff_seconds": 5,
+    "timeout_seconds": 90,
+    "max_response_bytes": 20000000,
+    "user_agent": "datathon-2026-weather/1.0 (non-commercial research)",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "cell_selection": "sea"
+  },
+  "sources": {
+    "weather": {
+      "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+      "model": "ecmwf_ifs",
+      "dataset_note": "ECMWF IFS historical analysis assembled by Open-Meteo, about 9 km, hourly. Explicitly selected because the documented ERA5 variable matrix does not provide wind gusts.",
+      "documentation_url": "https://open-meteo.com/en/docs/historical-weather-api",
+      "variables": ["wind_speed_10m", "wind_gusts_10m", "wind_direction_10m", "precipitation", "surface_pressure"]
+    },
+    "marine": {
+      "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+      "model": "ncep_gfswave025",
+      "dataset_note": "NOAA NCEP GFS Wave archived model forecast, documented 0.25 degree grid (about 25 km), hourly, available since June 2024. Selected after ERA5-Ocean returned null/undefined for all requested wind-wave and swell components. No ERA5-Ocean values enter the final table.",
+      "model_identifier_reference": "https://github.com/open-meteo/open-data#marine-wave-models",
+      "documentation_url": "https://open-meteo.com/en/docs/marine-weather-api",
+      "variables": ["wave_height", "wave_direction", "wave_period", "wind_wave_height", "swell_wave_height", "swell_wave_period"]
+    }
+  },
+  "review_thresholds": {
+    "comment": "Provisional review thresholds for exploratory analysis, not safety limits; organisers and marine experts must review them.",
+    "wind_speed_10m_kmh": 30,
+    "wind_gusts_10m_kmh": 45,
+    "wave_height_m": 2
+  },
+  "plausible_ranges": {
+    "comment": "Broad diagnostic ranges only. Outliers are reported with point and hour and are never dropped or clipped.",
+    "wind_speed_10m": [0, 200],
+    "wind_gusts_10m": [0, 300],
+    "wind_direction_10m": [0, 360],
+    "precipitation": [0, 300],
+    "surface_pressure": [850, 1100],
+    "wave_height": [0, 20],
+    "wave_direction": [0, 360],
+    "wave_period": [0, 35],
+    "wind_wave_height": [0, 20],
+    "swell_wave_height": [0, 20],
+    "swell_wave_period": [0, 35]
+  }
+}

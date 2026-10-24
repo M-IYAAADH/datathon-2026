@@ -2,3 +2,10 @@
 PyMuPDF==1.26.7
 # Tests
 pytest==9.0.2
+# FollowMe GPS cleaning (offline after installation)
+duckdb==1.4.3
+pyproj==3.7.2
+numpy==2.4.4
+shapely==2.1.2
+# Harbour reference (OSM PBF parsing)
+osmium==4.3.2

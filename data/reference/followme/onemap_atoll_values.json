@@ -1,0 +1,131 @@
+{
+  "objectIdFieldName": "OBJECTID",
+  "uniqueIdField": {
+    "name": "OBJECTID",
+    "isSystemMaintained": true
+  },
+  "globalIdFieldName": "",
+  "geometryType": "esriGeometryPolygon",
+  "spatialReference": {
+    "wkid": 102100,
+    "latestWkid": 3857
+  },
+  "fields": [
+    {
+      "name": "atoll",
+      "type": "esriFieldTypeString",
+      "alias": "atoll",
+      "sqlType": "sqlTypeOther",
+      "length": 30,
+      "domain": null,
+      "defaultValue": null
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "atoll": "Vaavu"
+      }
+    },
+    {
+      "attributes": {
+        "atoll": "Laamu"
+      }
+    },
+    {
+      "attributes": {
+        "atoll": "Dhaalu"
+      }
+    },
+    {
+      "attributes": {
+        "atoll": "Thaa"
+      }
+    },
+    {
+      "attributes": {
+        "atoll": "Haa Dhaalu"
+      }
+    },
+    {
+      "attributes": {
+        "atoll": "Alifu Alifu"
+      }
+    },
+    {
+      "attributes": {
+        "atoll": "Baa"
+      }
+    },
+    {
+      "attributes": {
+        "atoll": "Haa Alifu"
+      }
+    },
+    {
+      "attributes": {
+        "atoll": "Lhaviyani"
+      }
+    },
+    {
+      "attributes": {
+        "atoll": "Gnaviyani"
+      }
+    },
+    {
+      "attributes": {
+        "atoll": "Gaafu Alifu"
+      }
+    },
+    {
+      "attributes": {
+        "atoll": "Shaviyani"
+      }
+    },
+    {
+      "attributes": {
+        "atoll": "Noonu"
+      }
+    },
+    {
+      "attributes": {
+        "atoll": "Meemu"
+      }
+    },
+    {
+      "attributes": {
+        "atoll": "Faafu"
+      }
+    },
+    {
+      "attributes": {
+        "atoll": "Seenu"
+      }
+    },
+    {
+      "attributes": {
+        "atoll": "Kaafu"
+      }
+    },
+    {
+      "attributes": {
+        "atoll": "Raa"
+      }
+    },
+    {
+      "attributes": {
+        "atoll": "Alifu Dhaalu"
+      }
+    },
+    {
+      "attributes": {
+        "atoll": "Gaafu Dhaalu"
+      }
+    },
+    {
+      "attributes": {
+        "atoll": "MLE"
+      }
+    }
+  ]
+}

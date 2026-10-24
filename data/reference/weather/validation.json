@@ -1,0 +1,1205 @@
+{
+  "daily_row_count": 1440,
+  "duplicate_point_hour_groups": 0,
+  "failures": [],
+  "hours_expected_per_point": 744,
+  "outliers": [],
+  "point_hour_counts": {
+    "grid_013_291": 744,
+    "grid_013_292": 744,
+    "grid_013_293": 744,
+    "grid_013_294": 744,
+    "grid_013_295": 744,
+    "grid_014_291": 744,
+    "grid_014_292": 744,
+    "grid_014_293": 744,
+    "grid_014_294": 744,
+    "grid_014_295": 744,
+    "grid_015_291": 744,
+    "grid_015_292": 744,
+    "grid_015_293": 744,
+    "grid_015_294": 744,
+    "grid_015_295": 744,
+    "grid_016_291": 744,
+    "grid_016_292": 744,
+    "grid_016_293": 744,
+    "grid_016_294": 744,
+    "grid_016_295": 744,
+    "grid_017_291": 744,
+    "grid_017_292": 744,
+    "grid_017_293": 744,
+    "grid_017_294": 744,
+    "grid_017_295": 744,
+    "grid_018_291": 744,
+    "grid_018_292": 744,
+    "grid_018_293": 744,
+    "grid_018_294": 744,
+    "grid_018_295": 744,
+    "grid_019_291": 744,
+    "grid_019_292": 744,
+    "grid_019_293": 744,
+    "grid_019_294": 744,
+    "grid_019_295": 744,
+    "route_hulhumale": 744,
+    "route_maafushi": 744,
+    "route_male": 744,
+    "route_mathiveri": 744,
+    "route_mid_male_rasdhoo": 744,
+    "route_mid_rasdhoo_ukulhas": 744,
+    "route_mid_ukulhas_mathiveri": 744,
+    "route_rasdhoo": 744,
+    "route_thoddoo": 744,
+    "route_ukulhas": 744
+  },
+  "ranking_scope": {
+    "point_ids": [
+      "grid_014_291",
+      "grid_014_294",
+      "grid_015_291",
+      "grid_016_291",
+      "grid_016_294",
+      "grid_017_291",
+      "grid_017_294",
+      "grid_018_294",
+      "grid_019_294",
+      "route_hulhumale",
+      "route_maafushi",
+      "route_male",
+      "route_mathiveri",
+      "route_mid_ukulhas_mathiveri",
+      "route_rasdhoo",
+      "route_thoddoo",
+      "route_ukulhas"
+    ],
+    "rule": "Query points covered by at least one reviewed study-area polygon"
+  },
+  "row_count": 33480,
+  "source_point_coverage": {
+    "marine": {
+      "grid_013_291": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_013_292": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_013_293": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_013_294": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_013_295": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_014_291": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_014_292": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_014_293": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_014_294": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_014_295": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_015_291": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_015_292": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_015_293": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_015_294": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_015_295": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_016_291": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_016_292": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_016_293": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_016_294": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_016_295": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_017_291": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_017_292": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_017_293": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_017_294": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_017_295": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_018_291": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_018_292": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_018_293": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_018_294": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_018_295": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_019_291": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_019_292": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_019_293": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_019_294": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_019_295": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "route_hulhumale": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "route_maafushi": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "route_male": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "route_mathiveri": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "route_mid_male_rasdhoo": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "route_mid_rasdhoo_ukulhas": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "route_mid_ukulhas_mathiveri": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "route_rasdhoo": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "route_thoddoo": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      },
+      "route_ukulhas": {
+        "non_null_hours": {
+          "swell_wave_height": 744,
+          "swell_wave_period": 744,
+          "wave_direction": 744,
+          "wave_height": 744,
+          "wave_period": 744,
+          "wind_wave_height": 744
+        },
+        "returned_time_count": 744
+      }
+    },
+    "weather": {
+      "grid_013_291": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_013_292": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_013_293": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_013_294": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_013_295": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_014_291": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_014_292": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_014_293": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_014_294": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_014_295": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_015_291": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_015_292": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_015_293": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_015_294": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_015_295": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_016_291": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_016_292": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_016_293": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_016_294": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_016_295": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_017_291": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_017_292": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_017_293": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_017_294": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_017_295": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_018_291": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_018_292": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_018_293": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_018_294": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_018_295": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_019_291": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_019_292": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_019_293": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_019_294": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "grid_019_295": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "route_hulhumale": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "route_maafushi": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "route_male": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "route_mathiveri": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "route_mid_male_rasdhoo": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "route_mid_rasdhoo_ukulhas": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "route_mid_ukulhas_mathiveri": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "route_rasdhoo": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "route_thoddoo": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      },
+      "route_ukulhas": {
+        "non_null_hours": {
+          "precipitation": 744,
+          "surface_pressure": 744,
+          "wind_direction_10m": 744,
+          "wind_gusts_10m": 744,
+          "wind_speed_10m": 744
+        },
+        "returned_time_count": 744
+      }
+    }
+  },
+  "source_response_hours": {
+    "marine": 33480,
+    "weather": 33480
+  },
+  "time_utc_max": "2025-08-31T23:00:00+00:00",
+  "time_utc_min": "2025-08-01T00:00:00+00:00",
+  "top_days": {
+    "wave": [
+      {
+        "date_local": "2025-08-01",
+        "maximum": 1.92
+      },
+      {
+        "date_local": "2025-08-05",
+        "maximum": 1.88
+      },
+      {
+        "date_local": "2025-08-02",
+        "maximum": 1.86
+      },
+      {
+        "date_local": "2025-08-04",
+        "maximum": 1.84
+      },
+      {
+        "date_local": "2025-08-06",
+        "maximum": 1.82
+      }
+    ],
+    "wind": [
+      {
+        "date_local": "2025-08-28",
+        "maximum": 47.5
+      },
+      {
+        "date_local": "2025-08-05",
+        "maximum": 39.8
+      },
+      {
+        "date_local": "2025-08-27",
+        "maximum": 39.7
+      },
+      {
+        "date_local": "2025-08-06",
+        "maximum": 38.9
+      },
+      {
+        "date_local": "2025-08-01",
+        "maximum": 37.1
+      }
+    ]
+  },
+  "top_days_bbox_context": {
+    "wave": [
+      {
+        "date_local": "2025-08-01",
+        "maximum": 2.02
+      },
+      {
+        "date_local": "2025-08-05",
+        "maximum": 1.94
+      },
+      {
+        "date_local": "2025-08-02",
+        "maximum": 1.88
+      },
+      {
+        "date_local": "2025-08-04",
+        "maximum": 1.88
+      },
+      {
+        "date_local": "2025-08-06",
+        "maximum": 1.84
+      }
+    ],
+    "wind": [
+      {
+        "date_local": "2025-08-28",
+        "maximum": 47.5
+      },
+      {
+        "date_local": "2025-08-05",
+        "maximum": 39.8
+      },
+      {
+        "date_local": "2025-08-27",
+        "maximum": 39.7
+      },
+      {
+        "date_local": "2025-08-06",
+        "maximum": 39.3
+      },
+      {
+        "date_local": "2025-08-04",
+        "maximum": 38.9
+      }
+    ]
+  },
+  "variables": {
+    "precipitation": {
+      "maximum": 8.6,
+      "minimum": 0.0,
+      "non_null_count": 33480,
+      "null_count": 0,
+      "unit": "mm"
+    },
+    "surface_pressure": {
+      "maximum": 1014.5,
+      "minimum": 1006.0,
+      "non_null_count": 33480,
+      "null_count": 0,
+      "unit": "hPa"
+    },
+    "swell_wave_height": {
+      "maximum": 1.6,
+      "minimum": 0.2,
+      "non_null_count": 33480,
+      "null_count": 0,
+      "unit": "m"
+    },
+    "swell_wave_period": {
+      "maximum": 17.25,
+      "minimum": 6.25,
+      "non_null_count": 33480,
+      "null_count": 0,
+      "unit": "s"
+    },
+    "wave_direction": {
+      "maximum": 300.0,
+      "minimum": 100.0,
+      "non_null_count": 33480,
+      "null_count": 0,
+      "unit": "°"
+    },
+    "wave_height": {
+      "maximum": 2.02,
+      "minimum": 0.52,
+      "non_null_count": 33480,
+      "null_count": 0,
+      "unit": "m"
+    },
+    "wave_period": {
+      "maximum": 19.0,
+      "minimum": 3.5,
+      "non_null_count": 33480,
+      "null_count": 0,
+      "unit": "s"
+    },
+    "wind_direction_10m": {
+      "maximum": 360.0,
+      "minimum": 1.0,
+      "non_null_count": 33480,
+      "null_count": 0,
+      "unit": "°"
+    },
+    "wind_gusts_10m": {
+      "maximum": 62.3,
+      "minimum": 4.0,
+      "non_null_count": 33480,
+      "null_count": 0,
+      "unit": "km/h"
+    },
+    "wind_speed_10m": {
+      "maximum": 47.5,
+      "minimum": 0.5,
+      "non_null_count": 33480,
+      "null_count": 0,
+      "unit": "km/h"
+    },
+    "wind_wave_height": {
+      "maximum": 1.82,
+      "minimum": 0.0,
+      "non_null_count": 33480,
+      "null_count": 0,
+      "unit": "m"
+    }
+  }
+}

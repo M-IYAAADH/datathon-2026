@@ -1,0 +1,42 @@
+{
+  "attempts": [
+    {
+      "bytes": 169361,
+      "completed_at_utc": "2026-10-24T05:43:11+00:00",
+      "curl_exit_code": 0,
+      "file": "weather_a1ce8fac18246d918a6f.attempt01.json",
+      "headers_file": "weather_a1ce8fac18246d918a6f.attempt01.headers.txt",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-24T05:43:09+00:00",
+      "sha256": "6ac244bd55eb55a66b616af09d91d5b65f7efc6d2f18e6fcea876046b1f8372d",
+      "transport_error": ""
+    }
+  ],
+  "endpoint": "https://archive-api.open-meteo.com/v1/archive",
+  "error": null,
+  "parameters": {
+    "cell_selection": "sea",
+    "elevation": "nan,nan,nan,nan,nan",
+    "end_date": "2025-08-31",
+    "hourly": "wind_speed_10m,wind_gusts_10m,wind_direction_10m,precipitation,surface_pressure",
+    "latitude": "4.2231139,3.9409856,4.1742229,4.1918626,4.2186871",
+    "longitude": "73.5429238,73.4896699,73.5094929,72.7462553,73.2506864",
+    "models": "ecmwf_ifs",
+    "precipitation_unit": "mm",
+    "start_date": "2025-08-01",
+    "timeformat": "iso8601",
+    "timezone": "GMT",
+    "wind_speed_unit": "kmh"
+  },
+  "point_ids": [
+    "route_hulhumale",
+    "route_maafushi",
+    "route_male",
+    "route_mathiveri",
+    "route_mid_male_rasdhoo"
+  ],
+  "response_file": "weather_a1ce8fac18246d918a6f.attempt01.json",
+  "source": "weather",
+  "success": true,
+  "url": "https://archive-api.open-meteo.com/v1/archive?latitude=4.2231139%2C3.9409856%2C4.1742229%2C4.1918626%2C4.2186871&longitude=73.5429238%2C73.4896699%2C73.5094929%2C72.7462553%2C73.2506864&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wind_speed_10m%2Cwind_gusts_10m%2Cwind_direction_10m%2Cprecipitation%2Csurface_pressure&models=ecmwf_ifs&wind_speed_unit=kmh&cell_selection=sea&precipitation_unit=mm&elevation=nan%2Cnan%2Cnan%2Cnan%2Cnan"
+}

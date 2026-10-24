@@ -1,0 +1,11 @@
+{
+  "pipeline_version": "1.0.0",
+  "national_output": "data/private/followme",
+  "geometry_path": "data/reference/followme/study_area.geojson",
+  "geometry_sha256": "f4d64eebd1ea42c15b5aba9e331da16ee34b916645337a776f213213db25400d",
+  "geography_provenance_path": "data/reference/followme/geography_provenance.json",
+  "chunk_rows": 100000,
+  "duckdb_memory_limit": "1GB",
+  "selection_rule": "Keep an entire national trajectory if any member point is covered by the study mask, or any accepted adjacent-pair line intersects it. Never bridge rejected pairs; boundary touches count as intersection. Retain every member observation including those outside the region.",
+  "transition_geometry": "Straight longitude/latitude line between accepted endpoint observations; selection geometry only, not an inferred GPS observation or validated sailed path."
+}

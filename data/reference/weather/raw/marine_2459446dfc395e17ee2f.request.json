@@ -1,0 +1,41 @@
+{
+  "attempts": [
+    {
+      "bytes": 183618,
+      "completed_at_utc": "2026-10-24T05:45:57+00:00",
+      "curl_exit_code": 0,
+      "file": "marine_2459446dfc395e17ee2f.attempt01.json",
+      "headers_file": "marine_2459446dfc395e17ee2f.attempt01.headers.txt",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-24T05:45:55+00:00",
+      "sha256": "30f51d5afb5f482db44d4260f1850d4dda0bd71d5a274d0c0708c52d6ba10ac1",
+      "transport_error": ""
+    }
+  ],
+  "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+  "error": null,
+  "parameters": {
+    "cell_selection": "sea",
+    "end_date": "2025-08-31",
+    "hourly": "wave_height,wave_direction,wave_period,wind_wave_height,swell_wave_height,swell_wave_period",
+    "latitude": "3.5,3.5,3.5,3.5,3.5",
+    "length_unit": "metric",
+    "longitude": "72.75,73.0,73.25,73.5,73.75",
+    "models": "ncep_gfswave025",
+    "start_date": "2025-08-01",
+    "timeformat": "iso8601",
+    "timezone": "GMT",
+    "wind_speed_unit": "kmh"
+  },
+  "point_ids": [
+    "grid_014_291",
+    "grid_014_292",
+    "grid_014_293",
+    "grid_014_294",
+    "grid_014_295"
+  ],
+  "response_file": "marine_2459446dfc395e17ee2f.attempt01.json",
+  "source": "marine",
+  "success": true,
+  "url": "https://marine-api.open-meteo.com/v1/marine?latitude=3.5%2C3.5%2C3.5%2C3.5%2C3.5&longitude=72.75%2C73.0%2C73.25%2C73.5%2C73.75&start_date=2025-08-01&end_date=2025-08-31&timezone=GMT&timeformat=iso8601&hourly=wave_height%2Cwave_direction%2Cwave_period%2Cwind_wave_height%2Cswell_wave_height%2Cswell_wave_period&models=ncep_gfswave025&wind_speed_unit=kmh&cell_selection=sea&length_unit=metric"
+}

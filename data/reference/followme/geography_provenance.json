@@ -1,0 +1,49 @@
+{
+  "all_island_footprints_covered": true,
+  "cod_admin1_units": 5,
+  "cod_reviewed_on": "2025-10-30",
+  "cod_valid_on": "2024-10-22",
+  "coverage_numeric_tolerance_degree2": 1e-14,
+  "crs": "EPSG:4326; longitude, latitude",
+  "geographic_bounds": [
+    72.68540900000016,
+    3.219775299999981,
+    73.772628,
+    4.97688
+  ],
+  "geometry_sha256": "f4d64eebd1ea42c15b5aba9e331da16ee34b916645337a776f213213db25400d",
+  "greater_male_rule": "Male ADM1 plus all three OneMap MLE islands. Wider Greater Male islands assigned to Kaafu, including Hulhule and industrial/reclaimed islands, are included through the entire K scope.",
+  "onemap_islands": 379,
+  "preparation_script_sha256": "7fdeda35dc1340f6fc323e5879e00f093054ba92c3674a862279e99e2fece51e",
+  "primary_license": "CC BY-IGO",
+  "primary_resource_url": "https://data.humdata.org/dataset/a968d227-24c9-49ea-bbce-cee04ee94819/resource/3e277382-c09a-4496-bd46-c1a2a92bb835/download/mdv_admin_boundaries.geojson.zip",
+  "primary_source": "Government of the republic of Maldives, OCHA COD-AB v02",
+  "primary_url": "https://data.humdata.org/dataset/cod-ab-mdv",
+  "rejected_reference": "geoBoundaries gbOpen MDV ADM1 51498476 (OSM/Wambacher 2017) has tiny incomplete AA/ADh geometries and was not used.",
+  "retrieved_date": "2026-10-24",
+  "secondary_license": "https://readme.onemap.mv/pdf/Data%20Usage%20License.pdf",
+  "secondary_source": "Geomatics Department, Ministry of Infrastructure, Housing and Urban Development, OneMap",
+  "secondary_url": "https://readme.onemap.mv/",
+  "shapely_version": "2.1.2",
+  "source_hashes": {
+    "hdx_metadata.json": "7bfb3665cc59f8d7fec4f038dcee14844c61acc4f4c671f0ae3bdbb2bf30d297",
+    "mdv_admin_boundaries.geojson.zip": "054216dd5f312c98427c93e104dde2f64a5f23029a0533763481c24741ceea0b",
+    "onemap_island_layer_metadata.json": "973358dd08335fbeb07acfb6a50b1c2b65b9f3574ee52da158070dac9c26f340",
+    "onemap_query.json": "a8992bbc3a55259b1b39b23b0390a3beb6946bc4156719ea3fa16688ea4ea771",
+    "onemap_study_islands.geojson": "028d86db440078616cc207a3a05aa6a17828afafba9540cd0ca2fd22c25e8031"
+  },
+  "source_islands_disjoint_from_cod_admin1": 2,
+  "source_islands_not_fully_covered_by_cod_admin1": 4,
+  "study_scope": [
+    "AA",
+    "ADh",
+    "K",
+    "V",
+    "Greater_Male"
+  ],
+  "unresolved_geography": [
+    "Functional Greater Male has no separate asserted legal marine boundary; complete Kaafu plus Male ensures its islands are in the overall mask.",
+    "2025 historical shorelines and post-2024 reclamation dates are not independently verified.",
+    "Boundary/shoreline differences retained in study_island_coverage.csv; full actual island footprints are included without extending marine borders."
+  ]
+}

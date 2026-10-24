@@ -4,3 +4,20 @@
 data/interim/ferry/renders/
 __pycache__/
 .pytest_cache/
+# FollowMe source records, secrets, pseudonymised trajectories and working files
+.venv/
+data/private/
+data/raw/followme/
+data/interim/followme/
+.env
+*.secret
+/FollowMe*/
+/followme*.zip
+# Large third-party downloads (URL, retrieval time and SHA-256 are recorded in provenance files and data/catalog.csv)
+data/reference/harbours/raw/*.osm.pbf
+data/reference/followme/mdv_admin_boundaries.geojson.zip
+# Teammate drops awaiting a check (see data/inbox/README.md); the README stays tracked
+data/inbox/*
+!data/inbox/README.md
+# Stray private outputs written when a script is run from scripts/ (relative data/private path)
+**/data/private/

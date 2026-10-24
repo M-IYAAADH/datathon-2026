@@ -1,0 +1,63 @@
+{
+  "config_version": "1.0.0",
+  "raw_dir": "data/reference/harbours/raw",
+  "output_dir": "data/reference/harbours",
+  "user_agent": "datathon-2026-harbour-reference/1.0 (research; contact: repository owner)",
+  "study_area_path": "data/reference/followme/study_area.geojson",
+  "islands_path": "data/reference/followme/onemap_study_islands.geojson",
+  "ferry_stops_path": "data/processed/ferry/stops.csv",
+  "bbox_margin_degrees": 0.05,
+  "bbox_margin_note": "About 5.5 km on every side of the study-area geometry bounds, so near-boundary jetties and route endpoints are not clipped.",
+  "overpass": {
+    "endpoint": "https://overpass.private.coffee/api/interpreter",
+    "timeout_seconds": 180,
+    "attribution": "Contains data (c) OpenStreetMap contributors, available under the Open Database Licence (ODbL) 1.0: https://www.openstreetmap.org/copyright",
+    "licence": "ODbL-1.0",
+    "status_note": "Attempted 2026-10-24 on overpass.private.coffee and overpass.kumi.systems; both timed out or returned dispatcher errors on a trivial query, so the Geofabrik extract is the OSM source. overpass-api.de was not used because its robots.txt disallows /api/."
+  },
+  "onemap": {
+    "services_url": "https://services7.arcgis.com/yvCbn3q8PPtPLZIM/ArcGIS/rest/services",
+    "harbour_keywords": [
+      "harbour",
+      "harbor",
+      "jetty",
+      "port",
+      "pier",
+      "quay",
+      "terminal",
+      "marina",
+      "wharf",
+      "dock"
+    ],
+    "licence_url": "https://readme.onemap.mv/pdf/Data%20Usage%20License.pdf"
+  },
+  "island_assignment": {
+    "offshore_max_distance_m": 500,
+    "note": "Inside an island polygon = 'within_polygon'. Otherwise the nearest island polygon boundary within offshore_max_distance_m = 'nearest_shoreline'. Beyond that no island is assigned. Centroids are never used."
+  },
+  "ferry_match": {
+    "note": "Methods: island_name (assigned island equals stop island, atoll agrees; blank-atoll Male-area stops accept Greater_Male or K), island_alias (table above), feature_name_token (feature name contains the island name, never for route endpoints, and never when it contradicts the assigned island).",
+    "island_aliases": {
+      "villimale": [
+        "vilingili"
+      ]
+    },
+    "alias_note": "Ferry sheets print Villimale/Vilimale for the Male-city island OneMap calls Vilin'gili (data/manual/ferry/stop_name_aliases.csv already treats villimale=vilimale). Needs local confirmation."
+  },
+  "grouping": {
+    "distance_m": 150,
+    "name_similarity_min": 0.8,
+    "note": "Two features join one group when within distance_m and: both named with name similarity >= name_similarity_min; or exactly one is unnamed; or both are unnamed AND from different sources. Unnamed features from the same source never chain to each other (avoids merging whole resort jetty networks). Single linkage; every source row is kept."
+  },
+  "confidence_rules": {
+    "high": "named ferry_terminal/ferry platform/stop_position or harbour polygon with an island assigned within polygon or <=100 m",
+    "medium": "other harbour-related classes with an island assigned",
+    "low": "route endpoint evidence, unassigned island, or generic structure (breakwater, quay) without a name"
+  },
+  "geofabrik": {
+    "url": "https://download.geofabrik.de/asia/maldives-latest.osm.pbf",
+    "licence": "ODbL-1.0",
+    "attribution": "Contains data (c) OpenStreetMap contributors, available under the Open Database Licence (ODbL) 1.0: https://www.openstreetmap.org/copyright",
+    "note": "Whole-country extract (about 3.6 MB). Clipped to the study bbox plus margin when parsed."
+  }
+}

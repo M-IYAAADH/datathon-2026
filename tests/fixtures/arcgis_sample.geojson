@@ -1,0 +1,6 @@
+{"type": "FeatureCollection", "features": [
+ {"type": "Feature", "id": 7, "properties": {"OBJECTID": 7, "name": "Fixture Jetty", "extra": null}, "geometry": {"type": "Point", "coordinates": [73.5, 4.2]}},
+ {"type": "Feature", "id": 8, "properties": {"OBJECTID": 8}, "geometry": {"type": "Polygon", "coordinates": [[[73.0, 4.0], [73.01, 4.0], [73.01, 4.01], [73.0, 4.0]]]}},
+ {"type": "Feature", "id": 9, "properties": {"OBJECTID": 9}, "geometry": null},
+ {"type": "Feature", "properties": {}, "geometry": {"type": "Point", "coordinates": [73.0, 4.0]}}
+]}

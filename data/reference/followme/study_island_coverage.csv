@@ -1,0 +1,380 @@
+study_area_code,OBJECTID,FCODE,atoll,islandName,islandNa_1,category,covered_by_cod_admin1,intersects_cod_admin1,covered_by_final_geometry,final_uncovered_area_degree2,covered_within_numeric_tolerance,supplement_area_degree2
+AA,1,LD0004,Alifu Alifu,Maalhos,މާޅޮސް,Residential Island,True,True,True,0.0,True,0.0
+AA,2,LD0027,Alifu Alifu,Kan'dholhudhoo,ކަނދޮޅުދޫ,Tourism Island,True,True,True,0.0,True,0.0
+AA,3,LD0099,Alifu Alifu,Vihamaafaru,ވިހަމާފަރު,Uninhabited Island,True,True,True,0.0,True,0.0
+AA,4,LD0109,Alifu Alifu,Maagau,މާގައު,Tourism Island,True,True,True,0.0,True,0.0
+AA,5,LD0132,Alifu Alifu,Mathiveri,މަތިވެރި,Residential Island,True,True,True,0.0,True,0.0
+AA,6,LD0201,Alifu Alifu,Ellaidhoo,އެއްލައިދޫ,Tourism Island,True,True,True,0.0,True,0.0
+AA,7,LD0225,Alifu Alifu,Alikoirah,އަލިކޮއިރަށް,Tourism Island,True,True,True,0.0,True,0.0
+AA,8,LD0257,Alifu Alifu,Rasdhoo,ރަސްދޫ,Residential Island,True,True,True,0.0,True,0.0
+AA,9,LD0287,Alifu Alifu,Feridhoo,ފެރިދޫ,Residential Island,True,True,True,0.0,True,0.0
+AA,10,LD0300,Alifu Alifu,Maayafushi,މާޔަފުށި,Tourism Island,True,True,True,0.0,True,0.0
+AA,11,LD0343,Alifu Alifu,Gangehi,ގަންގެހި,Tourism Island,True,True,True,0.0,True,0.0
+AA,12,LD0375,Alifu Alifu,Halaveli,ހަލަވެލި,Tourism Island,True,True,True,0.0,True,0.0
+AA,13,LD0405,Alifu Alifu,Etheremadivaru,އެތެރެމަޑިވަރު,Tourism Island,True,True,True,0.0,True,0.0
+AA,14,LD0411,Alifu Alifu,Velidhoo,ވެލިދޫ,Tourism Island,True,True,True,0.0,True,0.0
+AA,15,LD0474,Alifu Alifu,Bodufolhudhoo,ބޮޑުފޮޅުދޫ,Residential Island,True,True,True,0.0,True,0.0
+AA,16,LD0501,Alifu Alifu,Thoddoo,ތޮއްޑޫ,Residential Island,True,True,True,0.0,True,0.0
+AA,17,LD0574,Alifu Alifu,Madivaru,މަޑިވަރު,Uninhabited Island,True,True,True,0.0,True,0.0
+AA,18,LD0645,Alifu Alifu,Madivarufinolhu,މަޑިވަރުފިނޮޅު,Uninhabited Island,True,True,True,0.0,True,0.0
+AA,19,LD0727,Alifu Alifu,Velifinolhu,ވެލިފިނޮޅު,Uninhabited Island,True,True,True,0.0,True,0.0
+AA,20,LD0760,Alifu Alifu,Madoogali,މަޑޫގަލި,Tourism Island,True,True,True,0.0,True,0.0
+AA,21,LD0865,Alifu Alifu,Mushimasmigili,މުށިމަސްމިގިލި,Tourism Island,True,True,True,0.0,True,0.0
+AA,22,LD0868,Alifu Alifu,Fushi,ފުށި,Uninhabited Island,True,True,True,0.0,True,0.0
+AA,23,LD0874,Alifu Alifu,Himandhoo,ހިމަންދޫ,Residential Island,True,True,True,0.0,True,0.0
+AA,24,LD0893,Alifu Alifu,Kudafolhudhoo,ކުޑަފޮޅުދޫ,Tourism Island,True,True,True,0.0,True,0.0
+AA,25,LD0916,Alifu Alifu,Ukulhas,އުކުޅަސް,Residential Island,True,True,True,0.0,True,0.0
+AA,26,LD0964,Alifu Alifu,Gaagan'du,ގާގަނޑު,Uninhabited Island,True,True,True,0.0,True,0.0
+AA,27,LD0997,Alifu Alifu,Gaathafushi,ގާތަފުށި,Tourism Island,True,True,True,0.0,True,0.0
+AA,28,LD1002,Alifu Alifu,Fesdhoo,ފެސްދޫ,Tourism Island,True,True,True,0.0,True,0.0
+AA,29,LD1080,Alifu Alifu,Bathalaa,ބަތަލާ,Tourism Island,True,True,True,0.0,True,0.0
+AA,30,LD1021,Alifu Alifu,Fusfinolhu,ފުސްފިނޮޅު,Uninhabited Island,True,True,True,0.0,True,0.0
+AA,31,LD1139,Alifu Alifu,Kuramathi,ކުރަމަތި,Tourism Island,True,True,True,0.0,True,0.0
+AA,32,LD1154,Alifu Alifu,Dhinnolhufinolhu,ދިންނޮޅުފިނޮޅު,Uninhabited Island,True,True,True,0.0,True,0.0
+AA,33,LD1342,Alifu Alifu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+AA,34,LD1343,Alifu Alifu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+AA,35,LD1346,Alifu Alifu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+AA,36,LD1455,Alifu Alifu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+AA,37,LD1456,Alifu Alifu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+AA,38,LD0356,Alifu Alifu,Mathivereefinolhu,މަތިވެރީފިނޮޅު,Tourism Island,True,True,True,0.0,True,0.0
+AA,39,LD0807,Alifu Alifu,Veligan'du,ވެލިގަނޑު,Tourism Island,True,True,True,0.0,True,0.0
+AA,40,LD1577,Alifu Alifu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+AA,41,LD1578,Alifu Alifu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+AA,42,LD1579,Alifu Alifu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+AA,43,LD1580,Alifu Alifu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+AA,44,LD1581,Alifu Alifu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+AA,45,LD1582,Alifu Alifu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+AA,46,LD1583,Alifu Alifu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,47,LD0009,Alifu Dhaalu,Omadhoo,އޮމަދޫ,Residential Island,True,True,True,0.0,True,0.0
+ADh,48,LD0021,Alifu Dhaalu,Ariyadhoo,އަރިޔަދޫ,l,True,True,True,0.0,True,0.0
+ADh,49,LD0080,Alifu Dhaalu,Dhiffushi,ދިއްފުށި,Tourism Island,True,True,True,0.0,True,0.0
+ADh,50,LD0089,Alifu Dhaalu,Innafushi,އިންނަފުށި,Tourism Island,True,True,True,0.0,True,0.0
+ADh,51,LD0120,Alifu Dhaalu,Dhiggiri,ދިއްގިރި,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,52,LD0126,Alifu Dhaalu,Bodukaashihuraa,ބޮޑުކާށިހުރާ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,53,LD0165,Alifu Dhaalu,Hurasdhoo,ހުރަސްދޫ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,54,LD0168,Alifu Dhaalu,Mandhoo,މަންދޫ,Residential Island,True,True,True,0.0,True,0.0
+ADh,55,LD0170,Alifu Dhaalu,Rangaleefinolhu,ރަންގަލީފިނޮޅު,Tourism Island,True,True,True,0.0,True,0.0
+ADh,56,LD0175,Alifu Dhaalu,Theluveligaa,ތެލުވެލިގާ,Tourism Island,True,True,True,0.0,True,0.0
+ADh,57,LD0214,Alifu Dhaalu,Rangali,ރަންގަލި,Tourism Island,True,True,True,0.0,True,0.0
+ADh,58,LD0220,Alifu Dhaalu,Bodufinolhu,ބޮޑުފިނޮޅު,Tourism Island,True,True,True,0.0,True,0.0
+ADh,59,LD0263,Alifu Dhaalu,Vilamendhoo,ވިލަމެންދޫ,Tourism Island,True,True,True,0.0,True,0.0
+ADh,60,LD0273,Alifu Dhaalu,Dhan'gethi,ދަނގެތި,Residential Island,True,True,True,0.0,True,0.0
+ADh,61,LD0316,Alifu Dhaalu,Angaagau,އަންގާގައު,Tourism Island,True,True,True,0.0,True,0.0
+ADh,62,LD0364,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,63,LD0388,Alifu Dhaalu,Huruelhi,ހުރުއެޅި,Tourism Island,True,True,True,0.0,True,0.0
+ADh,64,LD0419,Alifu Dhaalu,Huvahendhoo,ހުވަހެންދޫ,Tourism Island,True,True,True,0.0,True,0.0
+ADh,65,LD0452,Alifu Dhaalu,Heenfaru,ހީންފަރު,Tourism Island,True,True,True,0.0,True,0.0
+ADh,66,LD0459,Alifu Dhaalu,Dhidhdhoo,ދިއްދޫ,Residential Island,True,True,True,0.0,True,0.0
+ADh,67,LD0461,Alifu Dhaalu,Mirihi,މިރިހި,Tourism Island,True,True,True,0.0,True,0.0
+ADh,68,LD0513,Alifu Dhaalu,Fenfushi,ފެންފުށި,Residential Island,True,True,True,0.0,True,0.0
+ADh,69,LD0529,Alifu Dhaalu,Tholhifushi,ތޮޅިފުށި,Tourism Island,True,True,True,0.0,True,0.0
+ADh,70,LD0581,Alifu Dhaalu,Kudarah,ކުޑަރަށް,Tourism Island,True,True,True,0.0,True,0.0
+ADh,71,LD0610,Alifu Dhaalu,Vakarufalhi,ވަކަރުފަޅި,Tourism Island,True,True,True,0.0,True,0.0
+ADh,72,LD0641,Alifu Dhaalu,Kudadhoo,ކުޑަދޫ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,73,LD0725,Alifu Dhaalu,Nalaguraidhoo,ނަލަގުރައިދޫ,Tourism Island,True,True,True,0.0,True,0.0
+ADh,74,LD0771,Alifu Dhaalu,Kun'burudhoo,ކުނބުރުދޫ,Residential Island,True,True,True,0.0,True,0.0
+ADh,75,LD1102,Alifu Dhaalu,Hiyafushi,ހިޔަފުށި,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,76,LD1007,Alifu Dhaalu,Dhihdhoofinolhu,ދިއްދޫފިނޮޅު,Tourism Island,True,True,True,0.0,True,0.0
+ADh,77,LD1337,Alifu Dhaalu,Ranfinolhu,ރަންފިނޮޅު,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,78,LD1047,Alifu Dhaalu,Dhigurah,ދިގުރަށް,Residential Island,True,True,True,0.0,True,0.0
+ADh,79,LD1093,Alifu Dhaalu,Hukurudhoo,ހުކުރުދޫ,Industrial Island,True,True,True,0.0,True,0.0
+ADh,80,LD1336,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,81,LD1062,Alifu Dhaalu,Mahchafushi,މައްޗަފުށި,Tourism Island,True,True,True,0.0,True,0.0
+ADh,82,LD0966,Alifu Dhaalu,Lonuboi,ލޮނުބޮއި,Tourism Island,True,True,True,0.0,True,0.0
+ADh,83,LD1176,Alifu Dhaalu,Maafushivaru,މާފުށިވަރު,Tourism Island,True,True,True,0.0,True,0.0
+ADh,84,LD1010,Alifu Dhaalu,Vilin'gilivaru,ވިލިނގިލިވަރު,Tourism Island,True,True,True,0.0,True,0.0
+ADh,85,LD1338,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,86,LD1131,Alifu Dhaalu,Fushidhigga,ފުށިދިއްގަ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,87,LD1198,Alifu Dhaalu,Thun'dufushi,ތުނޑުފުށި,Tourism Island,True,True,True,0.0,True,0.0
+ADh,88,LD0782,Alifu Dhaalu,Kalhahan'dhihuraa,ކަޅަހަނދިހުރާ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,89,LD0784,Alifu Dhaalu,En'boodhoo,އެނބޫދޫ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,90,LD1023,Alifu Dhaalu,Hangnaameedhoo,ހަންޏާމީދޫ,Residential Island,True,True,True,0.0,True,0.0
+ADh,91,LD1339,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,92,LD0900,Alifu Dhaalu,Moofushi,މޫފުށި,Tourism Island,True,True,True,0.0,True,0.0
+ADh,93,LD1147,Alifu Dhaalu,Athurugau,އަތުރުގައު,Tourism Island,True,True,True,0.0,True,0.0
+ADh,94,LD1340,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,95,LD1341,Alifu Dhaalu, , ,Uninhabited Island,False,False,True,0.0,True,3.19244170508255e-08
+ADh,96,LD1348,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,97,LD1350,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,98,LD1351,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,99,LD1505,Alifu Dhaalu,Athulivarufinolhu,އަތުލިވަރުފިނޮޅު,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,100,LD1584,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,101,LD1585,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,102,LD1586,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,103,LD1587,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,104,LD1588,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,105,LD1589,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,106,LD1590,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,107,LD1591,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,108,LD1592,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,109,LD1593,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,110,LD1594,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,111,LD1595,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,112,LD1596,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,113,LD1597,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,114,LD1598,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,115,LD1599,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,116,LD1600,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,117,LD1601,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,118,LD1602,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,119,LD1603,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,120,LD1604,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,121,LD1605,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,122,LD1606,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,123,LD1607,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1285,LD0182,Vaavu,Fulidhoo,ފުލިދޫ,Residential Island,True,True,True,0.0,True,0.0
+V,1286,LD1148,Vaavu,Kunaaveshi,ކުނާވެށި,Tourism Island,True,True,True,0.0,True,0.0
+V,1287,LD1026,Vaavu,Vashugiri,ވަށުގިރި,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1288,LD0117,Vaavu,Hulhidhoo,ހުޅިދޫ,Industrial Island,True,True,True,0.0,True,0.0
+V,1289,LD1079,Vaavu,Thinadhoo,ތިނަދޫ,Residential Island,True,True,True,0.0,True,0.0
+V,1290,LD0075,Vaavu,Felidhoo,ފެލިދޫ,Residential Island,True,True,True,0.0,True,0.0
+V,1291,LD0260,Vaavu,Keyodhoo,ކެޔޮދޫ,Residential Island,True,True,True,0.0,True,0.0
+V,1292,LD1364,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1293,LD0148,Vaavu,Alimathaa,އަލިމަތާ,Tourism Island,True,True,True,0.0,True,0.0
+V,1294,LD1365,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1295,LD1366,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1296,LD0604,Vaavu,Kuda Anbaraa,ކުޑައަންބަރާ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1297,LD0935,Vaavu,Fohtheyobodufushi,ފޮއްތެޔޮބޮޑުފުށި,Tourism Island,True,True,True,0.0,True,0.0
+V,1298,LD1362,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1299,LD1043,Vaavu,Anbaraa,އަންބަރާ,Tourism Island,True,True,True,0.0,True,0.0
+V,1300,LD0079,Vaavu,Thun'duhuraa,ތުނޑުހުރާ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1301,LD0420,Vaavu,Rakeedhoo,ރަކީދޫ,Residential Island,True,True,True,0.0,True,0.0
+V,1302,LD1360,Vaavu,Kudamohoraa,ކުޑަމޮހޮރާ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1303,LD0813,Vaavu,Bodumohoraa,ބޮޑުމޮހޮރާ,Tourism Island,True,True,True,0.0,True,0.0
+V,1304,LD1157,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1305,LD1099,Vaavu,Vattaru,ވައްޓަރު,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1306,LD0267,Vaavu,Dhiggiri,ދިއްގިރި,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1307,LD0051,Vaavu,Aarah,އާރަށް,Tourism Island,True,True,True,0.0,True,0.0
+V,1308,LD1367,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1309,LD1368,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1310,LD1608,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1311,LD1371,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1312,LD1363,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1313,LD1506,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1314,LD1370,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1315,LD1369,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1316,LD0682,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1317,LD1624,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1318,LD1623,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1319,LD1622,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1320,LD1621,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1321,LD1620,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1322,LD1619,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1323,LD1618,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1324,LD1617,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1325,LD1616,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1326,LD1615,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1327,LD1614,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1328,LD1613,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1329,LD1612,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1330,LD1611,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1331,LD1610,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+V,1332,LD1609,Vaavu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1334,LD0950,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1335,LD0362,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1336,LD0721,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1337,LD0665,Kaafu,Kaashidhoo,ކާށިދޫ,Residential Island,True,True,True,0.0,True,0.0
+K,1338,LD0873,Kaafu,Gaafaru,ގާފަރު,Residential Island,True,True,True,0.0,True,0.0
+K,1339,LD1298,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1340,LD1301,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1341,LD0843,Kaafu,Kagi,ކަގި,Tourism Island,True,True,True,0.0,True,0.0
+K,1342,LD1303,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1343,LD1715,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1344,LD1299,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1345,LD0036,Kaafu,Helen'geli,ހެލެނގެލި,Tourism Island,True,True,True,0.0,True,0.0
+K,1346,LD0753,Kaafu,Maifalhuhuraa,މައިފަޅުހުރާ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1347,LD0691,Kaafu,Farivelihuraa,ފަރިވެލިހުރާ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1348,LD1730,Kaafu,Faritharihuraa,ފަރިތަރިހުރާ,Tourism Island,True,True,True,0.0,True,0.0
+K,1349,LD1705,Kaafu,Farikan'duhuraa,ފަަރިކަނޑުހުރާ,Tourism Island,True,True,True,0.0,True,0.0
+K,1350,LD0259,Kaafu,Thun'bafushi,ތުނބަފުށި,Industrial Island,True,True,True,0.0,True,0.0
+K,1351,LD0853,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1352,LD1708,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1353,LD1304,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1354,LD0536,Kaafu,Asdhoo,އަސްދޫ,Tourism Island,True,True,True,0.0,True,0.0
+K,1355,LD1305,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1356,LD1071,Kaafu,Meerufenfushi,މީރުފެންފުށި,Tourism Island,True,True,True,0.0,True,0.0
+K,1357,LD0894,Kaafu,Dhiffushi,ދިއްފުށި,Residential Island,True,True,True,0.0,True,0.0
+K,1358,LD1709,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1359,LD1710,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1360,LD0215,Kaafu,Vilin'gilimathidhahuraa,ވިލިނގިލިމަތިދަހުރާ,Tourism Island,True,True,True,0.0,True,0.0
+K,1361,LD1306,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1362,LD0007,Kaafu,Thulusdhoo Irumathee Huraagan'du,ތުލުސްދޫ އިރުމަތީ ހުރާގަނޑ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1363,LD0745,Kaafu,Thulusdhoo,ތުލުސްދޫ,Residential Island,True,True,True,0.0,True,0.0
+K,1364,LD1308,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1365,LD0473,Kaafu,Lhohifushi,ޅޮހިފުށި,Tourism Island,True,True,True,0.0,True,0.0
+K,1366,LD1316,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1367,LD1315,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1368,LD0062,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1369,LD0468,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1370,LD0960,Kaafu,Kanifinolhu,ކަނިފިނޮޅު,Tourism Island,True,True,True,0.0,True,0.0
+K,1371,LD0683,Kaafu,Huraa,ހުރާ,Residential Island,True,True,True,0.0,True,0.0
+K,1372,LD1317,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1373,LD1114,Kaafu,Kudahuraa,ކުޑަހުރާ,Tourism Island,True,True,True,0.0,True,0.0
+K,1374,LD0584,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1375,LD0157,Kaafu,Kanuoiyhuraa,ކަނުއޮތްހުރާ,Tourism Island,True,True,True,0.0,True,0.0
+K,1376,LD0159,Kaafu,Than'burudhoo,ތަނބުރުދޫ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1377,LD0127,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1378,LD0359,Kaafu,Girifushi,ގިރިފުށި,Institutional Island,True,True,True,0.0,True,0.0
+K,1379,LD1129,Kaafu,Hinmafushi,ހިންމަފުށި,Residential Island,True,True,True,0.0,True,0.0
+K,1380,LD0886,Kaafu,Lankanfushi,ލަންކަންފުށި,Tourism Island,True,True,True,0.0,True,0.0
+Greater_Male,1381,LD0268,MLE,Vilin'gili,ވިލިނގިލި,Residential Island,True,True,True,0.0,True,0.0
+K,1382,LD1711,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1383,LD0283,Kaafu,Kohdhipparu,ކޮއްދިއްޕަރު,Tourism Island,True,True,True,0.0,True,0.0
+K,1384,LD1312,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1385,LD1313,Kaafu,Nakahchaahuraa,ނަކައްޗާހުރާ,Tourism Island,True,True,True,0.0,True,0.0
+K,1386,LD1295,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1387,LD0785,Kaafu,Rasfari,ރަސްފަރި,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1388,LD0492,Kaafu,Kudahithi,ކުޑަހިތި,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1389,LD0305,Kaafu,Boduhithi,ބޮޑުހިތި,Tourism Island,True,True,True,0.0,True,0.0
+K,1390,LD1296,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1391,LD0331,Kaafu,Hen'badhoo,ހެނބަދޫ,Tourism Island,True,True,True,0.0,True,0.0
+K,1392,LD0436,Kaafu,Madivaru,މަޑިވަރު,Tourism Island,True,True,True,0.0,True,0.0
+K,1393,LD0399,Kaafu,Ziyaaraiyfushi,ޒިޔާރަތްފުށި,Tourism Island,True,True,True,0.0,True,0.0
+K,1394,LD1142,Kaafu,Makunudhoo,މަކުނުދޫ,Tourism Island,True,True,True,0.0,True,0.0
+K,1395,LD1712,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1396,LD0648,Kaafu,Eriadhoo,އެރިއަދޫ,Tourism Island,True,True,True,0.0,True,0.0
+K,1397,LD1300,Kaafu,Dhonfushi,ދޮންފުށި,Tourism Island,True,True,True,0.0,True,0.0
+K,1398,LD1713,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1399,LD0311,Kaafu,Vabbinfaru,ވައްބިންފަރު,Tourism Island,True,True,True,0.0,True,0.0
+K,1400,LD0154,Kaafu,Ihuru,އިހުރު,Tourism Island,True,True,True,0.0,True,0.0
+K,1401,LD1718,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1402,LD1719,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1403,LD0142,Kaafu,Baros,ބަރޮސް,Tourism Island,True,True,True,0.0,True,0.0
+K,1404,LD0597,Kaafu,Bolifushi,ބޮލިފުށި,Tourism Island,True,True,True,0.0,True,0.0
+K,1405,LD1724,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1406,LD0073,Kaafu,Maniyafushi,މަނިޔަފުށި,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1407,LD1323,Kaafu,Ithaafinolhu,އިތާފިނޮޅު,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1408,LD0642,Kaafu,Kalhuhuraa,ކަޅުހުރާ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1409,LD0098,Kaafu,Vaagali,ވާގަލި,Tourism Island,True,True,True,0.0,True,0.0
+K,1410,LD0196,Kaafu,Rannaalhi,ރަންނާޅި,Tourism Island,True,True,True,0.0,True,0.0
+K,1411,LD1725,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1412,LD0516,Kaafu,Fihaalhohi,ފިހާޅޮހި,Tourism Island,True,True,True,0.0,True,0.0
+K,1413,LD1327,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1414,LD1726,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1415,LD1328,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1416,LD1329,Kaafu,Tholhimaraahuraa,ތޮޅިމަރާހުރާ,Tourism Island,True,True,True,0.0,True,0.0
+K,1417,LD0633,Kaafu,Mahaanaelhihuraa,މަހާނައެޅިހުރާ,Tourism Island,True,True,True,0.0,True,0.0
+K,1418,LD0624,Kaafu,Erruhhuraa,އެއްރުއްހުރާ,Tourism Island,True,True,True,0.0,True,0.0
+K,1419,LD0415,Kaafu,Olhigan'dufinolhu,އޮޅިގަނޑުފިނޮޅު,Tourism Island,True,True,True,0.0,True,0.0
+K,1420,LD1727,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1421,LD1729,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1422,LD1194,Kaafu,Bodufinolhu,ބޮޑުފިނޮޅު,Tourism Island,True,True,True,0.0,True,0.0
+K,1423,LD0324,Kaafu,Kudafinolhu,ކުޑަފިނޮޅު,Tourism Island,True,True,True,0.0,True,0.0
+K,1424,LD0128,Kaafu,Maadhoo,މާދޫ,Tourism Island,True,True,True,0.0,True,0.0
+K,1425,LD0842,Kaafu,Lhosfushi,ޅޮސްފުށި,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1426,LD0738,Kaafu,Guraidhoo,ގުރައިދޫ,Residential Island,True,True,True,0.0,True,0.0
+K,1427,LD1165,Kaafu,Villivaru,ވިއްލިވަރު,Tourism Island,True,True,True,0.0,True,0.0
+K,1428,LD0160,Kaafu,Biyaadhoo,ބިޔާދޫ,Tourism Island,True,True,True,0.0,True,0.0
+K,1429,LD1735,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1430,LD0069,Kaafu,Maafushi,މާފުށި,Residential Island,True,True,True,0.0,True,0.0
+K,1431,LD0149,Kaafu,Vammaafushi,ވައްމާފުށި,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1432,LD1321,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1433,LD1335,Kaafu,Noofinolhu,ނޫފިނޮޅޮ,Tourism Island,True,True,True,0.0,True,0.0
+K,1434,LD1134,Kaafu,Veligan'duhuraa,ވެލިގަނޑުހުރާ,Tourism Island,True,True,True,0.0,True,0.0
+K,1435,LD0321,Kaafu,Dhigufinolhu,ދިގުފިނޮޅު,Tourism Island,True,True,True,0.0,True,0.0
+K,1436,LD1334,Kaafu,Funfinolhu,ފުންފިނޮޅު,Tourism Island,True,True,True,0.0,True,0.0
+K,1437,LD1737,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1438,LD1326,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1439,LD0816,Kaafu,En'boodhoo,އެނބޫދޫ,Tourism Island,True,True,True,0.0,True,0.0
+K,1440,LD0524,Kaafu,En'boodhoofinolhu,އެނބޫދޫފިނޮޅު,Tourism Island,True,True,True,0.0,True,0.0
+Greater_Male,1441,LD0591,MLE,Hulhumalé,ހުޅުމާލެ,Residential Island,False,True,False,2.807713733862625e-26,True,5.836087183070837e-13
+Greater_Male,1442,LD0442,MLE,Malé,މާލެ,Residential Island,True,True,True,0.0,True,0.0
+K,1443,LD1714,Kaafu,Aanugan'duhuraa,އާނުގަނޑުހުރާ,Tourism Island,True,True,True,0.0,True,0.0
+K,1444,LD1716,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1445,LD1717,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1446,LD1320,Kaafu,Bodubis,ބޮޑުބިސް,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1447,LD1720,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1448,LD1736,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1449,LD1731,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1450,LD1732,Kaafu,Hathaafinolhu,ހަތާފިނޮޅު,Tourism Island,True,True,True,0.0,True,0.0
+K,1451,LD1733,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1452,LD1734,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1453,LD0026,Kaafu,Boduban'dos,ބޮޑުބަނޑޮސް,Tourism Island,True,True,True,0.0,True,0.0
+K,1454,LD0137,Kaafu,Boduhuraa,ބޮޑުހުރާ,Tourism Island,True,True,True,0.0,True,0.0
+K,1455,LD0166,Kaafu,Thilafushi,ތިލަފުށި,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1456,LD0202,Kaafu,Makunufushi,މަކުނުފުށި,Tourism Island,True,True,True,0.0,True,0.0
+K,1457,LD0230,Kaafu,Kudaban'dos,ކުޑަބަނޑޮސް,Tourism Island,True,True,True,0.0,True,0.0
+K,1458,LD0389,Kaafu,Dhoonidhoo,ދޫނިދޫ,Institutional Island,True,True,True,0.0,True,0.0
+K,1459,LD0482,Kaafu,Olhuhali,އޮޅުހަލި,Tourism Island,True,True,True,0.0,True,0.0
+K,1460,LD0483,Kaafu,Funadhoo,ފުނަދޫ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1461,LD0495,Kaafu,Gaagan'du,ގާގަނޑު,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1462,LD0558,Kaafu,Gulhigaathuhuraa,ގުޅިގާތުހުރާ,Tourism Island,True,True,True,0.0,True,0.0
+K,1463,LD0577,Kaafu,Gulhi,ގުޅި,Residential Island,True,True,True,0.0,True,0.0
+K,1464,LD0656,Kaafu,Kan'duoiygiri,ކަނޑުއޮތްގިރި,Industrial Island,True,True,True,0.0,True,0.0
+K,1465,LD0689,Kaafu,Giraavaru,ގިރާވަރު,Tourism Island,True,True,True,0.0,True,0.0
+K,1466,LD0765,Kaafu,Nakaiychaafushi,ނަކަތްޗާފުށި,Tourism Island,True,True,True,0.0,True,0.0
+K,1467,LD0803,Kaafu,Gasfinolhu,ގަސްފިނޮޅު,Tourism Island,True,True,True,0.0,True,0.0
+K,1468,LD0903,Kaafu,Vaadhoo,ވާދޫ,Tourism Island,True,True,True,0.0,True,0.0
+K,1469,LD0929,Kaafu,Thulhaagiri,ތުޅާގިރި,Tourism Island,True,True,True,0.0,True,0.0
+K,1470,LD0954,Kaafu,Velassaru,ވެލައްސަރު,Tourism Island,True,True,True,0.0,True,0.0
+K,1471,LD1039,Kaafu,Vihamanaafushi,ވިހަމަނާފުށި,Tourism Island,True,True,True,0.0,True,0.0
+K,1472,LD1089,Kaafu,Aarah,އާރަށް,Institutional Island,True,True,True,0.0,True,0.0
+K,1473,LD1203,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1474,LD1293,Kaafu,Aanugan'dufinolhu,އާނުގަނޑުފިނޮޅު,Tourism Island,True,True,True,0.0,True,0.0
+K,1475,LD1297,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1476,LD1310,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1477,LD1325,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1478,LD1501,Kaafu,Ehmafushi,އެއްމަފުށި,Tourism Island,True,True,True,0.0,True,0.0
+K,1479,LD1502,Kaafu,Akasdhoo,އަކަސްދޫ,Tourism Island,True,True,True,0.0,True,0.0
+K,1480,LD0078,Kaafu,Vabboahuraa,ވައްބޯހުރާ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1481,LD0527,Kaafu,Medhufinolhu,މެދުފިނޮޅު,Tourism Island,True,True,True,0.0,True,0.0
+K,1482,LD0890,Kaafu,Hulhule,ހުޅުލެ,Industrial Island,False,True,False,1.4761410262284428e-19,True,7.88926676906439e-11
+K,1483,LD1508,Kaafu,Kan'baashaa,ކަނބާޝާ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1484,LD1500,Kaafu,Maaranfushi,މާރަންފުށި,Tourism Island,True,True,True,0.0,True,0.0
+K,1485,LD1706,Kaafu,Nashvilu,ނަޝްވިލު,Tourism Island,True,True,True,0.0,True,0.0
+K,1486,LD1707,Kaafu,Hastheem,ހަސްތީމް,Tourism Island,True,True,True,0.0,True,0.0
+K,1487,LD0150,Kaafu,Feydhoofinolhu,ފޭދޫފިނޮޅު,Tourism Island,True,True,True,0.0,True,0.0
+K,1488,LD1177,Kaafu,Furanafushi,ފުރަނަފުށި,Tourism Island,True,True,True,0.0,True,0.0
+K,1489,LD0377,Kaafu,Kan'doomaafushi,ކަނޑޫމާފުށި,Tourism Island,True,True,True,0.0,True,0.0
+K,1490,LD1739,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1491,LD0712,Kaafu,Bulhifushi,ބުޅިފުށި,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1492,LD1740,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1493,LD0972,Kaafu,Lankanfinolhu,ލަންކަންފިނޮޅު,Tourism Island,True,True,True,0.0,True,0.0
+K,1494,LD1318,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1495,LD0981,Kaafu,Akirifushi,އަކިރިފުށި,Tourism Island,True,True,True,0.0,True,0.0
+K,1496,LD1746,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1497,LD1745,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1498,LD1744,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1499,LD1743,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1500,LD1742,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1501,LD1741,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1502,LD1752,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1503,LD1751,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1504,LD1507,Kaafu,Ithaafushi,އިތާފުށި,Tourism Island,True,True,True,0.0,True,0.0
+K,1505,LD1749,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1506,LD1750,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1507,LD1748,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1508,LD1747,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1509,LD1702,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1510,LD1753,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1511,LD1703,Kaafu,Fariiruhuraa,ފަރިިއިރުހުރާ,Tourism Island,True,True,True,0.0,True,0.0
+K,1512,LD1754,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1513,LD1755,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1514,LD1756,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1515,LD1758,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1516,LD1722,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1517,LD1757,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1518,LD1723,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1519,LD1759,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1520,LD1728,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1521,LD1760,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1522,LD1761,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1523,LD1762,Kaafu,Kassanfushi,ކައްސަންފުށި,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1524,LD1763,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1525,LD1764,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1526,LD1765,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1527,LD0756,Kaafu,Olhuveli,އޮޅުވެލި,Tourism Island,True,True,True,0.0,True,0.0
+K,1528,LD1767,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,1529,LD0583,Alifu Dhaalu,Bulhalhohi,ބުޅަޅޮހި,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,1530,LD0545,Alifu Dhaalu,Mahibadhoo,މަހިބަދޫ,Residential Island,True,True,True,0.0,True,0.0
+K,1536,LD0549,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1537,LD0390,Kaafu,Farukolhufushi,ފަރުކޮޅުފުށި,Tourism Island,False,False,True,0.0,True,8.698557179509188e-06
+ADh,1541,LD0579,Alifu Dhaalu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1547,LD1777,Kaafu,Kudagiri,ކުޑަގިރި,Uninhabited Island,True,True,True,0.0,True,0.0
+ADh,1551,LD0158,Alifu Dhaalu,Maamigili,މާމިގިލި,Residential Island,True,True,True,0.0,True,0.0
+K,1552,LD1781,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1553,LD1782,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1554,LD1785,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1555,LD1784,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+K,1556,LD1783,Kaafu, , ,Uninhabited Island,True,True,True,0.0,True,0.0
+AA,1560,LD1786,Alifu Alifu, , ,Tourism Island,True,True,True,0.0,True,0.0
