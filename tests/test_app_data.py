@@ -31,7 +31,7 @@ CONFIG_KEYS = {"timezone", "bufferOfficialMin", "bufferInferredMin", "longWaitMi
 CENSUS_KEYS = {"name", "population", "male", "female", "age0_17", "age18_64", "age65p", "disability",
                "disabilityEligible", "elderlyAlone"}
 META_KEYS = {"buildVersion", "fixture", "evidencePeriod", "timezoneStatus", "speedUnitStatus", "clockCorrections",
-             "timetableYear"}
+             "timetableYear", "region"}
 DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
@@ -123,6 +123,8 @@ def test_deterministic(tmp_path, out):
     bad.main(["--out", str(d2), "--build-version", BV])
     for n in FILES:
         assert (out / f"{n}.json").read_bytes() == (d2 / f"{n}.json").read_bytes(), n
+    for n in ("islands", "atolls"):
+        assert (out / f"{n}.geojson").read_bytes() == (d2 / f"{n}.geojson").read_bytes(), n
 
 
 # ---- disclosure ----
@@ -192,3 +194,68 @@ def test_forbidden_fields(b, out):
     for l in b["legs"]:
         if l["evidence"]:
             assert isinstance(l["evidence"]["devices"], int)
+
+
+# ---- region ----
+CORRIDOR = ("MATHIVERI", "BODUFOLHUDHOO", "UKULHAS", "RASDHOO", "THODDOO", "HIMANDHOO", "MAAFUSHI", "GULHI",
+            "GURAIDHOO", "MALE", "HULHUMALE")
+
+
+def test_region(b):
+    region = set(b["meta"]["region"]["atolls"])
+    assert region == set(bad.DEFAULT_ATOLLS)
+    assert "Central Maldives study region" in b["meta"]["region"]["name"]
+    for s in b["stops"]:
+        assert s["atoll"] in region, s["id"]
+    ids = {s["id"] for s in b["stops"]}
+    for name in CORRIDOR:
+        # stop ids keep their atoll suffix when the bare name is ambiguous nationally (e.g. GURAIDHOO-K)
+        assert name in ids or f"{name}-K" in ids, name
+    assert sum(l["source"] == "inferred" for l in b["legs"]) == 31
+
+
+# ---- map layers ----
+def _rings(g):
+    polys = [g["coordinates"]] if g["type"] == "Polygon" else g["coordinates"]
+    return [r for p in polys for r in p]
+
+
+def _check_layer(path, max_bytes):
+    assert path.stat().st_size < max_bytes, path.stat().st_size
+    fc = json.loads(path.read_text(encoding="utf-8"))
+    assert fc["type"] == "FeatureCollection" and fc["attribution"] and fc["features"]
+    for f in fc["features"]:
+        assert f["type"] == "Feature" and f["properties"]["code"]
+        assert f["geometry"]["type"] in ("Polygon", "MultiPolygon")
+        for r in _rings(f["geometry"]):
+            assert len(r) >= 4 and r[0] == r[-1], f["properties"]["code"]
+            for lon, lat in r:
+                assert 2 <= lat <= 6 and 72 <= lon <= 74.5, f["properties"]["code"]
+    return fc
+
+
+def test_islands_geojson(out, b):
+    fc = _check_layer(out / "islands.geojson", 1_500_000)
+    assert "OneMap" in fc["attribution"]
+    keys = {s["censusKey"] for s in b["stops"]}
+    for f in fc["features"]:
+        assert f["properties"]["isStop"] == (f["properties"]["code"] in keys)
+        assert f["properties"]["atoll"] in bad.DEFAULT_ATOLLS
+
+
+def _inside(lon, lat, ring):
+    c = False
+    for (x1, y1), (x2, y2) in zip(ring, ring[1:]):
+        if (y1 > lat) != (y2 > lat) and lon < x1 + (lat - y1) * (x2 - x1) / (y2 - y1):
+            c = not c
+    return c
+
+
+def test_atolls_geojson(out, b):
+    fc = _check_layer(out / "atolls.geojson", 200_000)
+    assert "COD-AB" in fc["attribution"] and "OneMap" in fc["attribution"]
+    hulls = {f["properties"]["code"]: f["geometry"]["coordinates"][0] for f in fc["features"]}
+    assert set(hulls) == {"AA", "ADh", "K", "V", "Greater_Male"}
+    code = {"AA": "AA", "ADH": "ADh", "K": "K", "V": "V", "MLE": "Greater_Male"}
+    for s in b["stops"]:
+        assert _inside(s["lon"], s["lat"], hulls[code[s["atoll"]]]), s["id"]

@@ -5,9 +5,16 @@ Inputs (all tracked in this repo, no private data):
       2026 MTCC timetables only (source_id in MTCC_2026_SOURCES); historical tables are never used.
   - data/derived/vessels/corridor_services.json   inferred vessel services (Aug 2025, aggregate only)
   - per_island/*.csv                              Census 2022 per-island rows
+  - data/reference/followme/onemap_study_islands.geojson  OneMap island polygons (5 study atolls)
+  - data/reference/followme/study_area.geojson           COD-AB v02 + OneMap atoll land unions
+
+Region: only stops whose atoll is in --atolls (default AA,ADH,K,V,MLE) are kept, and only legs
+whose both ends are kept stops. Also writes islands.geojson (simplified OneMap footprints) and
+atolls.geojson (convex hull per study atoll, display outline only).
 
 Usage:
   python3 scripts/build_app_data.py --out <app_repo>/app/public/data [--build-version 2026-10-24T17:00+05:00]
+      [--atolls AA,ADH,K,V,MLE]
 
 Output is deterministic: same inputs + same --build-version give identical bytes.
 Standard library only.
@@ -29,6 +36,23 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
 DEFAULT_BUILD_VERSION = "2026-10-24T17:00+05:00"
+DEFAULT_ATOLLS = ("AA", "ADH", "K", "V", "MLE")
+REGION_NAME = "Central Maldives study region (AA, ADh, K, V, Greater Malé)"
+ISLANDS_SRC = Path("data") / "reference" / "followme" / "onemap_study_islands.geojson"
+# Wording from data/ready/island_polygons/README.md and geography_provenance.json.
+ISLANDS_ATTRIBUTION = ("Island footprints: OneMap (Geomatics Department, Ministry of Infrastructure, Housing and "
+                       "Urban Development), layer island_20240509, OneMap Data Usage License "
+                       "(https://readme.onemap.mv/pdf/Data%20Usage%20License.pdf)")
+ATOLLS_SRC = Path("data") / "reference" / "followme" / "study_area.geojson"
+# Wording from geography_provenance.json (primary_source/primary_license, secondary_source/secondary_license).
+ATOLLS_ATTRIBUTION = ("Administrative boundaries: Government of Maldives / OCHA COD-AB v02 (CC BY-IGO); "
+                      "island footprints: OneMap (Geomatics Department, Ministry of Infrastructure, Housing and "
+                      "Urban Development), OneMap Data Usage License "
+                      "(https://readme.onemap.mv/pdf/Data%20Usage%20License.pdf)")
+ATOLLS_METHOD = ("Convex hull of COD-AB v02 / OneMap island polygons; display outline only, "
+                 "not a legal or reef boundary")
+ONEMAP_ATOLL = {"Alifu Alifu": "AA", "Alifu Dhaalu": "ADH", "Kaafu": "K", "Vaavu": "V", "MLE": "MLE"}
+COORD_DECIMALS = 5
 
 CONFIG = {
     "timezone": "Indian/Maldives",
@@ -136,7 +160,8 @@ def load_census(root: Path):
     return census, index
 
 
-def build(root: Path, build_version: str):
+def build(root: Path, build_version: str, atolls=DEFAULT_ATOLLS):
+    region = sorted({a.strip().upper() for a in atolls if a.strip()})
     report = collections.OrderedDict()
 
     def note(k, v):
@@ -203,6 +228,9 @@ def build(root: Path, build_version: str):
         if not hit:
             note("stop_unmapped_no_census_match", f"{sid} ({fs['island_name_en']}, {fs['atoll_abbreviation'] or '-'})")
             continue
+        if (fs["atoll_abbreviation"].upper() or "MLE") not in region:
+            note("stop_dropped_outside_region", f"{new_id} ({fs['atoll_abbreviation'] or '-'})")
+            continue
         stop_id[sid] = new_id
         name = "Malé" if new_id == "MALE" else fs["island_name_en"].replace("’", "").replace("'", "")
         stops.append({
@@ -210,14 +238,25 @@ def build(root: Path, build_version: str):
             "lat": hit[1], "lon": hit[2], "censusKey": hit[0],
             "kind": "hub" if new_id == "MALE" else "island",
         })
-    legs = []
+    legs, trip_kept, trip_cut = [], collections.Counter(), collections.Counter()
+    outside = {sid for sid in used if hits[sid] and sid not in stop_id}
     for l in mtcc:
         if l["from"] not in stop_id or l["to"] not in stop_id:
-            bad = [x for x in (l["from"], l["to"]) if x not in stop_id]
-            note("mtcc_leg_dropped_stop_unmapped", f"{l['id']} ({','.join(bad)})")
+            if l["from"] in outside or l["to"] in outside:
+                note("mtcc_leg_dropped_outside_region", f"{l['id']} route={l['routeId']}")
+                trip_cut[(l["routeId"], l["tripId"])] += 1
+            else:
+                bad = [x for x in (l["from"], l["to"]) if x not in stop_id]
+                note("mtcc_leg_dropped_stop_unmapped", f"{l['id']} ({','.join(bad)})")
             continue
         l["from"], l["to"] = stop_id[l["from"]], stop_id[l["to"]]
         legs.append(l)
+        trip_kept[(l["routeId"], l["tripId"])] += 1
+    for (r, t), n in sorted(collections.Counter({k: v for k, v in trip_cut.items()}).items()):
+        if trip_kept[(r, t)]:
+            note("mtcc_trip_cut_mid_trip_by_region", f"{r} {t} kept={trip_kept[(r, t)]} dropped={n}")
+    for r, n in sorted(collections.Counter(r for (r, _), v in trip_cut.items() for _ in range(v)).items()):
+        note("mtcc_legs_dropped_outside_region_by_route", f"{r}: {n}")
     by_census = {s["censusKey"]: s["id"] for s in stops}
 
     # ---- Inferred: service stops -> consecutive boardable segments ----
@@ -292,13 +331,108 @@ def build(root: Path, build_version: str):
         "speedUnitStatus": "confirmed" if V.get("speed_unit_confirmed") else "unconfirmed",
         "clockCorrections": int(V["clock_correction"]["observations_corrected_in_scope"]),
         "timetableYear": 2026,
+        "region": {"atolls": region, "name": REGION_NAME},
     }
     config = dict(CONFIG, buildVersion=build_version)
     keys = {s["censusKey"] for s in stops}
     census_out = {k: census[k] for k in sorted(keys)}
     bundle = {"stops": stops, "legs": legs, "config": config, "census": census_out, "meta": meta}
     validate(bundle)
+    bundle["islands"] = build_islands(root, by_census)
+    bundle["atolls"] = build_atolls(root)
     return bundle, report
+
+
+def _ring(coords):
+    """Round to COORD_DECIMALS, drop consecutive duplicates, close; None if fewer than 4 points."""
+    out = []
+    for c in coords:
+        p = [round(float(c[0]), COORD_DECIMALS), round(float(c[1]), COORD_DECIMALS)]
+        if not out or out[-1] != p:
+            out.append(p)
+    if out and out[0] != out[-1]:
+        out.append(list(out[0]))
+    return out if len(out) >= 4 else None
+
+
+def _polygon(rings):
+    ext = _ring(rings[0]) if rings else None
+    if not ext:
+        return None
+    return [ext] + [r for r in (_ring(h) for h in rings[1:]) if r]
+
+
+def convex_hull(points):
+    """Andrew's monotone chain; returns a closed counter-clockwise ring."""
+    pts = sorted(set(points))
+    if len(pts) < 3:
+        return None
+
+    def cross(o, a, b):
+        return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0])
+
+    lower, upper = [], []
+    for p in pts:
+        while len(lower) >= 2 and cross(lower[-2], lower[-1], p) <= 0:
+            lower.pop()
+        lower.append(p)
+    for p in reversed(pts):
+        while len(upper) >= 2 and cross(upper[-2], upper[-1], p) <= 0:
+            upper.pop()
+        upper.append(p)
+    hull = lower[:-1] + upper[:-1]
+    return [list(p) for p in hull] + [list(hull[0])]
+
+
+def build_atolls(root: Path) -> dict:
+    """study_area.geojson (island-land unions) -> one convex-hull Polygon per study atoll, display only."""
+    with open(root / ATOLLS_SRC, encoding="utf-8") as f:
+        src = json.load(f)
+    feats = []
+    for ft in src["features"]:
+        pr, g = ft["properties"], ft["geometry"]
+        polys = [g["coordinates"]] if g["type"] == "Polygon" else g["coordinates"]
+        pts = [(round(float(c[0]), COORD_DECIMALS), round(float(c[1]), COORD_DECIMALS))
+               for poly in polys for ring in poly for c in ring]
+        ring = convex_hull(pts)
+        if not ring:
+            continue
+        feats.append({
+            "type": "Feature",
+            "properties": {"code": pr["study_area_code"], "name": pr["admin_name"], "pcode": pr["admin_pcode"],
+                           "method": ATOLLS_METHOD},
+            "geometry": {"type": "Polygon", "coordinates": [ring]},
+        })
+    feats.sort(key=lambda x: x["properties"]["code"])
+    return {"type": "FeatureCollection", "attribution": ATOLLS_ATTRIBUTION, "features": feats}
+
+
+def build_islands(root: Path, stop_census_keys) -> dict:
+    """OneMap study-island polygons -> compact FeatureCollection for the app map."""
+    with open(root / ISLANDS_SRC, encoding="utf-8") as f:
+        src = json.load(f)
+    feats = []
+    for ft in src["features"]:
+        pr, g = ft["properties"], ft["geometry"]
+        if not g:
+            continue
+        polys = [g["coordinates"]] if g["type"] == "Polygon" else g["coordinates"]
+        polys = [p for p in (_polygon(p) for p in polys) if p]
+        if not polys:
+            continue
+        geom = {"type": "Polygon", "coordinates": polys[0]} if len(polys) == 1 else \
+            {"type": "MultiPolygon", "coordinates": polys}
+        feats.append({
+            "type": "Feature",
+            "properties": {
+                "code": pr["FCODE"], "name": pr["islandName"],
+                "atoll": ONEMAP_ATOLL.get(pr["atoll"], pr["atoll"]),
+                "category": pr["category"], "isStop": pr["FCODE"] in stop_census_keys,
+            },
+            "geometry": geom,
+        })
+    feats.sort(key=lambda x: x["properties"]["code"])
+    return {"type": "FeatureCollection", "attribution": ISLANDS_ATTRIBUTION, "features": feats}
 
 
 def validate(b: dict) -> None:
@@ -334,6 +468,10 @@ def write(bundle: dict, out: Path) -> None:
             (tmp / f"{name}.json").write_text(dumps(bundle[name]), encoding="utf-8")
         for name in ("stops", "legs", "config", "census", "meta"):
             os.replace(tmp / f"{name}.json", out / f"{name}.json")
+        for name in ("islands", "atolls"):
+            (tmp / f"{name}.geojson").write_text(
+                json.dumps(bundle[name], ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
+            os.replace(tmp / f"{name}.geojson", out / f"{name}.geojson")
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
 
@@ -343,8 +481,10 @@ def main(argv=None) -> int:
     ap.add_argument("--root", type=Path, default=REPO, help="data repo root")
     ap.add_argument("--out", type=Path, required=True, help="output directory (e.g. <app>/app/public/data)")
     ap.add_argument("--build-version", default=os.environ.get("APP_DATA_BUILD_VERSION", DEFAULT_BUILD_VERSION))
+    ap.add_argument("--atolls", default=",".join(DEFAULT_ATOLLS),
+                    help="comma-separated atoll codes to keep (default AA,ADH,K,V,MLE)")
     args = ap.parse_args(argv)
-    bundle, report = build(args.root, args.build_version)
+    bundle, report = build(args.root, args.build_version, args.atolls.split(","))
     write(bundle, args.out)
     legs = bundle["legs"]
     summary = {
@@ -354,6 +494,10 @@ def main(argv=None) -> int:
         "legs_mtcc": sum(l["source"] == "mtcc" for l in legs),
         "legs_inferred": sum(l["source"] == "inferred" for l in legs),
         "census": len(bundle["census"]),
+        "stops_by_atoll": dict(sorted(collections.Counter(s["atoll"] for s in bundle["stops"]).items())),
+        "islands": len(bundle["islands"]["features"]),
+        "atolls": len(bundle["atolls"]["features"]),
+        "islands_isStop": sum(f["properties"]["isStop"] for f in bundle["islands"]["features"]),
     }
     print(json.dumps(summary, indent=1))
     for k, v in report.items():
