@@ -1,0 +1,18 @@
+name,path,status,verification,private,owner,blocks,next_action,tasks
+census_2022_per_island,per_island,READY,AUTO_CHECKED,no,,Source URL and licence UNKNOWN (catalog),Ask who added per_island/ for source and licence (Q8),D12
+island_polygons,data/reference/followme,READY,AUTO_CHECKED,no,,Only the 5 study atolls (379 islands); 154 Census islands have no polygon,None needed for study area,
+ferry_timetables_2026,data/interim/ferry; data/manual/ferry; data/processed/ferry,READY,AUTO_CHECKED,no,,Stop to Census island_code crosswalk MISSING (island join unavailable); CFN 2026 currency unconfirmed (Q6); source PDFs not in repo,Import crosswalk (D2); confirm 2026 timetable and Rasdhoo connection (D3),D2 D3
+health_facilities,data/reference/health,READY,AUTO_CHECKED,no,,Island-level use only: coordinates are island centroids; hours/services not reliable; 6 UNVERIFIED rows; no island_code column,Verify 6 rows (D7); live-check OSM nodes (D6); add island_code via crosswalk (D2),D2 D6 D7
+weather_2025_08,data/reference/weather,READY,AUTO_CHECKED,no,,Modelled not observed; non-commercial API terms; first 5 local hours of 1 Aug missing,Join to FollowMe days (D10),D10
+followme_cleaned,data/private/followme,READY,NEEDS_ORGANISER,yes,,Private: stays out of git. Timezone and speed unit unconfirmed (Q1 Q2),Ask organisers (D5),D5
+vessel_services_inferred,data/derived/vessels; data/private/followme,NOT READY,NEEDS_ORGANISER,no,,Pending rebuild with clock-offset correction and island-shoreline stops; Q1 Q2 Q3 open,Rebuild (D1); ask organisers (D5),D1 D5
+ferry_subsets_alif_male,data/processed/ferry,NOT READY,UNVERIFIED,no,,Transfer times are team assumptions with no source (Q5),Confirm transfer rules (D5) and rebuild,D5
+ferry_stop_census_crosswalk,data/reference/crosswalk,NOT READY,UNVERIFIED,no,,File not delivered (ChatGPT building it),Run the prompt; review; import (D2),D2
+route_exposure,data/reference/exposure,NOT READY,UNVERIFIED,no,,File not built; no owner,Classify corridor legs open water or sheltered lagoon (D8),D8
+weather_warning_format,data/reference/weather,NOT READY,UNVERIFIED,no,,Official format not obtained; weather thresholds in config/weather.json are provisional,Ask MMS or organisers (D9),D9
+organiser_answers,data/organiser_answers.md,NOT READY,NEEDS_ORGANISER,no,,Q1-Q8 all OPEN,Send questions; record answers (D5),D5
+weather_followme_join,(not built),NOT READY,UNVERIFIED,no,,Not built,Join weather to FollowMe days and service_days (D10),D10
+followme_private_support,../FollowMe_august_2025; ../FollowMe_pipeline/out; data/private/followme; data/private/followme.secret; data/private/followme_geography_review; data/private/followme_sample,NEEDS_CHECK,NEEDS_ORGANISER,yes,,Working files and raw originals; not shareable. Raw lives outside the repo,Keep private; delete staging only on team lead's say,
+harbour_jetty_reference,data/manual/harbours; data/reference/harbours,ARCHIVE,UNVERIFIED,no,,Deprecated by team lead but scripts/build_vessel_services.py still reads harbour_reference.csv,Decide replacement before changing vessel services,D1
+health_facilities_gemini_audited,data/archive/health_facilities_gemini_audited,ARCHIVE,UNVERIFIED,no,,Deprecated: 4 coordinates fall outside island polygons,Keep; do not use,
+maritime_terminals_gemini_audited,data/archive/maritime_terminals_gemini_audited,ARCHIVE,UNVERIFIED,no,,Deprecated: provenance beyond row columns UNKNOWN,Keep; do not use,
